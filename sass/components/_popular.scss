@@ -1,0 +1,250 @@
+.popular{
+    padding-left: 145px;
+    padding-right: 145px;
+    padding-top: 180px;
+    position: relative;
+    padding-bottom: 129px;
+}
+
+.popular-title{
+    @extend %title
+}
+
+.popular-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 180px;
+    transform: translateX(-100%);
+    width: 191px;
+    height: 59px;
+    border: 1px solid $main-text-color;
+    border-radius: 14px;
+}
+
+.popular-more-icon{
+    fill: $section-color;
+    stroke: $section-color;
+    margin-left: 10px;
+}
+
+.popular-more-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+}
+
+.popular-products-list{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card{
+    display: block;
+    position: relative;
+    width: 350px;
+    height: 814px;
+}
+
+.product-card-image{
+    display: block;
+    width: 350px;
+    height: 420px;
+    border-radius: 40px;
+    background-color: $card-color;
+}
+
+.product-card-title{
+    margin-top: 30px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: $main-text-color;
+}
+
+.product-card-rating-wrap{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.product-card-rating{
+    display: flex;
+}
+
+.product-card-rating-item:not(:first-child){
+    margin-left: 5px;
+}
+
+.product-card-reviews{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: $main-text-color;
+    margin-left: 16px;
+}
+
+.product-card-text{
+    margin-top: 16px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    color: $main-text-color;
+}
+
+.product-card-meta-wrap{
+    position: absolute;
+    bottom: 0;
+}
+
+.product-card-meta{
+    display: flex;
+}
+
+.product-card-meta-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 143px;
+    height: 59px;
+    background-color: $secondary-text-color;
+    border-radius: 14px;
+}
+
+.product-card-meta-type-dog{
+    fill: $notificatins-color;
+    margin-right: 10px;
+}
+
+.product-card-meta-type-cat {
+    fill: $image-background;
+    margin-right: 10px;
+}
+
+.product-card-meta-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-text-color;
+}
+
+.product-card-meta-weight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 193px;
+    height: 59px;
+    margin-left: 14px;
+    border: none;
+    border-radius: 14px;
+    background-color: $secondary-text-color;
+}
+
+.product-card-meta-weight-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-text-color;
+    margin-left: 10px;
+    margin-right: 17px;
+}
+
+.product-card-buy{
+    display: flex;
+    width: 100%;
+    height: 59px;
+    border: none;
+    border-radius: 14px;
+    background-color: $buttons-color;
+    margin-top: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card-buy-prev-price{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    text-decoration-line: line-through;
+    margin-right: 10px;
+}
+
+.product-card-buy-price{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $secondary-text-color;
+}
+
+.product-card-buy-inner-wrap{
+    display: flex;
+    align-items: center;
+}
+
+.product-card-buy-icon{
+    stroke: $secondary-text-color;
+    margin-right: 11px;
+}
+
+.product-card-buy-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $secondary-text-color;
+}
+
+.popular-slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 66px;
+}
+
+.popular-slider-point {
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background-color: #B3B2B2;
+    border-radius: 100%;
+
+    &:not(:first-child) {
+        margin-left: 14px;
+    }
+}
+
+.popular-slider-active{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #B3B2B2;
+    border-radius: 100%;
+    left: -29%;
+    top: -28%;
+}

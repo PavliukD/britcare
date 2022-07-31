@@ -147,40 +147,261 @@
         </div>
     </section>
     <section class="popular">
-        <h2>Популярні товари</h2>
-        <a href="">Більше товарів</a>
-        <ul>
-            <li>
-                <img src="" alt="photo of product">
-                <h3></h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <a href="">
-                    <span></span>
-                </a>
-                <p></p>
+        <h2 class="popular-title">Популярні товари</h2>
+        <a href="" class="popular-more">
+            <span class="popular-more-text">Більше товарів</span>
+            <svg class="popular-more-icon" width="7" height="13">
+                <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+        </a>
+        <ul class="popular-products-list">
+            <li class="product-card">
+                <img src="./images/bg.png" alt="photo of product" class="product-card-image">
+                <h3 class="product-card-title">Brit Care GF Adult Large Breed Salmon & Potato</h3>
+                <div class="product-card-rating-wrap">
+                    <ul class="product-card-rating">
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <a href="" class="product-card-reviews">
+                        <span>5 відгуків</span>
+                    </a>
+                </div>
+                <p class="product-card-text">Беззерновая формула для взрослых собак крупных пород (от 25 кг и более) - лосось и картофель.</p>
+                <div class="product-card-meta-wrap">
+                    <div class="product-card-meta">
+                        <div class="product-card-meta-type">
+                            <svg width="23" height="19" class="product-card-meta-type-dog">
+                                <use href="./images/symbol-defs.svg#icon-dog"></use>
+                            </svg>
+                            <span class="product-card-meta-text">
+                                < 10 кг</span>
+                        </div>
+                        <button class="product-card-meta-weight">
+                            <svg width="16" height="19">
+                                <use href="./images/symbol-defs.svg#icon-pack"></use>
+                            </svg>
+                            <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            <svg width="13" height="7">
+                                <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="product-card-buy">
+                        <div>
+                            <span class="product-card-buy-prev-price">100 ₴</span>
+                            <span class="product-card-buy-price">90 ₴</span>
+                        </div>
+                        <div class="product-card-buy-inner-wrap">
+                            <svg width="15" height="19" class="product-card-buy-icon">
+                                <use href="./images/symbol-defs.svg#icon-bag"></use>
+                            </svg>
+                            <span class="product-card-buy-text">Купити</span>
+                        </div>
+                    </button>
+                </div>
             </li>
-            <li></li>
-            <li></li>
+            <li class="product-card">
+                <img src="./images/item.png" alt="photo of product" class="product-card-image">
+                <h3 class="product-card-title">Brit Care Junior Large Breed Lamb & Rice</h3>
+                <div class="product-card-rating-wrap">
+                    <ul class="product-card-rating">
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <a href="" class="product-card-reviews">
+                        <span>20 відгуків</span>
+                    </a>
+                </div>
+                <p class="product-card-text">Гипоаллергенная формула для молодых собак (от 3 месяцев до 2 лет) крупных пород (более 25 кг) - ягненок и рис.</p>
+                <div class="product-card-meta-wrap">
+                    <div class="product-card-meta">
+                        <div class="product-card-meta-type">
+                            <svg width="23" height="19" class="product-card-meta-type-cat">
+                                <use href="./images/symbol-defs.svg#icon-cat"></use>
+                            </svg>
+                            <span class="product-card-meta-text">
+                                > 5 кг</span>
+                        </div>
+                        <button class="product-card-meta-weight">
+                            <svg width="16" height="19">
+                                <use href="./images/symbol-defs.svg#icon-pack"></use>
+                            </svg>
+                            <span class="product-card-meta-weight-text">Вага: 1кг</span>
+                            <svg width="13" height="7">
+                                <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="product-card-buy">
+                        <div>
+                            <span class="product-card-buy-prev-price is-hidden">100 ₴</span>
+                            <span class="product-card-buy-price">90 ₴</span>
+                        </div>
+                        <div class="product-card-buy-inner-wrap">
+                            <svg width="15" height="19" class="product-card-buy-icon">
+                                <use href="./images/symbol-defs.svg#icon-bag"></use>
+                            </svg>
+                            <span class="product-card-buy-text">Купити</span>
+                        </div>
+                    </button>
+                </div>                
+            </li>
+            <li class="product-card">
+                <img src="./images/item_01.png" alt="photo of product" class="product-card-image">
+                <h3 class="product-card-title">Brit Premium Junior XL</h3>
+                <div class="product-card-rating-wrap">
+                    <ul class="product-card-rating">
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <a href="" class="product-card-reviews">
+                        <span>20 відгуків</span>
+                    </a>
+                </div>
+                <p class="product-card-text">Полноценный корм с курицей для щенков и молодых собак (1-30 месяцев) гигантских пород (45-90 кг). С высоким содержанием
+                курицы.</p>
+                <div class="product-card-meta-wrap">
+                    <div class="product-card-meta">
+                        <div class="product-card-meta-type">
+                            <svg width="23" height="19" class="product-card-meta-type-dog">
+                                <use href="./images/symbol-defs.svg#icon-dog"></use>
+                            </svg>
+                            <span class="product-card-meta-text">
+                                < 10 кг</span>
+                        </div>
+                        <button class="product-card-meta-weight">
+                            <svg width="16" height="19">
+                                <use href="./images/symbol-defs.svg#icon-pack"></use>
+                            </svg>
+                            <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            <svg width="13" height="7">
+                                <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="product-card-buy">
+                        <div>
+                            <span class="product-card-buy-prev-price">100 ₴</span>
+                            <span class="product-card-buy-price">90 ₴</span>
+                        </div>
+                        <div class="product-card-buy-inner-wrap">
+                            <svg width="15" height="19" class="product-card-buy-icon">
+                                <use href="./images/symbol-defs.svg#icon-bag"></use>
+                            </svg>
+                            <span class="product-card-buy-text">Купити</span>
+                        </div>
+                    </button>
+                </div>                
+            </li>
         </ul>
+        <div class="popular-slider">
+            <div class="popular-slider-point">
+                <div class="popular-slider-active"></div>
+            </div>
+            <div class="popular-slider-point">
+                <div class="popular-slider-active is-hidden"></div>
+            </div>
+            <div class="popular-slider-point">
+                <div class="popular-slider-active is-hidden"></div>
+            </div>
+        </div>
     </section>
     <section class="gallery">
+        <div class="gallery-stuff">
 
+        </div>
     </section>
     <section class="about-us">
-        <h2>Про нас</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolo in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="">Детальніше</a>
-        <img src="" alt="">
-        <img src="" alt="">
+        <div class="about-us-info">
+            <h2 class="about-us-title">Про нас</h2>
+            <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis
+                aute irure dolo in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="" class="about-us-lik-details">Детальніше</a>
+        </div>
+        <div class="about-us-gallery">
+            <img src="./images/bg (1).png" alt="main photo" class="about-us-main-photo">
+            <img src="./images/bg (2).png" alt="secondary photo" class="about-us-secondary-photo">
+            <div class="about-us-logo-wrap">
+                <svg width="90" height="54">
+                    <use href="./images/symbol-defs.svg#icon-main-logo"></use>
+                </svg>
+            </div>
+        </div>
     </section>
     <section class="faq">
         <h2>f.a.q.</h2>
