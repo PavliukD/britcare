@@ -669,4 +669,22 @@ section {
   position: absolute;
   top: 60px;
   right: 0;
+}
+
+.faq {
+  padding-left: 145px;
+  padding-right: 145px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-color: #FFFFFF;
+}
+
+.faq-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 58px;
+  text-transform: uppercase;
+  color: rgb(181, 123, 73);
 }/*# sourceMappingURL=main.css.map */
