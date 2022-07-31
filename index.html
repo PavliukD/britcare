@@ -11,48 +11,63 @@
     <link rel="stylesheet" href="./css/main.css"/>
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="/">
             <img src="./images/logo.png" alt="company logo">
         </a>
-        <ul>
-            <li>
-                <a href="">
-                    <span>Магазин</span>
+        <ul class="header-nav">
+            <li class="header-nav-item">
+                <a href="" class="header-nav-link">
+                    <span class="header-nav-link-text">Магазин</span>
+                </a>
+                <button class="header-shop-button">
+                    <svg width="10" height="5" class="header-shop-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="header-nav-item">
+                <a href="" class="header-nav-link">
+                    <span class="header-nav-link-text">Чому ми</span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <span>Чому ми</span>
+            <li class="header-nav-item">
+                <a href="" class="header-nav-link">
+                    <span class="header-nav-link-text">Відгуки</span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <span>Відгуки</span>
+            <li class="header-nav-item">
+                <a href="" class="header-nav-link">
+                    <span class="header-nav-link-text">Про нас</span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <span>Про нас</span>
+            <li class="header-nav-item">
+                <a href="" class="header-nav-link">
+                    <span class="header-nav-link-text">FAQ</span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <span>FAQ</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <span>Контакти</span>
+            <li class="header-nav-item">
+                <a href="" class="header-nav-link">
+                    <span class="header-nav-link-text">Контакти</span>
                 </a>
             </li>
         </ul>
-        <ul>
-            <li>
-                <a href="">Вхід</a>
+        <ul class="header-user">
+            <li class="header-user-item">
+                <a href="" class="header-user-link">
+                    <svg width="15" height="18" class="header-user-icon">
+                        <use href="./images/symbol-defs.svg#icon-user"icon-user></use>
+                    </svg>
+                    <span class="header-user-text">Вхід</span> 
+                </a>
             </li>
-            <li>
-                <a href="">Корзина</a>
+            <li class="header-user-item">
+                <a href="" class="header-user-link">
+                    <svg width="15" height="18" class="header-user-icon">
+                        <use href="./images/symbol-defs.svg#icon-bag"></use>
+                    </svg>
+                    <span class="header-user-text">Корзина</span> 
+                </a>
             </li>
         </ul>
     </header>
@@ -95,30 +110,41 @@
         </div>
     </section>
     <section class="why-are-we">
-        <h2>Чому ми</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="" alt="product exsample">
-        <ul>
-            <li>
-                <h3>Склад</h3>
-                <p>Беззерновий, збагачений пребіотиками для гарного травлення та гіпоалергенний, збалансований спеціально для міні-порід.</p>
-            </li>
-            <li>
-                <h3>Користь</h3>
-                <p>Здоров'я та антибактеріальний захист зубів. Підтримує імунітет та здорове серце, має високий вміст Омега-3, завдяки чому
-                у песика завжди сяюча шерсть.</p>
-            </li>
-            <li>
-                <h3>Смак</h3>
-                <p>Має неймовірні смаки – свіжої баранини, лосося, тунця, кролика та оленини. Підійде навіть для найвибагливіших песиків,
-                містить розмарин, куркуму, гвоздику, цитруси і лохину.</p>
-            </li>
-            <li>
-                <h3>Якість</h3>
-                <p>Виготовляється для задоволення особливих харчових потреб міні-собак. Виробник – Чехія. Постачальник несе гарантію якості
-                корму.</p>
-            </li>
-        </ul>
+        <h2 class="why-are-we-title">Чому ми</h2>
+        <p class="why-are-we-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="why-are-we-info">
+            <div class="why-are-we-image-wrap">
+                <svg class="why-are-we-icon" width="80" height="80">
+                    <use href="./images/symbol-defs.svg#icon-no_gluet"></use>
+                </svg>
+                <img src="./images/Rectangle 2.png" alt="product exsample" class="why-are-we-image">
+            </div>
+            <ul class="why-are-we-list">
+                <li class="why-are-we-list-item">
+                    <h3 class="why-are-we-list-title">Склад</h3>
+                    <p class="why-are-we-list-text">Беззерновий, збагачений пребіотиками для гарного травлення та гіпоалергенний, збалансований спеціально для
+                        міні-порід.</p>
+                </li>
+                <li class="why-are-we-list-item">
+                    <h3 class="why-are-we-list-title">Користь</h3>
+                    <p class="why-are-we-list-text">Здоров'я та антибактеріальний захист зубів. Підтримує імунітет та здорове серце, має високий вміст Омега-3,
+                        завдяки чому
+                        у песика завжди сяюча шерсть.</p>
+                </li>
+                <li class="why-are-we-list-item">
+                    <h3 class="why-are-we-list-title">Смак</h3>
+                    <p class="why-are-we-list-text">Має неймовірні смаки – свіжої баранини, лосося, тунця, кролика та оленини. Підійде навіть для найвибагливіших
+                        песиків,
+                        містить розмарин, куркуму, гвоздику, цитруси і лохину.</p>
+                </li>
+                <li class="why-are-we-list-item">
+                    <h3 class="why-are-we-list-title">Якість</h3>
+                    <p class="why-are-we-list-text">Виготовляється для задоволення особливих харчових потреб міні-собак. Виробник – Чехія. Постачальник несе
+                        гарантію якості
+                        корму.</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <section class="popular">
         <h2>Популярні товари</h2>

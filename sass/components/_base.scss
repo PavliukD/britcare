@@ -1,7 +1,22 @@
-@import '../utils/variables';
 
 h1,h2,h3,h4,h5, p{
     margin: 0;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &:focus{
+        text-decoration: none;
+    }
+
+    &:visited{
+        text-decoration: none;
+    }
 }
 
 ul{
@@ -25,4 +40,13 @@ section{
     width: 100%;
     padding-left: 145px;
     padding-right: 145px;
+}
+
+%title{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    color: $main-text-color;
 }

@@ -1,0 +1,76 @@
+
+.why-are-we{
+    padding-top: 180px;
+    padding-left: 145px;
+    padding-right: 145px;
+}
+
+.why-are-we-title{
+    @extend %title;
+    text-align: center;
+}
+
+.why-are-we-text{
+    display: block;
+    width: 560px;
+    margin: auto;
+    margin-top: 30px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: $main-text-color;
+    text-align: center;
+}
+
+.why-are-we-image-wrap{
+    position: relative;
+    margin-right: 65px;
+}
+
+.why-are-we-icon{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.why-are-we-image{
+    display: block;
+    width: 570px;
+    border-radius: 50px;
+}
+
+.why-are-we-info{
+    display: flex;
+    margin-top: 60px;
+}
+
+.why-are-we-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.why-are-we-list-item:not(:first-child){
+    margin-top: 30px;
+}
+
+.why-are-we-list-title{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: $main-text-color;
+}
+
+.why-are-we-list-text{
+    margin-top: 13px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    color: $main-text-color;
+}
