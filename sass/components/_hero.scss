@@ -1,0 +1,128 @@
+@import '../utils/variables';
+
+.hero-section{
+    padding-top: 20px;
+}
+
+.hero{
+    display: flex;
+    width: 100%;
+    padding-left: 145px;
+    padding-right: 145px;
+    padding-top: 164px;
+    padding-bottom: 50px;
+    background-color: $card-color;
+    border-radius: 50px;;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-title{
+    margin-top: 30px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    color: $main-text-color;
+}
+
+.hero-text{
+    margin-top: 30px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 35px;
+    color: $main-text-color;
+}
+
+.hero-shop-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 59px;
+    margin-top: 60px;
+    background-color: $buttons-color;
+    border-radius: 14px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+        cursor: pointer;
+        outline: 1px solid $buttons-color;
+    }
+
+    &:focus{
+        text-decoration: none;
+    }
+
+    &:visited{
+        text-decoration: none;
+    }
+}
+
+.hero-cards-list{
+    display: flex;
+    margin-left: 33px;
+}
+
+.hero-cards-list-item:not(:first-child) {
+    margin-left: 35px;
+}
+
+%hero-card{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 686px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.hero-card-dog{
+    @extend %hero-card;
+    background-color: $notificatins-color;
+}
+
+.hero-card-cat{
+    @extend %hero-card;
+    background-color: $image-background;
+}
+
+.hero-card-text-wrap{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+}
+
+.hero-card-icon{
+    fill: $secondary-text-color;
+}
+
+.hero-card-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: $secondary-text-color;
+    text-decoration: none;
+    margin-left: 14px;
+}

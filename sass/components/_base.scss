@@ -1,0 +1,28 @@
+@import '../utils/variables';
+
+h1,h2,h3,h4,h5, p{
+    margin: 0;
+}
+
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+section{
+    width: 1440px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $main-background-color;
+}
+
+.container{
+    width: 100%;
+    padding-left: 145px;
+    padding-right: 145px;
+}
