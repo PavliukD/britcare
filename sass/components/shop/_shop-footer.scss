@@ -118,6 +118,7 @@
 
 .footer-different{
     display: flex;
+    flex-direction: row-reverse;
     margin-top: 61px;
     justify-content: space-between;
 }

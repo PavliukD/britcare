@@ -1,11 +1,12 @@
-@import '../utils/variables';
+.header-wrap{
+    @extend section;
+    padding-top: 20px;
+}
+
 
 .header{
+    margin: auto;
     display: flex;
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 1140px;
     background-color: #F4F4ED;
     border: 1px solid #E7E4D9;
@@ -33,7 +34,6 @@
     
 }
 
-
 .header-nav-link-text{
     font-family: 'Gill Sans';
     font-style: normal;
@@ -45,9 +45,10 @@
 
 .header-user{
     display: flex;
+    flex-direction: row-reverse;
 }
 
-.header-user-item:first-child{
+.header-user-item:last-child{
     margin-right: 30px;
 }
 
@@ -82,4 +83,34 @@
 .header-shop-button-icon{
     fill: $section-color;
     margin-left: 10px;
+}
+
+.header-adress{
+    display: flex;
+    align-items: center;
+    padding-left: 145px;
+    margin-top: 60px;
+}
+
+.header-adress-item:not(:last-child){
+    &::after{
+        content: '>';
+        color: #F6B626;
+        font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+}
+
+.header-adress-link{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    color: $main-text-color;
 }

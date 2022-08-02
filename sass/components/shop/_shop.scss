@@ -1,36 +1,31 @@
-.popular{
+.shop{
     padding-left: 145px;
     padding-right: 145px;
-    padding-top: 180px;
+    padding-top: 60px;
     position: relative;
     padding-bottom: 129px;
 }
 
-.popular-title{
+.shop-title{
     @extend %title
 }
 
-.popular-more{
+.shop-disable-filter{
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     right: 0;
-    top: 180px;
+    top: 60px;
     transform: translateX(-100%);
-    width: 191px;
+    width: 147px;
     height: 59px;
     border: 1px solid $main-text-color;
     border-radius: 14px;
+    background-color: transparent;
 }
 
-.popular-more-icon{
-    fill: $section-color;
-    stroke: $section-color;
-    margin-left: 10px;
-}
-
-.popular-more-text{
+.shop-disable-filter-text{
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 600;
@@ -38,6 +33,11 @@
     line-height: 19px;
     letter-spacing: 0.03em;
     color: $main-text-color;
+    margin-right: 10px;
+}
+
+.shop-feed-type-filter{
+    display: flex;
 }
 
 .popular-products-list{

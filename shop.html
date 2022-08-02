@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BritCare</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/shop.css"/>
+    </head>
+<body>
+    <div class="header-wrap">
+        <header class="header">
+            <a href="/">
+                <img src="./images/logo.png" alt="company logo">
+            </a>
+            <ul class="header-nav">
+                <li class="header-nav-item">
+                    <a href="./shop.html" class="header-nav-link">
+                        <span class="header-nav-link-text">Магазин</span>
+                    </a>
+                    <button class="header-shop-button">
+                        <svg width="10" height="5" class="header-shop-button-icon">
+                            <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">Чому ми</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">Відгуки</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">Про нас</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">FAQ</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">Контакти</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header-user">
+                <li class="header-user-item">
+                    <a href="" class="header-user-link">
+                        <svg width="15" height="18" class="header-user-icon">
+                            <use href="./images/symbol-defs.svg#icon-user"icon-user></use>
+                        </svg>
+                        <span class="header-user-text">АИ</span> 
+                    </a>
+                </li>
+                <li class="header-user-item">
+                    <a href="" class="header-user-link">
+                        <svg width="15" height="18" class="header-user-icon">
+                            <use href="./images/symbol-defs.svg#icon-bag"></use>
+                        </svg>
+                        <span class="header-user-text">Корзина</span> 
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <ul class="header-adress">
+            <li class="header-adress-item">
+                <a href="/" class="header-adress-link">Головна</a>
+            </li>
+            <li class="header-adress-item">
+                <a href="/shop" class="header-adress-link">Магазин</a>
+            </li>
+        </ul>
+    </div>
+    <section class="shop">
+        <h2 class="shop-title">Популярні товари</h2>
+        <button class="shop-disable-filter">
+            <span class="shop-disable-filter-text">Фільтри</span>
+            <svg class="popular-more-icon" width="16" height="16">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5158 2.6702C16.0224 2.17374 16.0224 1.36881 15.5158 0.872348C15.0091 0.375884 14.1877 0.375884 13.6811 0.872348L7.7838 6.65105L2.31899 1.29609C1.81235 0.799627 0.990905 0.799626 0.484257 1.29609C-0.0223919 1.79255 -0.0223916 2.59748 0.484257 3.09395L5.94907 8.44891L0.379986 13.906C-0.126662 14.4025 -0.126662 15.2074 0.379986 15.7039C0.886635 16.2004 1.70807 16.2004 2.21472 15.7039L7.7838 10.2468L13.7853 16.1276C14.292 16.6241 15.1134 16.6241 15.6201 16.1276C16.1267 15.6312 16.1267 14.8263 15.6201 14.3298L9.61854 8.44891L15.5158 2.6702Z" fill="#525051"/>
+            </svg>
+        </button>
+        <div class="shop-feed-type-filter">
+            <ul class="">
+                <li>
+                    <span class="shop-filter-title">Корм</span>
+                    <ul>
+                        <li>
+                            <button>
+                                <svg width="23" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-dog"></use>
+                                </svg>
+                                <span>для песика</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <svg width="23" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-cat"></use>
+                                </svg>
+                                <span>для котика</span>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="shop-filter-title">Вид корму:</span>
+                    <ul>
+                        <li>
+                            <button>
+                                <span>Сухий</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <span>Вологий</span>
+                            </button>
+                        </li>
+                    </ul>                    
+                </li>
+            </ul>
+            <div class="shop-feed-type-filter-select">
+                <span class="shop-filter-title">Властивості:</span>
+                <select name="feed-properties" id="feed-properties"></select>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-slogan">
+                <svg width="67" height="67">
+                    <use href="./images/symbol-defs.svg#icon-logo"></use>
+                </svg>
+                <span class="foote-sloga-text"> Харчування,
+                    якого потребує
+                    ваш улюбленець,
+                    їжа, яку він хоче.</span>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">
+                        <h3 class="footer-nav-list-item-title">Товари</h3>
+                        <ul class="footer-nav-links-list">
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Для собак</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Для котів</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <h3 class="footer-nav-list-item-title">Сторінки</h3>
+                        <ul class="footer-nav-links-list">
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Магазин</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Чому ми?</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Про нас</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">FAQ</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Оплата та доставка</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Контакти</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <h3 class="footer-nav-list-item-title">Соц. мережі</h3>
+                        <ul class="footer-nav-links-list">
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Facebook</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Instagram</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Linkedin</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer-nav-meta">
+                    <ul class="footer-payment-list">
+                        <li class="footer-payment-list-item">
+                            <button class="footer-payment-button">
+                                <svg width="41" height="27">
+                                    <use href="./images/symbol-defs.svg#icon-master"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="footer-payment-list-item">
+                            <button class="footer-payment-button">
+                                <svg width="41" height="27">
+                                    <use href="./images/symbol-defs.svg#icon-visa"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="footer-icon-set">
+                        <li class="footer-icon-set-item">
+                            <svg class="footer-icon" width="29" height="27">
+                                <use href="./images/symbol-defs.svg#icon-heart"></use>
+                            </svg>
+                        </li>
+                        <li class="footer-icon-set-item">
+                            <svg class="footer-icon" width="33" height="27">
+                                <use href="./images/symbol-defs.svg#icon-dog"></use>
+                            </svg>
+                        </li>
+                        <li class="footer-icon-set-item">
+                            <svg class="footer-icon" width="32" height="27">
+                                <use href="./images/symbol-defs.svg#icon-cat"></use>
+                            </svg>
+                        </li>
+                        <li class="footer-icon-set-item">
+                            <svg class="footer-icon" width="27" height="27">
+                                <use href="./images/symbol-defs.svg#icon-healthy"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>           
+        </div>
+        <div class="footer-different">
+            <span class="footer-copy-right">© Brid care — All rights reserved, 2022</span>
+            <ul class="footer-legal">
+                <li class="footer-legal-item">
+                    <a href="" class="footer-legal-link">Публічна оферта</a>
+                </li>
+                <li class="footer-legal-item">
+                    <a href="" class="footer-legal-link">Захист персональних даних</a>
+                </li>
+            </ul>
+            <button class="footer-rewind-button">
+                <svg width="13" height="7" class="footer-rewind-button-icon">
+                    <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                </svg>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>
