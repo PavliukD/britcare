@@ -38,6 +38,141 @@
 
 .shop-feed-type-filter{
     display: flex;
+    margin-top: 60px;
+}
+
+.shop-feed-type-list{
+    display: flex;
+}
+
+.shop-filter-item{
+    display: flex;
+    margin-top: 14px;
+}
+
+.shop-filter-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 59px;
+    border: 1px solid #B3B2B2;
+    border-radius: 14px;
+    background-color: transparent;
+
+    &.active-button{
+        background-color: #B57B49;
+        border-color: #B57B49;
+    }
+
+    &:first-child{
+        margin-right: 30px;
+    }
+}
+
+.shop-filter-title{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-text-color;
+}
+
+.shop-feed-type-filter-select{
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-filter-select{
+    width: 350px;
+    height: 59px;
+    margin-top: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #525051;
+    border: 1px solid #B3B2B2;
+    border-radius: 14px;
+    background-color: transparent;
+    appearance: none;
+    background-image: url(../../../images/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 30px) center;
+}
+
+.filter-button-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #525051;
+
+    .active-button & {
+        color: #FFFFFF; 
+    }
+}
+
+.shop-filter-button-icon{
+    margin-right: 10px;
+    
+    &-dog{
+        margin-right: 10px;
+        fill: #B57B49;
+
+        .active-button & {
+            fill: #FFFFFF;
+        }
+    }
+
+    &-cat{
+        margin-right: 10px;
+        fill: #81C3D7;
+
+        .active-button & {
+            fill: #FFFFFF;
+        }
+    }
+
+}
+
+.shop-filter-input-group{
+    display: flex;
+}
+
+.filter-price-input{
+    width: 160px;
+    height: 59px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #525051;
+    border: none;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.filter-frice-slider{
+    width: 290px;
+    height: 3px;
+    background-color: #FFFFFF;
+
+    &::-webkit-slider-thumb{
+        background: transparent;    
+    }
+
+    &::-webkit-slider-runnable-track{
+        background: transparent;
+    }
 }
 
 .popular-products-list{

@@ -90,39 +90,39 @@
             </svg>
         </button>
         <div class="shop-feed-type-filter">
-            <ul class="">
-                <li>
+            <ul class="shop-feed-type-list">
+                <li class="shop-feed-type-list-item">
                     <span class="shop-filter-title">Корм</span>
-                    <ul>
+                    <ul class="shop-filter-item">
                         <li>
-                            <button>
-                                <svg width="23" height="19">
+                            <button class="shop-filter-button active-button">
+                                <svg width="23" height="19" class="shop-filter-button-icon-dog">
                                     <use href="./images/symbol-defs.svg#icon-dog"></use>
                                 </svg>
-                                <span>для песика</span>
+                                <span class="filter-button-text">для песика</span>
                             </button>
                         </li>
                         <li>
-                            <button>
-                                <svg width="23" height="19">
+                            <button class="shop-filter-button">
+                                <svg width="23" height="19" class="shop-filter-button-icon-cat">
                                     <use href="./images/symbol-defs.svg#icon-cat"></use>
                                 </svg>
-                                <span>для котика</span>
+                                <span class="filter-button-text">для котика</span>
                             </button>
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="shop-feed-type-list-item">
                     <span class="shop-filter-title">Вид корму:</span>
-                    <ul>
+                    <ul class="shop-filter-item">
                         <li>
-                            <button>
-                                <span>Сухий</span>
+                            <button class="shop-filter-button active-button">
+                                <span class="filter-button-text">Сухий</span>
                             </button>
                         </li>
                         <li>
-                            <button>
-                                <span>Вологий</span>
+                            <button class="shop-filter-button">
+                                <span class="filter-button-text">Вологий</span>
                             </button>
                         </li>
                     </ul>                    
@@ -130,7 +130,30 @@
             </ul>
             <div class="shop-feed-type-filter-select">
                 <span class="shop-filter-title">Властивості:</span>
-                <select name="feed-properties" id="feed-properties"></select>
+                <select name="feed-properties" id="feed-properties" class="shop-filter-select">
+                    <option value="value1">Для шерсті, Для стерилізов...</option>
+                    <option value="value2">Для чутливого травленя</option>
+                    <option value="value3">Гіпоалергенний</option>
+                    <option value="value4">Беззерновий</option>
+                    <option value="value5">Для стерилізованих</option>
+                </select>
+            </div>
+        </div>
+        <div class="">
+            <div class="shop-feed-type-filter-select">
+                <span class="shop-filter-title">Вага:</span>
+                <select name="feed-properties" id="feed-properties" class="shop-filter-select">
+                    <option value="value1">Фасування: 10кг</option>
+                    <option value="value2">Фасування: 5кг</option>
+                    <option value="value3">Фасування: 1кг</option>
+                </select>
+            </div>
+            <div>
+                <span class="shop-filter-title">Вартість:</span>
+                <div class="shop-filter-input-group">
+                    <input type="range" id="filter-price-slider" min="0" max="1000" step="1" class="filter-frice-slider">
+                    <input type="text" id="filter-price-input" class="filter-price-input">
+                </div>
             </div>
         </div>
     </section>

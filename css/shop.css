@@ -1,35 +1,31 @@
 @font-face {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   src: url("../../fonts/Gill Sans.otf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   src: url("../../fonts/Gill Sans Heavy.otf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   src: url("../../fonts/Gill Sans Medium.otf");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   src: url("../../fonts/Gill Sans Bold.otf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 h1, h2, h3, h4, h5, p {
   margin: 0;
 }
@@ -37,15 +33,12 @@ h1, h2, h3, h4, h5, p {
 a {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 a:focus {
   text-decoration: none;
 }
-
 a:visited {
   text-decoration: none;
 }
@@ -64,12 +57,12 @@ ul {
   list-style: none;
 }
 
-section, .header-wrap, .footer {
+section, .footer, .header-wrap {
   width: 1440px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #f4f4ed;
+  background-color: rgb(244, 244, 237);
 }
 
 .container {
@@ -79,7 +72,7 @@ section, .header-wrap, .footer {
 }
 
 .shop-title {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -97,8 +90,6 @@ section, .header-wrap, .footer {
 
 .header {
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1140px;
   background-color: #F4F4ED;
@@ -108,38 +99,25 @@ section, .header-wrap, .footer {
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .header-nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .header-nav-item:not(:first-child) {
   margin-left: 30px;
 }
 
 .header-nav-link-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -148,13 +126,8 @@ section, .header-wrap, .footer {
 }
 
 .header-user {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .header-user-item:last-child {
@@ -162,17 +135,13 @@ section, .header-wrap, .footer {
 }
 
 .header-user-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header-user-text {
   margin-left: 10px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -181,44 +150,34 @@ section, .header-wrap, .footer {
 }
 
 .header-user-icon {
-  stroke: #f6b626;
+  stroke: rgb(246, 182, 38);
 }
 
 .header-shop-button {
   padding: 0;
   border: none;
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-shop-button-icon {
-  fill: #f6b626;
+  fill: rgb(246, 182, 38);
   margin-left: 10px;
 }
 
 .header-adress {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 145px;
   margin-top: 60px;
 }
 
 .header-adress-item:not(:last-child)::after {
-  content: '>';
+  content: ">";
   color: #F6B626;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -228,7 +187,7 @@ section, .header-wrap, .footer {
 }
 
 .header-adress-link {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -245,20 +204,13 @@ section, .header-wrap, .footer {
 }
 
 .shop-disable-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   right: 0;
   top: 60px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
   width: 147px;
   height: 59px;
   border: 1px solid #525051;
@@ -267,7 +219,7 @@ section, .header-wrap, .footer {
 }
 
 .shop-disable-filter-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -278,19 +230,140 @@ section, .header-wrap, .footer {
 }
 
 .shop-feed-type-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  margin-top: 60px;
+}
+
+.shop-feed-type-list {
+  display: flex;
+}
+
+.shop-filter-item {
+  display: flex;
+  margin-top: 14px;
+}
+
+.shop-filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 59px;
+  border: 1px solid #B3B2B2;
+  border-radius: 14px;
+  background-color: transparent;
+}
+.shop-filter-button.active-button {
+  background-color: #B57B49;
+  border-color: #B57B49;
+}
+.shop-filter-button:first-child {
+  margin-right: 30px;
+}
+
+.shop-filter-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525051;
+}
+
+.shop-feed-type-filter-select {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-filter-select {
+  width: 350px;
+  height: 59px;
+  margin-top: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525051;
+  border: 1px solid #B3B2B2;
+  border-radius: 14px;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../../../images/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 30px) center;
+}
+
+.filter-button-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525051;
+}
+.active-button .filter-button-text {
+  color: #FFFFFF;
+}
+
+.shop-filter-button-icon {
+  margin-right: 10px;
+}
+.shop-filter-button-icon-dog {
+  margin-right: 10px;
+  fill: #B57B49;
+}
+.active-button .shop-filter-button-icon-dog {
+  fill: #FFFFFF;
+}
+.shop-filter-button-icon-cat {
+  margin-right: 10px;
+  fill: #81C3D7;
+}
+.active-button .shop-filter-button-icon-cat {
+  fill: #FFFFFF;
+}
+
+.shop-filter-input-group {
+  display: flex;
+}
+
+.filter-price-input {
+  width: 160px;
+  height: 59px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525051;
+  border: none;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.filter-frice-slider {
+  width: 290px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+.filter-frice-slider::-webkit-slider-thumb {
+  background: transparent;
+}
+.filter-frice-slider::-webkit-slider-runnable-track {
+  background: transparent;
 }
 
 .popular-products-list {
   margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .product-card {
@@ -305,12 +378,12 @@ section, .header-wrap, .footer {
   width: 350px;
   height: 420px;
   border-radius: 40px;
-  background-color: #e7e4d9;
+  background-color: rgb(231, 228, 217);
 }
 
 .product-card-title {
   margin-top: 30px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -319,18 +392,12 @@ section, .header-wrap, .footer {
 }
 
 .product-card-rating-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 16px;
 }
 
 .product-card-rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -339,7 +406,7 @@ section, .header-wrap, .footer {
 }
 
 .product-card-reviews {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -350,7 +417,7 @@ section, .header-wrap, .footer {
 
 .product-card-text {
   margin-top: 16px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -364,21 +431,13 @@ section, .header-wrap, .footer {
 }
 
 .product-card-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .product-card-meta-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 143px;
   height: 59px;
   background-color: #FFFFFF;
@@ -386,17 +445,17 @@ section, .header-wrap, .footer {
 }
 
 .product-card-meta-type-dog {
-  fill: #b57b49;
+  fill: rgb(181, 123, 73);
   margin-right: 10px;
 }
 
 .product-card-meta-type-cat {
-  fill: #81c3d7;
+  fill: rgb(129, 195, 215);
   margin-right: 10px;
 }
 
 .product-card-meta-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -405,15 +464,9 @@ section, .header-wrap, .footer {
 }
 
 .product-card-meta-weight {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 193px;
   height: 59px;
   margin-left: 14px;
@@ -423,7 +476,7 @@ section, .header-wrap, .footer {
 }
 
 .product-card-meta-weight-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -434,27 +487,21 @@ section, .header-wrap, .footer {
 }
 
 .product-card-buy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 59px;
   border: none;
   border-radius: 14px;
-  background-color: #7cb227;
+  background-color: rgb(124, 178, 39);
   margin-top: 14px;
   padding-left: 30px;
   padding-right: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .product-card-buy-prev-price {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -467,7 +514,7 @@ section, .header-wrap, .footer {
 }
 
 .product-card-buy-price {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -476,12 +523,8 @@ section, .header-wrap, .footer {
 }
 
 .product-card-buy-inner-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .product-card-buy-icon {
@@ -490,7 +533,7 @@ section, .header-wrap, .footer {
 }
 
 .product-card-buy-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -499,12 +542,8 @@ section, .header-wrap, .footer {
 }
 
 .popular-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 66px;
 }
 
@@ -516,7 +555,6 @@ section, .header-wrap, .footer {
   background-color: #B3B2B2;
   border-radius: 100%;
 }
-
 .popular-slider-point:not(:first-child) {
   margin-left: 14px;
 }
@@ -540,12 +578,8 @@ section, .header-wrap, .footer {
 }
 
 .footer-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-slogan {
@@ -556,21 +590,14 @@ section, .header-wrap, .footer {
   padding-right: 88px;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 50px;
 }
 
 .foote-sloga-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -581,7 +608,7 @@ section, .header-wrap, .footer {
 .footer-nav {
   width: 730px;
   height: 482px;
-  background-color: #7cb227;
+  background-color: rgb(124, 178, 39);
   border-radius: 50px;
   margin-left: 30px;
   padding-top: 60px;
@@ -591,21 +618,18 @@ section, .header-wrap, .footer {
 }
 
 .footer-nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .footer-nav-list-item:first-child {
   margin-right: 120px;
 }
-
 .footer-nav-list-item:last-child {
   margin-left: 150px;
 }
 
 .footer-nav-list-item-title {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -614,7 +638,7 @@ section, .header-wrap, .footer {
 }
 
 .footer-nav-link {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -623,8 +647,6 @@ section, .header-wrap, .footer {
 }
 
 .footer-payment-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -639,18 +661,12 @@ section, .header-wrap, .footer {
 }
 
 .footer-icon-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .footer-nav-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 81px;
 }
 
@@ -663,27 +679,18 @@ section, .header-wrap, .footer {
 }
 
 .footer-different {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   margin-top: 61px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-legal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .footer-copy-right {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -692,7 +699,7 @@ section, .header-wrap, .footer {
 }
 
 .footer-legal-link {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -701,7 +708,7 @@ section, .header-wrap, .footer {
 }
 
 .footer-legal-item:first-child::after {
-  content: '/ ';
+  content: "/ ";
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -715,6 +722,5 @@ section, .header-wrap, .footer {
 }
 
 .footer-rewind-button-icon {
-  fill: #7cb227;
-}
-/*# sourceMappingURL=shop.css.map */
+  fill: rgb(124, 178, 39);
+}/*# sourceMappingURL=shop.css.map */
