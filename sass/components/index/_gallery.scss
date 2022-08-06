@@ -1,13 +1,149 @@
 .gallery{
-    display: block;
-    width: 100%;
-    height: 1093;
-    background-color: $secondary-background-color;
+    @extend section;
+    padding: 0;
+    overflow: hidden;
 }
 
-.gallery-stuff{
-    display: block;
-    width: 100%;
-    height: 953px;
-    background-color: $section-color;
+.gallery-icons-set{
+    padding-left: 515px;
+    padding-top: 39px;
+    padding-bottom: 41px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-icons-set-list{
+    display: flex;
+}
+
+.gallery-icons-set-list-item:not(:first-child){
+    margin-left: 80px;
+}
+
+.gallery-icons-list{
+    display: flex;
+}
+
+.gallery-icon{
+    fill: #F6B626;
+}
+
+.gallery-icons-list-item:not(:first-child){
+    margin-left: 80px;
+}
+
+.gallery-main{
+    background-color: #F6B626;
+    padding-left: 355px;
+    padding-top: 60px;
+    padding-bottom: 180px;
+    position: relative;
+}
+
+.gallery-photo{
+    width: 730px;
+    height: 400px;
+    border-radius: 40px;
+}
+
+.gallery-list{
+    display: flex;
+}
+
+.gallery-card{
+    &:not(:first-child) {
+            margin-left: 120px;
+        }
+}
+
+.gallery-card-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.gallery-card-author{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.gallery-nav-buttons{
+        margin-top: 60px;
+        display: flex;
+}
+
+.gallery-nav-button{
+    width: 67px;
+    height: 53px;
+    border: 2px solid #FFFFFF;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active{
+        background-color: transparent;
+    }
+}
+
+.gallery-nav-buttons-item{
+    &:not(:first-child) {
+            margin-left: 14px;
+        }
+}
+
+.gallery-button-icon{
+    fill: rgba(246, 182, 38, 1);
+
+    &.active{
+        stroke: #FFFFFF;
+    }
+}
+
+.gallery-vertical-paw-big{
+    transform: rotate(131.75deg);
+}
+
+.gallery-vertical-paw-small{
+    transform: rotate(118.86deg);
+}
+
+.gallery-vertical-paws-item:not(:first-child){
+    margin-top: 10px;
+}
+
+.gallery-vertical-paws{
+    position: absolute;
+    top: 197px;
+    left: 90px;
+}
+
+.gallery-gorizontal-paws{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 8px;
+    left: 806px;
+}
+
+// .gallery-gorizontal-paws-item:not(:first-child){
+//     margin-left: 30px;
+// }
+
+.gallery-gorizontal-paw-big{
+    transform: translateY(-41px);
+}
+
+.gallery-gorizontal-paw-small{
+
 }

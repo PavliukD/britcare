@@ -1,35 +1,31 @@
 @font-face {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   src: url("../../fonts/Gill Sans.otf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   src: url("../../fonts/Gill Sans Heavy.otf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   src: url("../../fonts/Gill Sans Medium.otf");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   src: url("../../fonts/Gill Sans Bold.otf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 h1, h2, h3, h4, h5, p {
   margin: 0;
 }
@@ -37,15 +33,12 @@ h1, h2, h3, h4, h5, p {
 a {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 a:focus {
   text-decoration: none;
 }
-
 a:visited {
   text-decoration: none;
 }
@@ -64,12 +57,12 @@ ul {
   list-style: none;
 }
 
-section, .footer {
+section, .footer, .gallery {
   width: 1440px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #f4f4ed;
+  background-color: rgb(244, 244, 237);
 }
 
 .container {
@@ -78,8 +71,8 @@ section, .footer {
   padding-right: 145px;
 }
 
-.hero-title, .why-are-we-title, .popular-title, .about-us-title {
-  font-family: 'Gill Sans';
+.about-us-title, .popular-title, .why-are-we-title, .hero-title {
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -92,14 +85,11 @@ section, .footer {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 40px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 1140px;
   background-color: #F4F4ED;
   border: 1px solid #E7E4D9;
@@ -108,38 +98,25 @@ section, .footer {
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .header-nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .header-nav-item:not(:first-child) {
   margin-left: 30px;
 }
 
 .header-nav-link-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -148,8 +125,6 @@ section, .footer {
 }
 
 .header-user {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -158,17 +133,13 @@ section, .footer {
 }
 
 .header-user-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header-user-text {
   margin-left: 10px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -177,26 +148,20 @@ section, .footer {
 }
 
 .header-user-icon {
-  stroke: #f6b626;
+  stroke: rgb(246, 182, 38);
 }
 
 .header-shop-button {
   padding: 0;
   border: none;
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-shop-button-icon {
-  fill: #f6b626;
+  fill: rgb(246, 182, 38);
   margin-left: 10px;
 }
 
@@ -205,29 +170,20 @@ section, .footer {
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding-left: 145px;
   padding-right: 145px;
   padding-top: 164px;
   padding-bottom: 50px;
-  background-color: #e7e4d9;
+  background-color: rgb(231, 228, 217);
   border-radius: 50px;
 }
 
 .hero-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-title {
@@ -236,7 +192,7 @@ section, .footer {
 
 .hero-text {
   margin-top: 30px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -245,21 +201,15 @@ section, .footer {
 }
 
 .hero-shop-link, .about-us-lik-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 187px;
   height: 59px;
   margin-top: 60px;
-  background-color: #7cb227;
+  background-color: rgb(124, 178, 39);
   border-radius: 14px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -267,15 +217,12 @@ section, .footer {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-
 .hero-shop-link:hover, .about-us-lik-details:hover {
   cursor: pointer;
-  outline: 1px solid #7cb227;
+  outline: 1px solid rgb(124, 178, 39);
 }
 
 .hero-cards-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 33px;
 }
@@ -284,21 +231,12 @@ section, .footer {
   margin-left: 35px;
 }
 
-.hero-card-dog, .hero-card-cat {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.hero-card-cat, .hero-card-dog {
   display: flex;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 300px;
   height: 686px;
   border-radius: 50px;
@@ -306,20 +244,16 @@ section, .footer {
 }
 
 .hero-card-dog {
-  background-color: #b57b49;
+  background-color: rgb(181, 123, 73);
 }
 
 .hero-card-cat {
-  background-color: #81c3d7;
+  background-color: rgb(129, 195, 215);
 }
 
 .hero-card-text-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: absolute;
   bottom: 60px;
 }
@@ -329,7 +263,7 @@ section, .footer {
 }
 
 .hero-card-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -354,7 +288,7 @@ section, .footer {
   width: 560px;
   margin: auto;
   margin-top: 30px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -381,23 +315,14 @@ section, .footer {
 }
 
 .why-are-we-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
 }
 
 .why-are-we-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .why-are-we-list-item:not(:first-child) {
@@ -405,7 +330,7 @@ section, .footer {
 }
 
 .why-are-we-list-title {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -415,7 +340,7 @@ section, .footer {
 
 .why-are-we-list-text {
   margin-top: 13px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -432,20 +357,13 @@ section, .footer {
 }
 
 .popular-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   right: 0;
   top: 180px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
   width: 191px;
   height: 59px;
   border: 1px solid #525051;
@@ -453,13 +371,13 @@ section, .footer {
 }
 
 .popular-more-icon {
-  fill: #f6b626;
-  stroke: #f6b626;
+  fill: rgb(246, 182, 38);
+  stroke: rgb(246, 182, 38);
   margin-left: 10px;
 }
 
 .popular-more-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -470,12 +388,8 @@ section, .footer {
 
 .popular-products-list {
   margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .product-card {
@@ -490,12 +404,12 @@ section, .footer {
   width: 350px;
   height: 420px;
   border-radius: 40px;
-  background-color: #e7e4d9;
+  background-color: rgb(231, 228, 217);
 }
 
 .product-card-title {
   margin-top: 30px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -504,18 +418,12 @@ section, .footer {
 }
 
 .product-card-rating-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 16px;
 }
 
 .product-card-rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -524,7 +432,7 @@ section, .footer {
 }
 
 .product-card-reviews {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -535,7 +443,7 @@ section, .footer {
 
 .product-card-text {
   margin-top: 16px;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -549,21 +457,13 @@ section, .footer {
 }
 
 .product-card-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .product-card-meta-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 143px;
   height: 59px;
   background-color: #FFFFFF;
@@ -571,17 +471,17 @@ section, .footer {
 }
 
 .product-card-meta-type-dog {
-  fill: #b57b49;
+  fill: rgb(181, 123, 73);
   margin-right: 10px;
 }
 
 .product-card-meta-type-cat {
-  fill: #81c3d7;
+  fill: rgb(129, 195, 215);
   margin-right: 10px;
 }
 
 .product-card-meta-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -590,15 +490,9 @@ section, .footer {
 }
 
 .product-card-meta-weight {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 193px;
   height: 59px;
   margin-left: 14px;
@@ -608,7 +502,7 @@ section, .footer {
 }
 
 .product-card-meta-weight-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -619,27 +513,21 @@ section, .footer {
 }
 
 .product-card-buy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 59px;
   border: none;
   border-radius: 14px;
-  background-color: #7cb227;
+  background-color: rgb(124, 178, 39);
   margin-top: 14px;
   padding-left: 30px;
   padding-right: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .product-card-buy-prev-price {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -652,7 +540,7 @@ section, .footer {
 }
 
 .product-card-buy-price {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -661,12 +549,8 @@ section, .footer {
 }
 
 .product-card-buy-inner-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .product-card-buy-icon {
@@ -675,7 +559,7 @@ section, .footer {
 }
 
 .product-card-buy-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -684,12 +568,8 @@ section, .footer {
 }
 
 .popular-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 66px;
 }
 
@@ -701,7 +581,6 @@ section, .footer {
   background-color: #B3B2B2;
   border-radius: 100%;
 }
-
 .popular-slider-point:not(:first-child) {
   margin-left: 14px;
 }
@@ -717,26 +596,143 @@ section, .footer {
 }
 
 .gallery {
-  display: block;
-  width: 100%;
-  height: 1093;
-  background-color: white;
+  padding: 0;
+  overflow: hidden;
 }
 
-.gallery-stuff {
-  display: block;
-  width: 100%;
-  height: 953px;
-  background-color: #f6b626;
+.gallery-icons-set {
+  padding-left: 515px;
+  padding-top: 39px;
+  padding-bottom: 41px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-icons-set-list {
+  display: flex;
+}
+
+.gallery-icons-set-list-item:not(:first-child) {
+  margin-left: 80px;
+}
+
+.gallery-icons-list {
+  display: flex;
+}
+
+.gallery-icon {
+  fill: #F6B626;
+}
+
+.gallery-icons-list-item:not(:first-child) {
+  margin-left: 80px;
+}
+
+.gallery-main {
+  background-color: #F6B626;
+  padding-left: 355px;
+  padding-top: 60px;
+  padding-bottom: 180px;
+  position: relative;
+}
+
+.gallery-photo {
+  width: 730px;
+  height: 400px;
+  border-radius: 40px;
+}
+
+.gallery-list {
+  display: flex;
+}
+
+.gallery-card:not(:first-child) {
+  margin-left: 120px;
+}
+
+.gallery-card-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
+.gallery-card-author {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
+.gallery-nav-buttons {
+  margin-top: 60px;
+  display: flex;
+}
+
+.gallery-nav-button {
+  width: 67px;
+  height: 53px;
+  border: 2px solid #FFFFFF;
+  border-radius: 14px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-nav-button.active {
+  background-color: transparent;
+}
+
+.gallery-nav-buttons-item:not(:first-child) {
+  margin-left: 14px;
+}
+
+.gallery-button-icon {
+  fill: rgb(246, 182, 38);
+}
+.gallery-button-icon.active {
+  stroke: #FFFFFF;
+}
+
+.gallery-vertical-paw-big {
+  transform: rotate(131.75deg);
+}
+
+.gallery-vertical-paw-small {
+  transform: rotate(118.86deg);
+}
+
+.gallery-vertical-paws-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.gallery-vertical-paws {
+  position: absolute;
+  top: 197px;
+  left: 90px;
+}
+
+.gallery-gorizontal-paws {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 8px;
+  left: 806px;
+}
+
+.gallery-gorizontal-paw-big {
+  transform: translateY(-41px);
 }
 
 .about-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 145px;
   padding-right: 145px;
   padding-top: 180px;
@@ -748,7 +744,7 @@ section, .footer {
 }
 
 .about-us-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -763,12 +759,8 @@ section, .footer {
 
 .about-us-gallery {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 50%;
 }
 
@@ -788,15 +780,9 @@ section, .footer {
 }
 
 .about-us-logo-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 190px;
   height: 134px;
   background-color: #FFFFFF;
@@ -815,13 +801,13 @@ section, .footer {
 }
 
 .faq-title {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
   line-height: 58px;
   text-transform: uppercase;
-  color: #b57b49;
+  color: rgb(181, 123, 73);
   text-align: center;
 }
 
@@ -838,32 +824,29 @@ section, .footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .faq-questions-list-item.hide-answer {
   border: 1px solid #E7E4D9;
   border-radius: 20px;
 }
-
 .faq-questions-list-item.open-answer {
   border: none;
   background-color: rgba(181, 123, 73, 0.1);
 }
-
 .faq-questions-list-item:not(:first-child) {
   margin-top: 24px;
 }
 
 .faq-question-title {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  color: #b57b49;
+  color: rgb(181, 123, 73);
 }
 
 .faq-question-answer-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -871,7 +854,6 @@ section, .footer {
   color: #525051;
   margin-top: 30px;
 }
-
 .faq-question-answer-text.hide-answer {
   display: none;
 }
@@ -880,23 +862,22 @@ section, .footer {
   position: absolute;
   right: 30px;
   top: 41px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   border: none;
   background-color: transparent;
 }
 
 .faq-questions-icon {
-  fill: #b57b49;
-  stroke: #b57b49;
+  fill: rgb(181, 123, 73);
+  stroke: rgb(181, 123, 73);
 }
 
 .faq-more-answers-icon {
-  stroke: #f6b626;
+  stroke: rgb(246, 182, 38);
 }
 
 .faq-more-answers-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -909,15 +890,9 @@ section, .footer {
   border-radius: 14px;
   width: 219px;
   height: 59px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   margin-top: 60px;
 }
@@ -931,12 +906,8 @@ section, .footer {
 }
 
 .footer-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-slogan {
@@ -947,21 +918,14 @@ section, .footer {
   padding-right: 88px;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 50px;
 }
 
 .foote-sloga-text {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -972,7 +936,7 @@ section, .footer {
 .footer-nav {
   width: 730px;
   height: 482px;
-  background-color: #7cb227;
+  background-color: rgb(124, 178, 39);
   border-radius: 50px;
   margin-left: 30px;
   padding-top: 60px;
@@ -982,21 +946,18 @@ section, .footer {
 }
 
 .footer-nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .footer-nav-list-item:first-child {
   margin-right: 120px;
 }
-
 .footer-nav-list-item:last-child {
   margin-left: 150px;
 }
 
 .footer-nav-list-item-title {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1005,7 +966,7 @@ section, .footer {
 }
 
 .footer-nav-link {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1014,8 +975,6 @@ section, .footer {
 }
 
 .footer-payment-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1030,18 +989,12 @@ section, .footer {
 }
 
 .footer-icon-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .footer-nav-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 81px;
 }
 
@@ -1054,23 +1007,17 @@ section, .footer {
 }
 
 .footer-different {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 61px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-legal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .footer-copy-right {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1079,7 +1026,7 @@ section, .footer {
 }
 
 .footer-legal-link {
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1088,7 +1035,7 @@ section, .footer {
 }
 
 .footer-legal-item:first-child::after {
-  content: '/ ';
+  content: "/ ";
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -1102,6 +1049,5 @@ section, .footer {
 }
 
 .footer-rewind-button-icon {
-  fill: #7cb227;
-}
-/*# sourceMappingURL=index.css.map */
+  fill: rgb(124, 178, 39);
+}/*# sourceMappingURL=index.css.map */
