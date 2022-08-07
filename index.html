@@ -21,7 +21,10 @@
                     <span class="header-nav-link-text">Магазин</span>
                 </a>
                 <button class="header-shop-button">
-                    <svg width="10" height="5" class="header-shop-button-icon">
+                    <svg width="10" height="5" class="header-shop-button-icon" data-shop-button-bottom>
+                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                    </svg>
+                    <svg width="10" height="5" class="header-shop-button-icon is-hidden" data-shop-button-up>
                         <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
                     </svg>
                 </button>
@@ -66,7 +69,26 @@
                     <svg width="15" height="18" class="header-user-icon">
                         <use href="./images/symbol-defs.svg#icon-bag"></use>
                     </svg>
-                    <span class="header-user-text">Корзина</span> 
+                    <span class="header-user-text">Корзина</span>
+                    <span class="header-user-added-products">99</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="header-shop-nav is-hidden">
+            <li class="header-shop-nav-item">
+                <a href="" class="header-shop-nav-link">
+                    <svg width="25" height="21" class="header-shop-nav-link-icon dog">
+                        <use href="./images/symbol-defs.svg#icon-dog"></use>
+                    </svg>
+                    <span class="header-shop-nav-link-text">для песика</span>
+                </a>
+            </li>
+            <li class="header-shop-nav-item">
+                <a href="" class="header-shop-nav-link">
+                    <svg width="25" height="21" class="header-shop-nav-link-icon cat">
+                        <use href="./images/symbol-defs.svg#icon-cat"></use>
+                    </svg>
+                    <span class="header-shop-nav-link-text">для котика</span>
                 </a>
             </li>
         </ul>
@@ -199,6 +221,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 < 10 кг</span>
+                            <div class="product-card-meta-type-notification dog">
+                                <span class="product-card-meta-type-notification-text">для песика</span>
+                                <div class="product-card-meta-type-notification-rectangle dog">                         
+                                </div>
+                            </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -209,6 +236,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -225,6 +272,7 @@
                 </div>
             </li>
             <li class="product-card">
+                <span class="product-card-new-product">новинка</span>
                 <img src="./images/item.png" alt="photo of product" class="product-card-image">
                 <h3 class="product-card-title">Brit Care Junior Large Breed Lamb & Rice</h3>
                 <div class="product-card-rating-wrap">
@@ -268,6 +316,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 > 5 кг</span>
+                            <div class="product-card-meta-type-notification cat">
+                                <span class="product-card-meta-type-notification-text">для котика</span>
+                                <div class="product-card-meta-type-notification-rectangle cat">
+                                </div>
+                            </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -278,6 +331,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -338,6 +411,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 < 10 кг</span>
+                            <div class="product-card-meta-type-notification dog">
+                                <span class="product-card-meta-type-notification-text">для песика</span>
+                                <div class="product-card-meta-type-notification-rectangle dog">
+                                </div>
+                            </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -348,6 +426,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -533,34 +631,22 @@
     <section class="faq">
         <h2 class="faq-title">f.a.q.</h2>
         <ul class="faq-questions-list">
-            <li class="faq-questions-list-item open-answer">
+            <li class="faq-questions-list-item open-answer" data-faq-question>
                 <h3 class="faq-question-title">Lorem ipsum dolor sit amet?</h3>
                 <p class="faq-question-answer-text open-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure dolo in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="faq-questions-list-item-button">
-                    <svg width="15" height="9" class="faq-questions-icon">
+                    <svg width="15" height="9" class="faq-questions-icon" data-faq-icon-up>
                         <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
                     </svg>
-                </button>
-            </li>
-            <li class="faq-questions-list-item hide-answer">
-                <h3 class="faq-question-title hide-answer">Lorem ipsum dolor sit amet?</h3>
-                <p class="faq-question-answer-text hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis
-                    aute irure dolo in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <button class="faq-questions-list-item-button">
-                    <svg width="15" height="9" class="faq-questions-icon">
+                    <svg width="15" height="9" class="faq-questions-icon is-hidden" data-faq-icon-down>
                         <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                     </svg>
                 </button>
             </li>
-            <li class="faq-questions-list-item hide-answer">
+            <li class="faq-questions-list-item hide-answer" data-faq-question>
                 <h3 class="faq-question-title hide-answer">Lorem ipsum dolor sit amet?</h3>
                 <p class="faq-question-answer-text hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna
@@ -570,12 +656,15 @@
                     occaecat
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="faq-questions-list-item-button">
-                    <svg width="15" height="9" class="faq-questions-icon">
+                    <svg width="15" height="9" class="faq-questions-icon is-hidden" data-faq-icon-up>
+                        <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                    <svg width="15" height="9" class="faq-questions-icon" data-faq-icon-down>
                         <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                     </svg>
                 </button>
             </li>
-            <li class="faq-questions-list-item hide-answer">
+            <li class="faq-questions-list-item hide-answer" data-faq-question>
                 <h3 class="faq-question-title hide-answer">Lorem ipsum dolor sit amet?</h3>
                 <p class="faq-question-answer-text hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna
@@ -585,12 +674,15 @@
                     occaecat
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="faq-questions-list-item-button">
-                    <svg width="15" height="9" class="faq-questions-icon">
+                    <svg width="15" height="9" class="faq-questions-icon is-hidden" data-faq-icon-up>
+                        <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                    <svg width="15" height="9" class="faq-questions-icon" data-faq-icon-down>
                         <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                     </svg>
                 </button>
             </li>
-            <li class="faq-questions-list-item hide-answer">
+            <li class="faq-questions-list-item hide-answer" data-faq-question>
                 <h3 class="faq-question-title hide-answer">Lorem ipsum dolor sit amet?</h3>
                 <p class="faq-question-answer-text hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna
@@ -600,12 +692,15 @@
                     occaecat
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="faq-questions-list-item-button">
-                    <svg width="15" height="9" class="faq-questions-icon">
+                    <svg width="15" height="9" class="faq-questions-icon is-hidden" data-faq-icon-up>
+                        <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                    <svg width="15" height="9" class="faq-questions-icon" data-faq-icon-down>
                         <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                     </svg>
                 </button>
             </li>
-            <li class="faq-questions-list-item hide-answer">
+            <li class="faq-questions-list-item hide-answer" data-faq-question>
                 <h3 class="faq-question-title hide-answer">Lorem ipsum dolor sit amet?</h3>
                 <p class="faq-question-answer-text hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna
@@ -615,7 +710,28 @@
                     occaecat
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="faq-questions-list-item-button">
-                    <svg width="15" height="9" class="faq-questions-icon">
+                    <svg width="15" height="9" class="faq-questions-icon is-hidden" data-faq-icon-up>
+                        <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                    <svg width="15" height="9" class="faq-questions-icon" data-faq-icon-down>
+                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="faq-questions-list-item hide-answer" data-faq-question>
+                <h3 class="faq-question-title hide-answer">Lorem ipsum dolor sit amet?</h3>
+                <p class="faq-question-answer-text hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis
+                    aute irure dolo in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="faq-questions-list-item-button">
+                    <svg width="15" height="9" class="faq-questions-icon is-hidden" data-faq-icon-up>
+                        <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                    <svg width="15" height="9" class="faq-questions-icon" data-faq-icon-down>
                         <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                     </svg>
                 </button>
@@ -623,7 +739,7 @@
         </ul>
         <a href="" class="faq-more-answers">
             <span class="faq-more-answers-text">Більше відповідей</span>
-            <svg class="faq-more-answers-icon" width="13" height="7">
+            <svg class="faq-more-answers-icon" width="7" height="13">
                 <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
             </svg>
         </a>
@@ -749,5 +865,26 @@
             </button>
         </div>
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <h3 class="modal-title">Cookie policy</h3>
+            <p class="modal-text">Щоб надати вам кращий сервіс, ми використовуємо файли cookie та подібні методи.
+                Ці файли cookie використовуються для забезпечення належної роботи сайту
+                (функціональні та файли cookie в строго необхідній категорії).</p>
+            <ul class="modal-buttons-list">
+                <li class="modal-buttons-list-item">
+                    <button class="modal-button accept" data-modal-accept-button>Прийняти</button>
+                </li>
+                <li class="modal-buttons-list-item">
+                    <button class="modal-button reject" data-modal-reject-button>Відхилити</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/header-shop-button.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/faq.js"></script>
+    <script src="./js/product-weight.js"></script>
+    <script src="./js/revindButton.js"></script>
 </body>
 </html>

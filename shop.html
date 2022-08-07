@@ -22,7 +22,10 @@
                         <span class="header-nav-link-text">Магазин</span>
                     </a>
                     <button class="header-shop-button">
-                        <svg width="10" height="5" class="header-shop-button-icon">
+                        <svg width="10" height="5" class="header-shop-button-icon" data-shop-button-bottom>
+                            <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                        </svg>
+                        <svg width="10" height="5" class="header-shop-button-icon is-hidden" data-shop-button-up>
                             <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
                         </svg>
                     </button>
@@ -68,6 +71,24 @@
                             <use href="./images/symbol-defs.svg#icon-bag"></use>
                         </svg>
                         <span class="header-user-text">Корзина</span> 
+                    </a>
+                </li>
+            </ul>
+            <ul class="header-shop-nav is-hidden">
+                <li class="header-shop-nav-item">
+                    <a href="" class="header-shop-nav-link">
+                        <svg width="25" height="21" class="header-shop-nav-link-icon dog">
+                            <use href="./images/symbol-defs.svg#icon-dog"></use>
+                        </svg>
+                        <span class="header-shop-nav-link-text">для песика</span>
+                    </a>
+                </li>
+                <li class="header-shop-nav-item">
+                    <a href="" class="header-shop-nav-link">
+                        <svg width="25" height="21" class="header-shop-nav-link-icon cat">
+                            <use href="./images/symbol-defs.svg#icon-cat"></use>
+                        </svg>
+                        <span class="header-shop-nav-link-text">для котика</span>
                     </a>
                 </li>
             </ul>
@@ -131,11 +152,11 @@
             <div class="shop-feed-type-filter-select">
                 <span class="shop-filter-title">Властивості:</span>
                 <select name="feed-properties" id="feed-properties" class="shop-filter-select">
-                    <option value="value1">Для шерсті, Для стерилізов...</option>
-                    <option value="value2">Для чутливого травленя</option>
-                    <option value="value3">Гіпоалергенний</option>
-                    <option value="value4">Беззерновий</option>
-                    <option value="value5">Для стерилізованих</option>
+                    <option value="value1" class="shop-option-value">Для шерсті, Для стерилізов...</option>
+                    <option value="value2" class="shop-option-value">Для чутливого травленя</option>
+                    <option value="value3" class="shop-option-value">Гіпоалергенний</option>
+                    <option value="value4" class="shop-option-value">Беззерновий</option>
+                    <option value="value5" class="shop-option-value">Для стерилізованих</option>
                 </select>
             </div>
         </div>
@@ -143,15 +164,17 @@
             <div class="shop-feed-type-filter-select">
                 <span class="shop-filter-title">Вага:</span>
                 <select name="feed-properties" id="feed-properties" class="shop-filter-select">
-                    <option value="value1">Фасування: 10кг</option>
-                    <option value="value2">Фасування: 5кг</option>
-                    <option value="value3">Фасування: 1кг</option>
+                    <option value="value1" class="shop-option-value">Фасування: 10кг</option>
+                    <option value="value2" class="shop-option-value">Фасування: 5кг</option>
+                    <option value="value3" class="shop-option-value">Фасування: 1кг</option>
                 </select>
             </div>
             <div class="shop-price-wrap">
                 <span class="shop-filter-title">Вартість:</span>
                 <div class="shop-filter-input-group">
-                    <input type="range" id="filter-price-slider" min="0" max="1000" step="1" class="filter-frice-slider">
+                    <div class="filter-frice-slider-wrap">
+                        <input type="range" id="filter-price-slider" min="0" max="1000" step="1" class="filter-frice-slider">
+                    </div>
                     <input type="text" id="filter-price-input" class="filter-price-input">
                 </div>
             </div>
@@ -195,7 +218,8 @@
                         <span>5 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Беззерновая формула для взрослых собак крупных пород (от 25 кг и более) - лосось и картофель.</p>
+                <p class="product-card-text">Беззерновая формула для взрослых собак крупных пород (от 25 кг и более) - лосось и
+                    картофель.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -204,6 +228,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 < 10 кг</span>
+                                    <div class="product-card-meta-type-notification dog">
+                                        <span class="product-card-meta-type-notification-text">для песика</span>
+                                        <div class="product-card-meta-type-notification-rectangle dog">
+                                        </div>
+                                    </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -214,6 +243,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -230,6 +279,7 @@
                 </div>
             </li>
             <li class="product-card">
+                <span class="product-card-new-product">новинка</span>
                 <img src="./images/item.png" alt="photo of product" class="product-card-image">
                 <h3 class="product-card-title">Brit Care Junior Large Breed Lamb & Rice</h3>
                 <div class="product-card-rating-wrap">
@@ -264,7 +314,8 @@
                         <span>20 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Гипоаллергенная формула для молодых собак (от 3 месяцев до 2 лет) крупных пород (более 25 кг) - ягненок и рис.</p>
+                <p class="product-card-text">Гипоаллергенная формула для молодых собак (от 3 месяцев до 2 лет) крупных пород (более
+                    25 кг) - ягненок и рис.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -273,6 +324,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 > 5 кг</span>
+                            <div class="product-card-meta-type-notification cat">
+                                <span class="product-card-meta-type-notification-text">для котика</span>
+                                <div class="product-card-meta-type-notification-rectangle cat">
+                                </div>
+                            </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -283,6 +339,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -296,7 +372,7 @@
                             <span class="product-card-buy-text">Купити</span>
                         </div>
                     </button>
-                </div>                
+                </div>
             </li>
             <li class="product-card">
                 <img src="./images/item_01.png" alt="photo of product" class="product-card-image">
@@ -333,8 +409,9 @@
                         <span>20 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Полноценный корм с курицей для щенков и молодых собак (1-30 месяцев) гигантских пород (45-90 кг). С высоким содержанием
-                курицы.</p>
+                <p class="product-card-text">Полноценный корм с курицей для щенков и молодых собак (1-30 месяцев) гигантских пород
+                    (45-90 кг). С высоким содержанием
+                    курицы.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -343,6 +420,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 < 10 кг</span>
+                                    <div class="product-card-meta-type-notification dog">
+                                        <span class="product-card-meta-type-notification-text">для песика</span>
+                                        <div class="product-card-meta-type-notification-rectangle dog">
+                                        </div>
+                                    </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -353,6 +435,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -366,7 +468,7 @@
                             <span class="product-card-buy-text">Купити</span>
                         </div>
                     </button>
-                </div>                
+                </div>
             </li>
             <li class="product-card">
                 <img src="./images/bg.png" alt="photo of product" class="product-card-image">
@@ -403,7 +505,8 @@
                         <span>5 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Беззерновая формула для взрослых собак крупных пород (от 25 кг и более) - лосось и картофель.</p>
+                <p class="product-card-text">Беззерновая формула для взрослых собак крупных пород (от 25 кг и более) - лосось и
+                    картофель.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -412,6 +515,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 < 10 кг</span>
+                                    <div class="product-card-meta-type-notification dog">
+                                        <span class="product-card-meta-type-notification-text">для песика</span>
+                                        <div class="product-card-meta-type-notification-rectangle dog">
+                                        </div>
+                                    </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -422,6 +530,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -438,6 +566,7 @@
                 </div>
             </li>
             <li class="product-card">
+                <span class="product-card-hit">хіт продажів</span>
                 <img src="./images/item.png" alt="photo of product" class="product-card-image">
                 <h3 class="product-card-title">Brit Care Junior Large Breed Lamb & Rice</h3>
                 <div class="product-card-rating-wrap">
@@ -472,7 +601,8 @@
                         <span>20 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Гипоаллергенная формула для молодых собак (от 3 месяцев до 2 лет) крупных пород (более 25 кг) - ягненок и рис.</p>
+                <p class="product-card-text">Гипоаллергенная формула для молодых собак (от 3 месяцев до 2 лет) крупных пород (более
+                    25 кг) - ягненок и рис.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -481,6 +611,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 > 5 кг</span>
+                            <div class="product-card-meta-type-notification cat">
+                                <span class="product-card-meta-type-notification-text">для котика</span>
+                                <div class="product-card-meta-type-notification-rectangle cat">
+                                </div>
+                            </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -491,6 +626,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -504,7 +659,7 @@
                             <span class="product-card-buy-text">Купити</span>
                         </div>
                     </button>
-                </div>                
+                </div>
             </li>
             <li class="product-card">
                 <img src="./images/item_01.png" alt="photo of product" class="product-card-image">
@@ -541,8 +696,9 @@
                         <span>20 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Полноценный корм с курицей для щенков и молодых собак (1-30 месяцев) гигантских пород (45-90 кг). С высоким содержанием
-                курицы.</p>
+                <p class="product-card-text">Полноценный корм с курицей для щенков и молодых собак (1-30 месяцев) гигантских пород
+                    (45-90 кг). С высоким содержанием
+                    курицы.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -551,6 +707,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 < 10 кг</span>
+                                    <div class="product-card-meta-type-notification dog">
+                                        <span class="product-card-meta-type-notification-text">для песика</span>
+                                        <div class="product-card-meta-type-notification-rectangle dog">
+                                        </div>
+                                    </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -561,6 +722,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -574,7 +755,7 @@
                             <span class="product-card-buy-text">Купити</span>
                         </div>
                     </button>
-                </div>                
+                </div>
             </li>
             <li class="product-card">
                 <img src="./images/bg.png" alt="photo of product" class="product-card-image">
@@ -611,7 +792,8 @@
                         <span>5 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Беззерновая формула для взрослых собак крупных пород (от 25 кг и более) - лосось и картофель.</p>
+                <p class="product-card-text">Беззерновая формула для взрослых собак крупных пород (от 25 кг и более) - лосось и
+                    картофель.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -620,6 +802,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 < 10 кг</span>
+                                    <div class="product-card-meta-type-notification dog">
+                                        <span class="product-card-meta-type-notification-text">для песика</span>
+                                        <div class="product-card-meta-type-notification-rectangle dog">
+                                        </div>
+                                    </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -630,6 +817,313 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="product-card-buy">
+                        <div>
+                            <span class="product-card-buy-prev-price">100 ₴</span>
+                            <span class="product-card-buy-price">90 ₴</span>
+                        </div>
+                        <div class="product-card-buy-inner-wrap">
+                            <svg width="15" height="19" class="product-card-buy-icon">
+                                <use href="./images/symbol-defs.svg#icon-bag"></use>
+                            </svg>
+                            <span class="product-card-buy-text">Купити</span>
+                        </div>
+                    </button>
+                </div>
+            </li>
+            <li class="product-card">
+                <span class="product-card-not-available">немає в наявності</span>
+                <img src="./images/item.png" alt="photo of product" class="product-card-image">
+                <h3 class="product-card-title">Brit Care Junior Large Breed Lamb & Rice</h3>
+                <div class="product-card-rating-wrap">
+                    <ul class="product-card-rating">
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <a href="" class="product-card-reviews">
+                        <span>20 відгуків</span>
+                    </a>
+                </div>
+                <p class="product-card-text">Гипоаллергенная формула для молодых собак (от 3 месяцев до 2 лет) крупных пород (более
+                    25 кг) - ягненок и рис.</p>
+                <div class="product-card-meta-wrap">
+                    <div class="product-card-meta">
+                        <div class="product-card-meta-type">
+                            <svg width="23" height="19" class="product-card-meta-type-cat">
+                                <use href="./images/symbol-defs.svg#icon-cat"></use>
+                            </svg>
+                            <span class="product-card-meta-text">
+                                > 5 кг</span>
+                            <div class="product-card-meta-type-notification cat">
+                                <span class="product-card-meta-type-notification-text">для котика</span>
+                                <div class="product-card-meta-type-notification-rectangle cat">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="product-card-meta-weight">
+                            <svg width="16" height="19">
+                                <use href="./images/symbol-defs.svg#icon-pack"></use>
+                            </svg>
+                            <span class="product-card-meta-weight-text">Вага: 1кг</span>
+                            <svg width="13" height="7">
+                                <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                            </svg>
+                        </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="product-card-buy">
+                        <div>
+                            <span class="product-card-buy-prev-price is-hidden">100 ₴</span>
+                            <span class="product-card-buy-price">90 ₴</span>
+                        </div>
+                        <div class="product-card-buy-inner-wrap">
+                            <svg width="15" height="19" class="product-card-buy-icon">
+                                <use href="./images/symbol-defs.svg#icon-bag"></use>
+                            </svg>
+                            <span class="product-card-buy-text">Купити</span>
+                        </div>
+                    </button>
+                </div>
+            </li>
+            <li class="product-card">
+                <img src="./images/item_01.png" alt="photo of product" class="product-card-image">
+                <h3 class="product-card-title">Brit Premium Junior XL</h3>
+                <div class="product-card-rating-wrap">
+                    <ul class="product-card-rating">
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-unfilled-star"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <a href="" class="product-card-reviews">
+                        <span>20 відгуків</span>
+                    </a>
+                </div>
+                <p class="product-card-text">Полноценный корм с курицей для щенков и молодых собак (1-30 месяцев) гигантских пород
+                    (45-90 кг). С высоким содержанием
+                    курицы.</p>
+                <div class="product-card-meta-wrap">
+                    <div class="product-card-meta">
+                        <div class="product-card-meta-type">
+                            <svg width="23" height="19" class="product-card-meta-type-dog">
+                                <use href="./images/symbol-defs.svg#icon-dog"></use>
+                            </svg>
+                            <span class="product-card-meta-text">
+                                < 10 кг</span>
+                                    <div class="product-card-meta-type-notification dog">
+                                        <span class="product-card-meta-type-notification-text">для песика</span>
+                                        <div class="product-card-meta-type-notification-rectangle dog">
+                                        </div>
+                                    </div>
+                        </div>
+                        <button class="product-card-meta-weight">
+                            <svg width="16" height="19">
+                                <use href="./images/symbol-defs.svg#icon-pack"></use>
+                            </svg>
+                            <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            <svg width="13" height="7">
+                                <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                            </svg>
+                        </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="product-card-buy">
+                        <div>
+                            <span class="product-card-buy-prev-price">100 ₴</span>
+                            <span class="product-card-buy-price">90 ₴</span>
+                        </div>
+                        <div class="product-card-buy-inner-wrap">
+                            <svg width="15" height="19" class="product-card-buy-icon">
+                                <use href="./images/symbol-defs.svg#icon-bag"></use>
+                            </svg>
+                            <span class="product-card-buy-text">Купити</span>
+                        </div>
+                    </button>
+                </div>
+            </li>
+            <li class="product-card">
+                <img src="./images/bg.png" alt="photo of product" class="product-card-image">
+                <h3 class="product-card-title">Brit Care GF Adult Large Breed Salmon & Potato</h3>
+                <div class="product-card-rating-wrap">
+                    <ul class="product-card-rating">
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                        <li class="product-card-rating-item">
+                            <svg class="product-card-rating-icon" width="14" height="14">
+                                <use href="./images/symbol-defs.svg#icon-filled-star"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <a href="" class="product-card-reviews">
+                        <span>5 відгуків</span>
+                    </a>
+                </div>
+                <p class="product-card-text">Беззерновая формула для взрослых собак крупных пород (от 25 кг и более) - лосось и
+                    картофель.</p>
+                <div class="product-card-meta-wrap">
+                    <div class="product-card-meta">
+                        <div class="product-card-meta-type">
+                            <svg width="23" height="19" class="product-card-meta-type-dog">
+                                <use href="./images/symbol-defs.svg#icon-dog"></use>
+                            </svg>
+                            <span class="product-card-meta-text">
+                                < 10 кг</span>
+                                    <div class="product-card-meta-type-notification dog">
+                                        <span class="product-card-meta-type-notification-text">для песика</span>
+                                        <div class="product-card-meta-type-notification-rectangle dog">
+                                        </div>
+                                    </div>
+                        </div>
+                        <button class="product-card-meta-weight">
+                            <svg width="16" height="19">
+                                <use href="./images/symbol-defs.svg#icon-pack"></use>
+                            </svg>
+                            <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            <svg width="13" height="7">
+                                <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                            </svg>
+                        </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -680,7 +1174,8 @@
                         <span>20 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Гипоаллергенная формула для молодых собак (от 3 месяцев до 2 лет) крупных пород (более 25 кг) - ягненок и рис.</p>
+                <p class="product-card-text">Гипоаллергенная формула для молодых собак (от 3 месяцев до 2 лет) крупных пород (более
+                    25 кг) - ягненок и рис.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -689,6 +1184,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 > 5 кг</span>
+                            <div class="product-card-meta-type-notification cat">
+                                <span class="product-card-meta-type-notification-text">для котика</span>
+                                <div class="product-card-meta-type-notification-rectangle cat">
+                                </div>
+                            </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -699,6 +1199,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -712,7 +1232,7 @@
                             <span class="product-card-buy-text">Купити</span>
                         </div>
                     </button>
-                </div>                
+                </div>
             </li>
             <li class="product-card">
                 <img src="./images/item_01.png" alt="photo of product" class="product-card-image">
@@ -749,8 +1269,9 @@
                         <span>20 відгуків</span>
                     </a>
                 </div>
-                <p class="product-card-text">Полноценный корм с курицей для щенков и молодых собак (1-30 месяцев) гигантских пород (45-90 кг). С высоким содержанием
-                курицы.</p>
+                <p class="product-card-text">Полноценный корм с курицей для щенков и молодых собак (1-30 месяцев) гигантских пород
+                    (45-90 кг). С высоким содержанием
+                    курицы.</p>
                 <div class="product-card-meta-wrap">
                     <div class="product-card-meta">
                         <div class="product-card-meta-type">
@@ -759,6 +1280,11 @@
                             </svg>
                             <span class="product-card-meta-text">
                                 < 10 кг</span>
+                                    <div class="product-card-meta-type-notification dog">
+                                        <span class="product-card-meta-type-notification-text">для песика</span>
+                                        <div class="product-card-meta-type-notification-rectangle dog">
+                                        </div>
+                                    </div>
                         </div>
                         <button class="product-card-meta-weight">
                             <svg width="16" height="19">
@@ -769,6 +1295,26 @@
                                 <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                             </svg>
                         </button>
+                        <ul class="product-card-meta-weight-variants is-hidden">
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 400 г</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 1 кг</span>
+                            </li>
+                            <li class="product-card-meta-weight-variants-item">
+                                <svg width="16" height="19">
+                                    <use href="./images/symbol-defs.svg#icon-pack"></use>
+                                </svg>
+                                <span class="product-card-meta-weight-text">Вага: 2 кг</span>
+                            </li>
+                        </ul>
                     </div>
                     <button class="product-card-buy">
                         <div>
@@ -782,7 +1328,7 @@
                             <span class="product-card-buy-text">Купити</span>
                         </div>
                     </button>
-                </div>                
+                </div>
             </li>
         </ul>
         <div class="shop-pagination">
@@ -925,5 +1471,9 @@
             </button>
         </div>
     </footer>
+    <script src="./js/product-weight.js"></script>
+    <script src="./js/header-shop-button.js"></script>
+    <script src="./js/revindButton.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

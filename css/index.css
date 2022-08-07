@@ -135,6 +135,7 @@ section, .footer, .gallery {
 .header-user-link {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header-user-text {
@@ -158,11 +159,78 @@ section, .footer, .gallery {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .header-shop-button-icon {
   fill: rgb(246, 182, 38);
   margin-left: 10px;
+}
+
+.header-shop-nav {
+  position: absolute;
+  bottom: 0;
+  left: 220px;
+  transform: translateY(calc(100% + 1px));
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.header-shop-nav.is-hidden {
+  width: 1px;
+  height: 1px;
+  display: none;
+  left: -1000%;
+}
+
+.header-shop-nav-link {
+  width: 168px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4F4ED;
+}
+.header-shop-nav-link:hover {
+  background-color: rgba(82, 80, 81, 0.1);
+}
+
+.header-shop-nav-link-icon {
+  margin-right: 10px;
+}
+.header-shop-nav-link-icon.dog {
+  fill: #B57B49;
+}
+.header-shop-nav-link-icon.cat {
+  fill: #81C3D7;
+}
+
+.header-shop-nav-link-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #525051;
+}
+
+.header-user-added-products {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #7CB227;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #F4F4ED;
+  transform: translateY(50%);
+  left: -10px;
 }
 
 .hero-section {
@@ -595,6 +663,91 @@ section, .footer, .gallery {
   top: -28%;
 }
 
+.product-card-meta-type-notification-rectangle {
+  width: 10px;
+  height: 10px;
+  bottom: -5px;
+  left: 48%;
+  transform: rotate(45deg);
+  position: absolute;
+}
+.product-card-meta-type-notification-rectangle.dog {
+  background-color: #B57B49;
+}
+.product-card-meta-type-notification-rectangle.cat {
+  background-color: #81C3D7;
+}
+
+.product-card-meta-type-notification-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.product-card-meta-type-notification {
+  width: 131px;
+  height: 59px;
+  border-radius: 14px;
+  position: absolute;
+  top: -21px;
+  transform: translateY(-100%);
+  display: none;
+}
+.product-card-meta-type-notification.dog {
+  background-color: #B57B49;
+}
+.product-card-meta-type-notification.cat {
+  background-color: #81C3D7;
+}
+.product-card-meta-type:hover .product-card-meta-type-notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-new-product {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 122px;
+  height: 34px;
+  background-color: #F6B626;
+  border-radius: 10px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-meta-weight-variants {
+  position: absolute;
+  border-radius: 0px 0px 14px 14px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  right: 0;
+  bottom: -33%;
+}
+
+.product-card-meta-weight-variants-item {
+  width: 193px;
+  background-color: #FFFFFF;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.product-card-meta-weight-variants-item:hover {
+  background-color: rgba(82, 80, 81, 0.1);
+}
+
 .gallery {
   padding: 0;
   overflow: hidden;
@@ -874,6 +1027,7 @@ section, .footer, .gallery {
 
 .faq-more-answers-icon {
   stroke: rgb(246, 182, 38);
+  margin-left: 10px;
 }
 
 .faq-more-answers-text {
@@ -1050,4 +1204,82 @@ section, .footer, .gallery {
 
 .footer-rewind-button-icon {
   fill: rgb(124, 178, 39);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 9999;
+}
+
+.modal {
+  display: block;
+  width: 688px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  position: absolute;
+  top: 206px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 9999;
+}
+
+.modal-buttons-list {
+  margin-top: 14px;
+}
+
+.modal-button {
+  width: 137px;
+  height: 49px;
+  border-radius: 14px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.modal-button.accept {
+  background-color: #7CB227;
+  border: 1px solid #7CB227;
+  color: #FFFFFF;
+}
+.modal-button.reject {
+  background-color: transparent;
+  border: 1px solid #525051;
+  color: #525051;
+}
+
+.modal-buttons-list {
+  display: flex;
+}
+
+.modal-buttons-list-item:not(:first-child) {
+  margin-left: 14px;
+}
+
+.modal-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #525051;
+}
+
+.modal-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+  margin-top: 14px;
 }/*# sourceMappingURL=index.css.map */
