@@ -156,29 +156,53 @@
             </ul>
             <div class="shop-feed-type-filter-select">
                 <span class="shop-filter-title">Властивості:</span>
-                <select name="feed-properties" id="feed-properties" class="shop-filter-select">
-                    <option value="value1" class="shop-option-value">Для шерсті, Для стерилізов...</option>
-                    <option value="value2" class="shop-option-value">Для чутливого травленя</option>
-                    <option value="value3" class="shop-option-value">Гіпоалергенний</option>
-                    <option value="value4" class="shop-option-value">Беззерновий</option>
-                    <option value="value5" class="shop-option-value">Для стерилізованих</option>
-                </select>
+                <button class="shop-filter-select" data-for="properties"></button>
+                <ul class="shop-option-values is-hidden" data-for="properties">
+                    <li class="shop-option-value">
+                        <span>Для шерсті, Для стерилізованих</span>
+                    </li>
+                    <li class="shop-option-value">
+                        <span>Для чутливого травленя</span>
+                    </li>
+                    <li class="shop-option-value">
+                        <span>Гіпоалергенний</span>
+                    </li>
+                    <li class="shop-option-value">
+                        <span>Беззерновий</span>
+                    </li>
+                    <li class="shop-option-value">
+                        <span>Для стерилізованих</span>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="shop-coast-group">
             <div class="shop-feed-type-filter-select">
                 <span class="shop-filter-title">Вага:</span>
-                <select name="feed-properties" id="feed-properties" class="shop-filter-select">
-                    <option value="value1" class="shop-option-value">Фасування: 10кг</option>
-                    <option value="value2" class="shop-option-value">Фасування: 5кг</option>
-                    <option value="value3" class="shop-option-value">Фасування: 1кг</option>
-                </select>
+                <button class="shop-filter-select" data-for="weight"></button>
+                <ul class="shop-option-values is-hidden" data-for="weight">
+                    <li class="shop-option-value">
+                        <span>Фасування: 10кг</span>
+                    </li>
+                    <li class="shop-option-value">
+                        <span>Фасування: 5кг</span>
+                    </li>
+                    <li class="shop-option-value">
+                        <span>Фасування: 1кг</span>
+                    </li>
+                </ul>               
             </div>
             <div class="shop-price-wrap">
                 <span class="shop-filter-title">Вартість:</span>
                 <div class="shop-filter-input-group">
                     <div class="filter-frice-slider-wrap">
                         <input type="range" id="filter-price-slider" min="0" max="1000" step="1" class="filter-frice-slider">
+                        <!-- <div class="custom-slider-wrap">
+                            <div class="custom-slider">
+                                <div class="custom-slider-thumb"></div>
+                                <div class="custom-slider-point"></div>
+                            </div> -->
+                        <!-- </div> -->
                     </div>
                     <input type="text" id="filter-price-input" class="filter-price-input">
                 </div>
@@ -1480,5 +1504,6 @@
     <script src="./js/header-shop-button.js"></script>
     <script src="./js/revindButton.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
 </html>

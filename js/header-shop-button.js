@@ -9,13 +9,11 @@
     function onCick(){
         if (menu.classList.contains('is-hidden')) {
             menu.classList.remove('is-hidden')
-            console.log(menu.classList)
             iconDown.classList.add('is-hidden')
             iconUp.classList.remove('is-hidden')
             return
         }
         menu.classList.add('is-hidden')
-        console.log(menu.classList)
         iconDown.classList.remove('is-hidden')
         iconUp.classList.add('is-hidden')
     }
