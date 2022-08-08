@@ -1,12 +1,12 @@
 .header-wrap{
     @extend section;
-    padding-top: 20px;
+    margin:auto;
+    padding-top: 40px;
 }
 
-
-.header{
-    margin: auto;
+.header {
     display: flex;
+    margin: auto;
     width: 1140px;
     background-color: #F4F4ED;
     border: 1px solid #E7E4D9;
@@ -17,25 +17,25 @@
     padding-bottom: 20px;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
-.header-nav{
+.header-nav {
     display: flex;
 }
 
-.header-nav-item{
+.header-nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    &:not(:first-child){
+    &:not(:first-child) {
         margin-left: 30px;
     }
-    
+
 }
 
-.header-nav-link-text{
+
+.header-nav-link-text {
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
@@ -44,18 +44,20 @@
     color: $main-text-color;
 }
 
-.header-user{
+.header-user {
     display: flex;
-    flex-direction: row-reverse;
 }
 
-.header-user-item:last-child{
+.header-user-item:first-child {
     margin-right: 30px;
 }
 
-.header-user-link{
+.header-user-link {
     display: flex;
     align-items: center;
+    position: relative;
+    border: none;
+    background-color: transparent;
 }
 
 .header-user-text {
@@ -68,20 +70,21 @@
     color: $main-text-color;
 }
 
-.header-user-icon{
+.header-user-icon {
     stroke: $section-color;
 }
 
-.header-shop-button{
+.header-shop-button {
     padding: 0;
     border: none;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.header-shop-button-icon{
+.header-shop-button-icon {
     fill: $section-color;
     margin-left: 10px;
 }
@@ -94,7 +97,6 @@
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
-    z-index: 999;
 
     &.is-hidden {
         width: 1px;
@@ -136,6 +138,42 @@
     font-size: 16px;
     line-height: 18px;
     color: #525051;
+}
+
+.header-user-added-products {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #7CB227;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F4F4ED;
+    transform: translateY(50%);
+    left: -10px;
+}
+
+.header-user-icon-wrap {
+    width: 43px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.enter {
+        background-color: rgba(179, 178, 178, 0.2);
+    }
+
+    &.bag {
+        background-color: rgba(246, 182, 38, 0.2);
+    }
 }
 
 .header-adress{

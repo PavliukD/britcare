@@ -40,38 +40,42 @@
                 </a>
             </li>
             <li class="header-nav-item">
-                <a href="" class="header-nav-link">
+                <a href="./about.html" class="header-nav-link">
                     <span class="header-nav-link-text">Про нас</span>
                 </a>
             </li>
             <li class="header-nav-item">
-                <a href="" class="header-nav-link">
+                <a href="./faq.html" class="header-nav-link">
                     <span class="header-nav-link-text">FAQ</span>
                 </a>
             </li>
             <li class="header-nav-item">
-                <a href="" class="header-nav-link">
+                <a href="./contacts.html" class="header-nav-link">
                     <span class="header-nav-link-text">Контакти</span>
                 </a>
             </li>
         </ul>
         <ul class="header-user">
             <li class="header-user-item">
-                <a href="" class="header-user-link">
-                    <svg width="15" height="18" class="header-user-icon">
-                        <use href="./images/symbol-defs.svg#icon-user"icon-user></use>
-                    </svg>
-                    <span class="header-user-text">Вхід</span> 
-                </a>
+                <button class="header-user-link">
+                    <div class="header-user-icon-wrap enter">
+                        <svg width="15" height="18" class="header-user-icon">
+                            <use href="./images/symbol-defs.svg#icon-user" icon-user></use>
+                        </svg>
+                    </div>
+                    <span class="header-user-text">Вхід</span>
+                </button>
             </li>
             <li class="header-user-item">
-                <a href="" class="header-user-link">
-                    <svg width="15" height="18" class="header-user-icon">
-                        <use href="./images/symbol-defs.svg#icon-bag"></use>
-                    </svg>
+                <button class="header-user-link">
+                    <div class="header-user-icon-wrap bag">
+                        <svg width="15" height="18" class="header-user-icon">
+                            <use href="./images/symbol-defs.svg#icon-bag"></use>
+                        </svg>
+                    </div>
                     <span class="header-user-text">Корзина</span>
-                    <span class="header-user-added-products">99</span>
-                </a>
+                    <!-- <span class="header-user-added-products">99</span> -->
+                </button>
             </li>
         </ul>
         <ul class="header-shop-nav is-hidden">
@@ -96,14 +100,45 @@
     <section class="hero-section">
         <div class="hero">
             <div class="hero-info">
-                <svg width="65" height="79">
-                    <use href="./images/symbol-defs.svg#icon-gluet_free"></use>
-                </svg>
-                <h2 class="hero-title">Lorem ipsum dolor sit amet</h2>
-                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua.</p>
-                <a href="" class="hero-shop-link">Магазин</a>
+                <ul class="hero-standart-list">
+                    <li class="hero-standarts-item">
+                        <svg width="65" height="79" class="hero-standarts-icon">
+                            <use href="./images/symbol-defs.svg#icon-iso"></use>
+                        </svg>
+                        <div class="hero-standarts-notification" style="width: 212px;">
+                            <span class="hero-standarts-notification-text">Максимальна якість
+                            всієї випускається
+                            продукції для тварин</span>
+                            <div class="hero-standart-notification-point"></div>
+                        </div>
+                    </li>
+                    <li class="hero-standarts-item">
+                        <svg width="65" height="79" class="hero-standarts-icon">
+                            <use href="./images/symbol-defs.svg#icon-no-gmo"></use>
+                        </svg>
+                        <div class="hero-standarts-notification is-hidden">
+                            <span class="hero-standarts-notification-text">Корм не містять
+                            генномодифікованих
+                            добавок і домішок</span>
+                            <div class="hero-standart-notification-point"></div>
+                        </div>
+                    </li>
+                    <li class="hero-standarts-item">
+                        <svg width="65" height="79" class="hero-standarts-icon">
+                            <use href="./images/symbol-defs.svg#icon-gluet_free"></use>
+                        </svg>
+                        <div class="hero-standarts-notification is-hidden">
+                            <span class="hero-standarts-notification-text">У складі корму
+                            не містяться
+                            рослинний білок</span>
+                            <div class="hero-standart-notification-point"></div>
+                        </div>
+                    </li>
+                </ul>
+                <h2 class="hero-title">Мова любові, яку зрозуміє ваш улюбленець</h2>
+                <p class="hero-text">Обирайте суперпреміум корм, який відповідає потребам саме вашого улюбленця — у Brit Care є товари для усіх вікових груп
+                тварин</p>
+                <a href="./shop.html" class="hero-shop-link">Магазин</a>
             </div>
             <ul class="hero-cards-list">
                 <li class="hero-cards-list-item">
@@ -616,7 +651,7 @@
                 aute irure dolo in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                 occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="" class="about-us-lik-details">Детальніше</a>
+            <a href="./about.html" class="about-us-lik-details">Детальніше</a>
         </div>
         <div class="about-us-gallery">
             <img src="./images/bg (1).png" alt="main photo" class="about-us-main-photo">
@@ -737,7 +772,7 @@
                 </button>
             </li>
         </ul>
-        <a href="" class="faq-more-answers">
+        <a href="./faq.html" class="faq-more-answers">
             <span class="faq-more-answers-text">Більше відповідей</span>
             <svg class="faq-more-answers-icon" width="7" height="13">
                 <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
@@ -772,22 +807,22 @@
                         <h3 class="footer-nav-list-item-title">Сторінки</h3>
                         <ul class="footer-nav-links-list">
                             <li class="footer-nav-link-item">
-                                <a href="" class="footer-nav-link">Магазин</a>
+                                <a href="./shop.html" class="footer-nav-link">Магазин</a>
                             </li>
                             <li class="footer-nav-link-item">
                                 <a href="" class="footer-nav-link">Чому ми?</a>
                             </li>
                             <li class="footer-nav-link-item">
-                                <a href="" class="footer-nav-link">Про нас</a>
+                                <a href="./about.html" class="footer-nav-link">Про нас</a>
                             </li>
                             <li class="footer-nav-link-item">
-                                <a href="" class="footer-nav-link">FAQ</a>
+                                <a href="./faq.html" class="footer-nav-link">FAQ</a>
                             </li>
                             <li class="footer-nav-link-item">
-                                <a href="" class="footer-nav-link">Оплата та доставка</a>
+                                <a href="./payment-delivery.html" class="footer-nav-link">Оплата та доставка</a>
                             </li>
                             <li class="footer-nav-link-item">
-                                <a href="" class="footer-nav-link">Контакти</a>
+                                <a href="./contacts.html" class="footer-nav-link">Контакти</a>
                             </li>
                         </ul>
                     </li>
@@ -852,10 +887,10 @@
             <span class="footer-copy-right">© Brid care — All rights reserved, 2022</span>
             <ul class="footer-legal">
                 <li class="footer-legal-item">
-                    <a href="" class="footer-legal-link">Публічна оферта</a>
+                    <a href="./public-offer.html" class="footer-legal-link">Публічна оферта</a>
                 </li>
                 <li class="footer-legal-item">
-                    <a href="" class="footer-legal-link">Захист персональних даних</a>
+                    <a href="./protection.html" class="footer-legal-link">Захист персональних даних</a>
                 </li>
             </ul>
             <button class="footer-rewind-button">

@@ -62,7 +62,7 @@ section, .footer, .gallery {
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgb(244, 244, 237);
+  background-color: #F4F4ED;
 }
 
 .container {
@@ -136,6 +136,8 @@ section, .footer, .gallery {
   display: flex;
   align-items: center;
   position: relative;
+  border: none;
+  background-color: transparent;
 }
 
 .header-user-text {
@@ -231,6 +233,21 @@ section, .footer, .gallery {
   color: #F4F4ED;
   transform: translateY(50%);
   left: -10px;
+}
+
+.header-user-icon-wrap {
+  width: 43px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-user-icon-wrap.enter {
+  background-color: rgba(179, 178, 178, 0.2);
+}
+.header-user-icon-wrap.bag {
+  background-color: rgba(246, 182, 38, 0.2);
 }
 
 .hero-section {
@@ -339,6 +356,59 @@ section, .footer, .gallery {
   color: #FFFFFF;
   text-decoration: none;
   margin-left: 14px;
+}
+
+.hero-standart-list {
+  display: flex;
+}
+
+.hero-standarts-item {
+  position: relative;
+}
+.hero-standarts-item:not(:first-child) {
+  margin-left: 13px;
+}
+
+.hero-standarts-icon {
+  fill: #B3B2B2;
+}
+.hero-standarts-item:hover .hero-standarts-icon {
+  fill: #FFFFFF;
+}
+
+.hero-standarts-notification {
+  position: absolute;
+  padding: 20px 30px;
+  background-color: #F6B626;
+  border-radius: 14px;
+  min-width: 179px;
+  max-width: 215px;
+  top: 0;
+  left: 20%;
+  transform: translateY(calc(-100% - 18px));
+  display: none;
+}
+.hero-standarts-item:hover .hero-standarts-notification {
+  display: block;
+}
+
+.hero-standarts-notification-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.hero-standart-notification-point {
+  width: 10px;
+  height: 10px;
+  background-color: #F6B626;
+  transform: matrix(0.71, -0.71, 0.7, 0.71, 0, 0);
+  position: absolute;
+  left: 13px;
+  bottom: -5px;
 }
 
 .why-are-we {
@@ -855,10 +925,12 @@ section, .footer, .gallery {
 
 .gallery-vertical-paw-big {
   transform: rotate(131.75deg);
+  fill: #FFFFFF;
 }
 
 .gallery-vertical-paw-small {
   transform: rotate(118.86deg);
+  fill: #FFFFFF;
 }
 
 .gallery-vertical-paws-item:not(:first-child) {
@@ -881,6 +953,11 @@ section, .footer, .gallery {
 
 .gallery-gorizontal-paw-big {
   transform: translateY(-41px);
+  fill: #FFFFFF;
+}
+
+.gallery-gorizontal-paw-small {
+  fill: #FFFFFF;
 }
 
 .about-us {

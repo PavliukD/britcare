@@ -1,0 +1,29 @@
+.faq{
+    background-color: #F4F4ED;
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+
+.faq-title{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 58px;
+        color: #525051;
+        text-align: left;
+}
+
+.faq-questions-list{
+    margin: 0;
+}
+
+.faq-page-questions{
+    margin-top: 60px;
+}
+
+.faq-page-questions-item{
+    &:not(:first-child){
+        margin-top: 60px;
+    }
+}

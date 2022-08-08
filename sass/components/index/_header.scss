@@ -53,6 +53,8 @@
     display: flex;
     align-items: center;
     position: relative;
+    border: none;
+    background-color: transparent;
 }
 
 .header-user-text {
@@ -152,4 +154,21 @@
     color: #F4F4ED;
     transform: translateY(50%);
     left: -10px;
+}
+
+.header-user-icon-wrap{
+    width: 43px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.enter{
+        background-color: rgba(179, 178, 178, 0.2);
+    }
+
+    &.bag{
+         background-color: rgba(246, 182, 38, 0.2);
+    }
 }

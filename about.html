@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BritCare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/about.css" />
+</head>
+
+<body>
+    <div class="header-wrap">
+        <header class="header">
+            <a href="/">
+                <img src="./images/logo.png" alt="company logo">
+            </a>
+            <ul class="header-nav">
+                <li class="header-nav-item">
+                    <a href="./shop.html" class="header-nav-link">
+                        <span class="header-nav-link-text">Магазин</span>
+                    </a>
+                    <button class="header-shop-button">
+                        <svg width="10" height="5" class="header-shop-button-icon" data-shop-button-bottom>
+                            <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                        </svg>
+                        <svg width="10" height="5" class="header-shop-button-icon is-hidden" data-shop-button-up>
+                            <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">Чому ми</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">Відгуки</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./about.html" class="header-nav-link">
+                        <span class="header-nav-link-text">Про нас</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./faq.html" class="header-nav-link">
+                        <span class="header-nav-link-text">FAQ</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./contacts.html" class="header-nav-link">
+                        <span class="header-nav-link-text">Контакти</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header-user">
+                <li class="header-user-item">
+                    <button class="header-user-link">
+                        <div class="header-user-icon-wrap enter">
+                            <svg width="15" height="18" class="header-user-icon">
+                                <use href="./images/symbol-defs.svg#icon-user" icon-user></use>
+                            </svg>
+                        </div>
+                        <span class="header-user-text">Вхід</span>
+                    </button>
+                </li>
+                <li class="header-user-item">
+                    <button class="header-user-link">
+                        <div class="header-user-icon-wrap bag">
+                            <svg width="15" height="18" class="header-user-icon">
+                                <use href="./images/symbol-defs.svg#icon-bag"></use>
+                            </svg>
+                        </div>
+                        <span class="header-user-text">Корзина</span>
+                        <!-- <span class="header-user-added-products">99</span> -->
+                    </button>
+                </li>
+            </ul>
+            <ul class="header-shop-nav is-hidden">
+                <li class="header-shop-nav-item">
+                    <a href="" class="header-shop-nav-link">
+                        <svg width="25" height="21" class="header-shop-nav-link-icon dog">
+                            <use href="./images/symbol-defs.svg#icon-dog"></use>
+                        </svg>
+                        <span class="header-shop-nav-link-text">для песика</span>
+                    </a>
+                </li>
+                <li class="header-shop-nav-item">
+                    <a href="" class="header-shop-nav-link">
+                        <svg width="25" height="21" class="header-shop-nav-link-icon cat">
+                            <use href="./images/symbol-defs.svg#icon-cat"></use>
+                        </svg>
+                        <span class="header-shop-nav-link-text">для котика</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <ul class="header-adress">
+            <li class="header-adress-item">
+                <a href="/" class="header-adress-link">Головна</a>
+            </li>
+            <li class="header-adress-item">
+                <a href="/shop" class="header-adress-link">Про нас</a>
+            </li>
+        </ul>
+    </div>
+    <section class="about"> 
+        <h2 class="about-title">Про нас</h2>
+        <div class="about-hero">
+            <ul class="about-icons-set">
+                <li class="about-icons-set-item">
+                    <svg class="about-icon" width="146" height="136">
+                        <use href="./images/symbol-defs.svg#icon-heart"></use>
+                    </svg>
+                </li>
+                <li class="about-icons-set-item">
+                    <svg class="about-icon" width="168" height="136">
+                        <use href="./images/symbol-defs.svg#icon-dog"></use>
+                    </svg>
+                </li>
+                <li class="about-icons-set-item">
+                    <svg class="about-icon" width="161" height="136">
+                        <use href="./images/symbol-defs.svg#icon-cat"></use>
+                    </svg>
+                </li>
+                <li class="about-icons-set-item">
+                    <svg class="about-icon" width="136" height="136">
+                        <use href="./images/symbol-defs.svg#icon-healthy"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+        <h3 class="about-history-title">Історія створення</h3>
+        <div class="about-history">
+            <div class="about-text-group">
+                <p class="about-text">"Сузір'я" - приватна сімейна компанія, яка була заснована в 1992 році. Починаючи як оптово-роздрібна, протягом декількох
+                років компанія освоїла виробництво зернових сумішей, акваріумів та аксесуарів. У 1995 році компанія почала імпорт
+                зоотоварів і поступово збільшила портфоліо представлених брендів.<br>
+                <br>
+                Зараз до них належать: Brit Care, Brit Premium, Profine, Petit, Tetra, Vitakraft, Hagen, Juwel, Hunter, Canin a,
+                Tropical, Trixie, Flexi та багато інших.</p>
+                <p class="about-text">Сьогодні компанія успішно розвивається у трьох напрямках: дистрибуція товарів провідних європейських виробників;
+                виробництво товарів під власною ТМ "Природа"; мережа власних зоомаркетів <span class="about-accent-text">MasterZOO</span> .</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-slogan">
+                <svg width="67" height="67">
+                    <use href="./images/symbol-defs.svg#icon-logo"></use>
+                </svg>
+                <span class="foote-sloga-text"> Харчування,
+                    якого потребує
+                    ваш улюбленець,
+                    їжа, яку він хоче.</span>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">
+                        <h3 class="footer-nav-list-item-title">Товари</h3>
+                        <ul class="footer-nav-links-list">
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Для собак</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Для котів</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <h3 class="footer-nav-list-item-title">Сторінки</h3>
+                        <ul class="footer-nav-links-list">
+                            <li class="footer-nav-link-item">
+                                <a href="./shop.html" class="footer-nav-link">Магазин</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Чому ми?</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="./about.html" class="footer-nav-link">Про нас</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="./faq.html" class="footer-nav-link">FAQ</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="./payment-delivery.html" class="footer-nav-link">Оплата та доставка</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="./contacts.html" class="footer-nav-link">Контакти</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <h3 class="footer-nav-list-item-title">Соц. мережі</h3>
+                        <ul class="footer-nav-links-list">
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Facebook</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Instagram</a>
+                            </li>
+                            <li class="footer-nav-link-item">
+                                <a href="" class="footer-nav-link">Linkedin</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer-nav-meta">
+                    <ul class="footer-payment-list">
+                        <li class="footer-payment-list-item">
+                            <button class="footer-payment-button">
+                                <svg width="41" height="27">
+                                    <use href="./images/symbol-defs.svg#icon-master"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="footer-payment-list-item">
+                            <button class="footer-payment-button">
+                                <svg width="41" height="27">
+                                    <use href="./images/symbol-defs.svg#icon-visa"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="footer-icon-set">
+                        <li class="footer-icon-set-item">
+                            <svg class="footer-icon" width="29" height="27">
+                                <use href="./images/symbol-defs.svg#icon-heart"></use>
+                            </svg>
+                        </li>
+                        <li class="footer-icon-set-item">
+                            <svg class="footer-icon" width="33" height="27">
+                                <use href="./images/symbol-defs.svg#icon-dog"></use>
+                            </svg>
+                        </li>
+                        <li class="footer-icon-set-item">
+                            <svg class="footer-icon" width="32" height="27">
+                                <use href="./images/symbol-defs.svg#icon-cat"></use>
+                            </svg>
+                        </li>
+                        <li class="footer-icon-set-item">
+                            <svg class="footer-icon" width="27" height="27">
+                                <use href="./images/symbol-defs.svg#icon-healthy"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-different">
+            <span class="footer-copy-right">© Brid care — All rights reserved, 2022</span>
+            <ul class="footer-legal">
+                <li class="footer-legal-item">
+                    <a href="./public-offer.html" class="footer-legal-link">Публічна оферта</a>
+                </li>
+                <li class="footer-legal-item">
+                    <a href="./protection.html" class="footer-legal-link">Захист персональних даних</a>
+                </li>
+            </ul>
+            <button class="footer-rewind-button">
+                <svg width="13" height="7" class="footer-rewind-button-icon">
+                    <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                </svg>
+            </button>
+        </div>
+    </footer>
+    <script src="./js/product-weight.js"></script>
+    <script src="./js/header-shop-button.js"></script>
+    <script src="./js/revindButton.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>

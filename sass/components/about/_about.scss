@@ -1,0 +1,71 @@
+.about {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 60px
+}
+
+.about-title {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+
+}
+
+.about-icons-set{
+    display: flex;
+}
+
+.about-icons-set-item{
+    &:not(:first-child){
+        margin-left: 6px;
+    }
+}
+
+.about-icon{
+    fill: #FFFFFF;
+}
+
+.about-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    width: 1110px;
+    height: 320px;
+    border-radius: 40px;
+    overflow: hidden;
+    background-image: url('../../../images/about-page.png');
+}
+
+.about-history-title{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #525051;
+        margin-top: 60px;
+}
+
+.about-text-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.about-text{
+    width: 540px;
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #525051;
+}
+
+.about-accent-text{
+    color: rgba(246, 182, 38, 1);
+    text-decoration: underline;
+}
