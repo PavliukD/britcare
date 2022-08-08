@@ -81,6 +81,7 @@
 .shop-feed-type-filter-select{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .shop-filter-select{
@@ -102,6 +103,7 @@
     background-image: url(../../../images/arrow-down.png);
     background-repeat: no-repeat;
     background-position: calc(100% - 30px) center;
+    text-align: left;
 }
 
 .filter-button-text{
@@ -180,24 +182,24 @@
     width: 290px;
     height: 3px;
     background-color: #FFFFFF;
+}
 
-    &::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background: #04AA6D;
-            cursor: pointer;
-        }
+.filter-frice-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+}
 
-    &::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: #04AA6D;
-        cursor: pointer;
-    }
+.filter-frice-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
 }
 
 .shop-confirm-button{
@@ -613,6 +615,7 @@
 }
 
 .shop-option-value{
+    padding-left: 30px;
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 600;
@@ -622,4 +625,57 @@
     background-color: #F4F4ED;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    &:hover{
+        background-color: rgba(82, 80, 81, 0.1);
+    }
+}
+
+.shop-option-values{
+    border: 1px solid #B3B2B2;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    overflow: hidden;
+    width: 350px;
+    position: absolute;
+    // transform: translateY(calc(100% + 1px));
+    top: 33px;
+    right: 0;
+    z-index: 999;
+    background-color: #F4F4ED;
+}
+
+.custom-slider{
+    width: 290px;
+    height: 3px;
+    background-color:  #FFFFFF;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.custom-slider-point{
+    width: 19px;
+    height: 19px;
+    border: 2px solid #B3B2B2;
+    border-radius: 100%;
+    background-image: url('../../../images/slider-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    // left: 50px;
+    transform: translateY(-40%);
+}
+
+.custom-slider-thumb{
+    height: 3px;
+    border-radius: 4px;
+    background-color: #F6B626;;
+}
+.custom-slider-wrap{
+    width: 290px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
