@@ -299,6 +299,10 @@ section, .footer, .header-wrap {
   color: #525051;
 }
 
+.checkout-parametrs {
+  width: 731px;
+}
+
 .promo {
   padding: 30px;
   border: 2px dashed #525051;
