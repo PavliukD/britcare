@@ -130,7 +130,7 @@
 <path fill="#f6b626" style="fill: var(--color1, #f6b626)" d="M18.526 3.689c0.859-0.806 0.902-2.156 0.096-3.015s-2.156-0.902-3.015-0.096l2.919 3.112zM15.624 31.439c0.868 0.796 2.218 0.738 3.014-0.13s0.738-2.218-0.13-3.014l-2.884 3.144zM3.808 14.583v0zM15.607 0.577c-4.423 4.149-8.841 8.303-13.259 12.45l2.92 3.111c4.425-4.153 8.833-8.298 13.258-12.449l-2.919-3.112zM2.38 19.279c4.409 4.054 8.827 8.107 13.245 12.159l2.884-3.144c-4.418-4.053-8.834-8.105-13.241-12.156l-2.888 3.141zM2.348 13.027c-1.808 1.697-1.795 4.573 0.032 6.252l2.888-3.141-2.92-3.111z"></path>
 </symbol>
 <symbol id="icon-arrow-right" viewBox="0 0 19 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color3, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.2667" d="M2.133 29.867c4.424-4.15 8.837-8.3 13.259-12.45 0.904-0.849 0.897-2.287-0.016-3.126-4.408-4.053-8.825-8.105-13.243-12.158"></path>
+<path fill="none"  stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.2667" d="M2.133 29.867c4.424-4.15 8.837-8.3 13.259-12.45 0.904-0.849 0.897-2.287-0.016-3.126-4.408-4.053-8.825-8.105-13.243-12.158"></path>
 </symbol>
 <symbol id="icon-filter" viewBox="0 0 27 32">
 <path fill="#fff" style="fill: var(--color3, #fff); stroke: var(--color3, #fff)" stroke="#fff" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.3684" d="M24.862 1.684l-9.674 14.701v11.582l-3.828 2.348v-13.932l-9.676-14.699h23.178z"></path>

@@ -26,6 +26,34 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../../fonts/Gill Sans.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../../fonts/Gill Sans Heavy.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../../fonts/Gill Sans Medium.otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../../fonts/Gill Sans Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 h1, h2, h3, h4, h5, p {
   margin: 0;
 }
@@ -271,210 +299,194 @@ section, .footer, .header-wrap {
   color: #525051;
 }
 
-.payment {
-  padding-left: 165px;
-  padding-right: 165px;
-  padding-top: 60px;
-}
-
-.payment-title {
-  font-family: "Gill Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 58px;
-  color: #525051;
-  margin-bottom: 60px;
-}
-
-.delivery-hero {
-  display: flex;
-  justify-content: space-between;
-}
-
-.delivery-payment-image {
-  width: 825px;
-  height: 320px;
-  border-radius: 50px;
-  overflow: hidden;
-}
-
-.delivery-alert {
-  width: 252px;
-  height: 320px;
-  border: 2px dashed #1C1919;
+.promo {
+  padding: 30px;
+  border: 2px dashed #525051;
   border-radius: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 351px;
+}
+
+.promo-main {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  position: relative;
 }
 
-.delivery-alert-text {
-  font-family: "Gill Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 35px;
-  color: #525051;
-}
-
-.delivery-alert-accent-text {
+.promo-title {
   font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 35px;
-  color: #1C1919;
+  color: #525051;
 }
 
-.give-four-button {
-  width: 172px;
-  height: 59px;
-  border-radius: 14px;
-  background-color: #F6B626;
+.promo-button-add {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+  background-color: transparent;
   border: none;
+}
+.promo-button-add:hover {
+  cursor: pointer;
+}
+
+.promo-add-wrap {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+}
+
+.promo-add-input {
+  width: 100%;
+  border: 1px solid #B3B2B2;
+  border-radius: 14px;
+  padding: 12px 26px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.promo-add-input:focus {
+  outline: none;
+}
+.promo-add-input::-moz-placeholder {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  color: #B3B2B2;
+}
+.promo-add-input:-ms-input-placeholder {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  color: #B3B2B2;
+}
+.promo-add-input::placeholder {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  color: #B3B2B2;
+}
+
+.promo-confirm-button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-45%);
+}
+
+.promo-confirm-button-icon {
+  stroke: rgb(246, 182, 38);
+}
+
+.is-hidden {
+  display: none;
+}
+
+.total-check {
+  width: 351px;
+  padding: 30px;
+  border: 2px dashed #525051;
+  border-radius: 40px;
+  margin-top: 14px;
+}
+
+.total-check-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+  margin-bottom: 14px;
+}
+
+.total-check-cathegory-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  color: #B3B2B2;
+}
+
+.total-check-cathegory-value {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.total-check-cathegory-value-total {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.total-check-cathegory {
+  display: flex;
+  justify-content: space-between;
+}
+.total-check-cathegory:not(:first-child) {
+  margin-top: 14px;
+}
+
+.total-check-summ {
+  margin-top: 14px;
+  border-top: 1px solid #B3B2B2;
+  border-bottom: 1px solid #B3B2B2;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-confirm-button {
+  width: 100%;
+  height: 59px;
+  border: none;
+  background-color: #F6B626;
+  border-radius: 14px;
+  margin-top: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 999;
-  bottom: 20px;
-}
-.give-four-button:hover {
-  background-color: #1C1919;
-  cursor: pointer;
-}
-.give-four-button:hover .give-four-icons-wrap {
-  display: block;
 }
 
-.give-four-button-text {
+.order-confirm-button-text {
   font-family: "Gill Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #1C1919;
+  color: #525051;
   margin-right: 10px;
 }
-.give-four-button:hover .give-four-button-text {
-  color: #F6B626;
-}
 
-.give-four-button-icon {
-  fill: #1C1919;
-}
-.give-four-button:hover .give-four-button-icon {
-  fill: #F6B626;
-}
-
-.payment-group-title {
-  font-family: "Gill Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-  color: #525051;
-  margin-top: 60px;
-}
-
-.payment-text {
-  font-family: "Gill Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 35px;
-  color: #525051;
-  width: 824px;
-}
-.payment-text.info {
-  margin-top: 14px;
-}
-
-.payment-text-accent {
-  font-family: "Gill Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 35px;
-  color: #525051;
-}
-
-.payment-text-list {
-  margin-top: 60px;
-}
-
-.payment-text-list-item:not(:first-child) {
-  margin-top: 60px;
-}
-
-.delivery-payment-list-item:first-child {
-  margin-bottom: 60px;
-}
-
-.give-four-first-paw {
-  fill: #F6B626;
-  position: absolute;
-  top: -153px;
-  left: 0;
-  transform: translateX(-60%);
-}
-
-.give-four-second-paw {
-  fill: #F6B626;
-  position: absolute;
-  left: 72px;
-  top: -110px;
-}
-
-.give-four-third-paw {
-  fill: #F6B626;
-  position: absolute;
-  left: -127px;
-  top: -20px;
-}
-
-.give-four-fourth-paw {
-  fill: #F6B626;
-  position: absolute;
-  left: -38px;
-  top: 151px;
-}
-
-.give-four-fifth-paw {
-  fill: #F6B626;
-  position: absolute;
-  top: 161px;
-  right: -67px;
-}
-
-.give-four-six-paw {
-  fill: #F6B626;
-  position: absolute;
-  left: 63px;
-  bottom: -94px;
-}
-
-.give-four-first-paw,
-.give-four-second-paw,
-.give-four-third-paw,
-.give-four-fourth-paw,
-.give-four-fifth-paw,
-.give-four-six-paw {
-  transform: rotate(17deg);
-}
-
-.give-four-icons-wrap {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: none;
+.order-confirm-button-icon {
+  fill: #525051;
 }
 
 .footer {
@@ -630,4 +642,4 @@ section, .footer, .header-wrap {
 
 .footer-rewind-button-icon {
   fill: rgb(124, 178, 39);
-}/*# sourceMappingURL=payment-delivery.css.map */
+}/*# sourceMappingURL=checkout.css.map */

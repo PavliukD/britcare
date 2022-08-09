@@ -1,0 +1,88 @@
+.promo{
+    padding: 30px;
+    border: 2px dashed #525051;
+        border-radius: 40px;
+        width: 351px;
+}
+
+.promo-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-title{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 35px;
+        color: #525051;
+}
+
+.promo-button-add{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        color: #525051;
+        background-color: transparent;
+        border: none;
+
+        &:hover{
+            cursor: pointer;
+        }
+}
+
+.promo-add-wrap{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+}
+
+.promo-add-input{
+    width: 100%;
+    border: 1px solid #B3B2B2;
+        border-radius: 14px;
+        padding: 12px 26px;
+font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+            color: #525051;
+            text-transform: uppercase;
+            background-color: transparent;
+    
+    &:focus{
+        outline: none;
+
+    }
+
+    &::placeholder{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 35px;
+        color: #B3B2B2;
+    }
+}
+
+.promo-confirm-button{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 26px;
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+.promo-confirm-button-icon{
+    stroke: rgba(246, 182, 38, 1);
+}
+
+.is-hidden{
+    display: none;
+}

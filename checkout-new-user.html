@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/404.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
 </head>
 
 <body>
@@ -100,14 +100,75 @@
                 </li>
             </ul>
         </header>
+        <ul class="header-adress">
+            <li class="header-adress-item">
+                <a href="/" class="header-adress-link">Головна</a>
+            </li>
+            <li class="header-adress-item">
+                <a href="/shop" class="header-adress-link">Оформлення замовлення</a>
+            </li>
+        </ul>
     </div>
-    <section class="wrong-page">
-        <div class="wrong-page-notification">
-            <span class="wrong-page-notification-text">Упссс... Хтось пішов не туди</span>
-            <span class="wrong-page-error">404 error</span>
-        </div>
-        <div class="wrong-page-link-wrap">
-            <a href="/" class="to-main-link">На головну</a>
+    <section class="checkout">
+        <ul class="checkout-parametrs">
+            <li class="checkout-parametr">
+                <h3 class="checkout-parametr-title">Ваші контактні дані</h3>
+                <div class="contacts-full">
+                
+                </div>
+            </li>
+            <li class="checkout-parametr">
+                <h3 class="checkout-parametr-title">Замовлення</h3>
+            </li>
+            <li class="checkout-parametr">
+                <h3 class="checkout-parametr-title">Доставка</h3>
+            </li>
+            <li class="checkout-parametr">
+                <h3 class="checkout-parametr-title">Оплата</h3>
+            </li>
+        </ul>
+        <div class="checkout-total">
+            <div class="promo">
+                <div class="promo-main">
+                    <span class="promo-title">Промокод</span>
+                    <button class="promo-button-add">Додати</button>
+                </div>
+                <div class="promo-add-wrap is-hidden">
+                    <input type="text" placeholder="XXXX-XXXX" class="promo-add-input">
+                    <button class="promo-confirm-button">
+                        <svg width="7" height="13" class="promo-confirm-button-icon">
+                            <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="total-check">
+                <span class="total-check-title">Разом</span>
+                <ul>
+                    <li class="total-check-cathegory">
+                        <span class="total-check-cathegory-title">1 товар на суму</span>
+                        <span class="total-check-cathegory-value">339 ₴</span>
+                    </li>
+                    <li class="total-check-cathegory">
+                        <span class="total-check-cathegory-title">Вартість доставки</span>
+                        <span class="total-check-cathegory-value">Безкоштовно</span>
+                    </li>
+                    <li class="total-check-cathegory">
+                        <span class="total-check-cathegory-title">Знижка</span>
+                        <span class="total-check-cathegory-value">-20 ₴</span>
+                    </li>
+                </ul>
+                <div class="total-check-summ">
+                    <span class="total-check-cathegory-title">До сплати</span>
+                    <span class="total-check-cathegory-value-total">319 ₴</span>
+                </div>
+                <button class="order-confirm-button">
+                    <span class="order-confirm-button-text">Замовлення підтверджую</span>
+                    <svg width="13" height="11" class="order-confirm-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-paw"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </section>
     <footer class="footer">
@@ -232,6 +293,7 @@
         </div>
     </footer>
     <script src="./js/revindButton.js"></script>
+    <script src="./js/promo.js"></script>
 </body>
 
 </html>

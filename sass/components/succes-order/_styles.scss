@@ -1,0 +1,58 @@
+.succes-order{
+    padding-left: 145px;
+    padding-right: 165px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.succes-order-notification{
+    width: 730px;
+    height: 200px;
+    background-color: #F6B626;
+    border-radius: 40px;
+    background-image: url('../../../images/succes-bg.png');
+    padding-left: 60px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.succes-notification-text{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #525051;
+}
+
+.order-number{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+        margin-top: 10px;
+}
+
+.succes-order-link-wrap{
+    width: 350px;
+    height: 200px;
+    border: 2px dashed #525051;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.to-main-link{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        text-decoration-line: underline;
+        color: #525051;
+}
