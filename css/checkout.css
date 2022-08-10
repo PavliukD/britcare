@@ -302,6 +302,7 @@ section, .footer, .header-wrap {
 .checkout {
   padding-left: 165px;
   padding-right: 165px;
+  padding-top: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -394,6 +395,258 @@ section, .footer, .header-wrap {
   font-size: 18px;
   line-height: 35px;
   color: #525051;
+}
+
+.contacts-buyer {
+  display: flex;
+  margin-top: 30px;
+}
+
+.contacts-buyer-link {
+  display: block;
+  padding: 20px 30px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  border-radius: 14px;
+}
+.contacts-buyer-link.new {
+  background-color: #FFFFFF;
+  color: #525051;
+}
+.contacts-buyer-link.old {
+  background-color: #7CB227;
+  color: #FFFFFF;
+}
+
+.contacts-buyer-item:not(:first-child) {
+  margin-left: 14px;
+}
+
+.contacts-buyer-data {
+  margin-top: 30px;
+}
+
+.old-user-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: flex;
+}
+
+.old-user-phone,
+.old-user-sms-password {
+  width: 350px;
+  position: relative;
+}
+
+.old-user-autorizate-button, .old-user-send-password-button, .old-user-enter-button {
+  margin-top: 34px;
+  width: 350px;
+  height: 59px;
+  background-color: #F6B626;
+  border: none;
+  border-radius: 14px;
+}
+
+.old-user-autorizate-button-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525051;
+  letter-spacing: 0.03em;
+  margin-right: 10px;
+}
+
+.old-user-enter-button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.old-user-sms-password-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.old-user-sms-password-input {
+  width: 65px;
+  height: 59px;
+  border: 1px solid #525051;
+  border-radius: 14px;
+  background-color: transparent;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #525051;
+}
+.old-user-sms-password-input:focus {
+  outline: none;
+}
+
+.old-user-help-buttons {
+  width: 100%;
+  display: flex;
+  margin-top: 21px;
+}
+
+.old-user-help-button-memory, .old-user-help-button-remember-password {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.old-user-help-button-memory-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.radio-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  border: 1px solid #B3B2B2;
+  margin-right: 10px;
+}
+
+.radio-in {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #7CB227;
+}
+
+.old-user-help-button-remember-password {
+  margin-left: 217px;
+}
+
+.old-user-help-button-remember-password-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #525051;
+}
+
+.old-user-phone-error {
+  width: 100%;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #FF0000;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+.old-user-phone-error-image {
+  position: absolute;
+  right: 26px;
+  top: 52px;
+}
+
+.old-user-send-password-button {
+  background-color: #525051;
+}
+
+.old-user-send-password-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F4F4ED;
+  margin-right: 10px;
+}
+
+.old-user-send-password-button-icon {
+  fill: #F4F4ED;
+}
+
+.old-user-sms-password-error {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.old-user-sms-password-error-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #FF0000;
+  margin-left: 10px;
+}
+
+.contacts-buyer-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.contacts-buyer-data-item {
+  width: 350px;
+}
+
+.contacts-buyer-data-item-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.contacts-buyer-data-item-input {
+  width: 100%;
+  height: 59px;
+  border: 1px solid #B3B2B2;
+  border-radius: 14px;
+  background-color: transparent;
+  padding: 12px 26px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+.contacts-buyer-data-item-input::-moz-placeholder {
+  color: #B3B2B2;
+}
+.contacts-buyer-data-item-input:-ms-input-placeholder {
+  color: #B3B2B2;
+}
+.contacts-buyer-data-item-input::placeholder {
+  color: #B3B2B2;
+}
+.contacts-buyer-data-item-input.error {
+  border-color: #FF0000;
 }
 
 .checkout-order-item {
@@ -648,7 +901,6 @@ section, .footer, .header-wrap {
   position: relative;
   margin-top: 30px;
   width: 100%;
-  display: flex;
 }
 
 .promo-add-input {
@@ -698,8 +950,8 @@ section, .footer, .header-wrap {
   background-color: transparent;
   position: absolute;
   right: 26px;
-  top: 50%;
-  transform: translateY(-45%);
+  top: 26px;
+  transform: translateY(-35%);
 }
 
 .promo-confirm-button-icon {
@@ -708,6 +960,42 @@ section, .footer, .header-wrap {
 
 .is-hidden {
   display: none;
+}
+
+.promo-allert {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+.promo-allert.is-hidden {
+  display: none;
+}
+
+.promo-allert-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #FF0000;
+  margin-left: 10px;
+}
+
+.promo-get-help-button {
+  background-color: transparent;
+  border: none;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #525051;
+  margin-top: 14px;
+}
+.promo-get-help-button:hover {
+  cursor: pointer;
 }
 
 .total-check {

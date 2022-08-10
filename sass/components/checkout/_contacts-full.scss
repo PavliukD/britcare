@@ -1,1 +1,43 @@
+.contacts-buyer-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
 
+.contacts-buyer-data-item{
+    width: 350px;
+}
+
+
+.contacts-buyer-data-item-text{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #525051;
+}
+
+.contacts-buyer-data-item-input{
+    width: 100%;
+    height: 59px;
+    border: 1px solid #B3B2B2;
+        border-radius: 14px;
+        background-color: transparent;
+        padding: 12px 26px;
+        font-family: 'Gill Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 35px;
+            color: #525051;
+
+            &::placeholder{
+            color: #B3B2B2;
+            }
+
+            &.error{
+                border-color: #FF0000;
+            }
+}

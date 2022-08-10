@@ -1,0 +1,179 @@
+.old-user-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: flex;
+}
+
+.old-user-phone,
+.old-user-sms-password{
+    width: 350px;
+    position: relative;
+}
+
+
+.old-user-autorizate-button{
+    margin-top: 34px;
+    width: 350px;
+    height: 59px;
+    background-color: #F6B626;
+    border: none;
+    border-radius: 14px;
+    
+}
+
+.old-user-autorizate-button-text{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #525051;
+        letter-spacing: 0.03em;
+        margin-right: 10px;
+}
+
+.old-user-enter-button{
+    @extend .old-user-autorizate-button;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.old-user-sms-password-inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.old-user-sms-password-input{
+    width: 65px;
+    height: 59px;
+    border: 1px solid #525051;
+        border-radius: 14px;
+        background-color: transparent;
+        font-family: 'Gill Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 35px;
+            display: flex;
+                align-items: center;
+                text-align: center;
+                color: #525051;
+
+        &:focus{
+            outline: none;
+        }
+}
+
+.old-user-help-buttons{
+    width: 100%;
+    display: flex;
+    margin-top: 21px;
+}
+
+.old-user-help-button-memory{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.old-user-help-button-memory-text{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #525051;
+}
+
+.radio-out{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: 1px solid #B3B2B2;
+    margin-right: 10px;
+}
+
+.radio-in{
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: #7CB227;
+}
+
+.old-user-help-button-remember-password{
+    @extend .old-user-help-button-memory;
+    margin-left: 217px;
+}
+
+.old-user-help-button-remember-password-text{
+    
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        text-decoration-line: underline;
+        color: #525051;
+}
+
+.old-user-phone-error{
+    width: 100%;
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #FF0000;
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+}
+
+.old-user-phone-error-image{
+    position: absolute;
+    right: 26px;
+    top: 52px;
+}
+
+.old-user-send-password-button{
+    @extend .old-user-autorizate-button;
+    background-color: #525051;
+}
+
+.old-user-send-password-text{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F4F4ED;
+        margin-right: 10px;
+}
+
+
+
+.old-user-send-password-button-icon{
+    fill: #F4F4ED;
+}
+
+.old-user-sms-password-error{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.old-user-sms-password-error-text{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #FF0000;
+        margin-left: 10px;
+}

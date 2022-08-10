@@ -38,7 +38,7 @@
     position: relative;
     margin-top: 30px;
     width: 100%;
-    display: flex;
+    
 }
 
 .promo-add-input{
@@ -75,8 +75,8 @@ font-family: 'Gill Sans';
     background-color: transparent;
     position: absolute;
     right: 26px;
-    top: 50%;
-    transform: translateY(-45%);
+    top: 26px;
+    transform: translateY(-35%);
 }
 
 .promo-confirm-button-icon{
@@ -85,4 +85,41 @@ font-family: 'Gill Sans';
 
 .is-hidden{
     display: none;
+}
+
+.promo-allert{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+
+    &.is-hidden{
+        display: none;
+    }
+}
+
+.promo-allert-text{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #FF0000;
+        margin-left: 10px;
+}
+
+.promo-get-help-button{
+    background-color: transparent;
+    border: none;
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        text-decoration-line: underline;
+        color: #525051;
+        margin-top: 14px;
+
+        &:hover{
+            cursor: pointer;
+        }
 }

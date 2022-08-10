@@ -1359,4 +1359,286 @@ section, .footer, .gallery {
   line-height: 35px;
   color: #525051;
   margin-top: 14px;
+}
+
+.auth {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 9999;
+}
+
+.auth-modal {
+  display: block;
+  width: 470px;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  position: absolute;
+  top: 206px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 9999;
+}
+
+.auth-close-modal {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  background-color: #7CB227;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  right: -25px;
+  top: -25px;
+  position: absolute;
+  background-image: url("../images/cross.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.auth-buyer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-buyer-button {
+  width: 190px;
+  height: 59px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #525051;
+  border-radius: 14px;
+  background: transparent;
+  border: none;
+}
+
+.auth-buyer-item {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #525051;
+}
+.auth-buyer-item:not(:first-child) {
+  background-color: rgba(179, 178, 178, 0.2);
+  border: none;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.input-wrap:not(:first-child) {
+  margin-top: 14px;
+}
+.input-wrap.is-hidden {
+  display: none;
+}
+
+.input-label {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.form-input {
+  height: 59px;
+  border: 1px solid #B3B2B2;
+  border-radius: 14px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+  padding: 12px 26px;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-input::-moz-placeholder {
+  color: #B3B2B2;
+}
+.form-input:-ms-input-placeholder {
+  color: #B3B2B2;
+}
+.form-input::placeholder {
+  color: #B3B2B2;
+}
+
+.modal-form {
+  margin-top: 30px;
+}
+
+.sms-password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sms-password-input {
+  width: 80px;
+  height: 59px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #525051;
+  border: 1px solid #525051;
+  border-radius: 14px;
+}
+.sms-password-input.error {
+  border-color: #FF0000;
+}
+
+.modal-send-password-button,
+.modal-enter-button,
+.exit-button {
+  width: 100%;
+  height: 59px;
+  margin-top: 30px;
+  background-color: #F6B626;
+  border-radius: 14px;
+  border: none;
+}
+
+.modal-send-password-text,
+.modal-enter-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525051;
+}
+
+.modal-send-password-button-icon,
+.modal-enter-button-icon {
+  fill: #525051;
+}
+
+.modal-help-buttons {
+  width: 100%;
+  display: flex;
+  margin-top: 21px;
+  justify-content: space-between;
+}
+
+.modal-help-button-memory {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.modal-help-button-memory-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.radio-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  border: 1px solid #B3B2B2;
+  margin-right: 10px;
+}
+
+.radio-in {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #7CB227;
+}
+
+.modal-help-button-remember-password {
+  border: none;
+  background-color: transparent;
+}
+
+.modal-help-button-remember-password-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #525051;
+}
+
+.modal-sms-password-error {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+.modal-sms-password-error.is-hidden {
+  display: none;
+}
+
+.modal-sms-password-error-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #FF0000;
+  margin-left: 10px;
+}
+
+.user {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6B626;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.user-initials {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.exit-button {
+  background-color: #525051;
+}
+
+.exit-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.exit-button-icon {
+  fill: #FFFFFF;
 }/*# sourceMappingURL=index.css.map */

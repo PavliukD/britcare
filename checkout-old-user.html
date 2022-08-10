@@ -116,13 +116,63 @@
                 <div class="contacts-full">
                     <ul class="contacts-buyer">
                         <li class="contacts-buyer-item">
-                            <a href="" class="contacts-buyer-link new">Я новий покупець</a>
-                        </li>
-                        <li class="contacts-buyer-item">
                             <a href="" class="contacts-buyer-link old">Я постійний клієнт</a>
                         </li>
+                        <li class="contacts-buyer-item">
+                            <a href="" class="contacts-buyer-link new">Я новий покупець</a>
+                        </li>
                     </ul>
-                    <ul class="contacts-buyer-data">
+                    <div class="old-user-data">
+                        <div class="old-user-phone">
+                            <span class="contacts-buyer-data-item-text">Мобільний телефон</span>
+                            <input type="text" class="contacts-buyer-data-item-input" placeholder="+38 (0__) ___ - __ - __">
+                            <span class="old-user-phone-error is-hidden">Введено невірний номер телефону</span>
+                            <img src="./images/error.png" alt="" class="old-user-phone-error-image is-hidden">
+                        </div>
+                        <button class="old-user-autorizate-button is-hidden">
+                            <span class="old-user-autorizate-button-text">Авторизуватися</span>
+                            <svg width="13" height="11" class="order-confirm-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-paw"></use>
+                            </svg>
+                        </button>
+                        <div class="old-user-sms-password is-hidden">
+                            <span class="contacts-buyer-data-item-text">Пароль з СМС повідомлення</span>
+                            <div class="old-user-sms-password-inputs">
+                                <input type="text" class="old-user-sms-password-input" maxlength="1">
+                                <input type="text" class="old-user-sms-password-input" maxlength="1">
+                                <input type="text" class="old-user-sms-password-input" maxlength="1">
+                                <input type="text" class="old-user-sms-password-input" maxlength="1">
+                            </div>
+                            <div class="old-user-sms-password-error is-hidden">
+                                <img src="./images/error.png" alt="" class="old-user-sms-password-error-image">
+                                <span class="old-user-sms-password-error-text">Введено невірний промокод</span>
+                            </div>
+                        </div>
+                        <div class="old-user-help-buttons is-hidden">
+                            <button class="old-user-help-button-memory" data-memory="false">
+                                <div class="radio-out">
+                                    <div class="radio-in is-hidden"></div>
+                                </div>
+                                <span class="old-user-help-button-memory-text">Запам'ятати мене</span>
+                            </button>
+                            <button class="old-user-help-button-remember-password" data-memory="false">
+                                <span class="old-user-help-button-remember-password-text">Надіслати пароль повторно</span>
+                            </button>
+                        </div>
+                        <button class="old-user-enter-button is-hidden">
+                            <span class="old-user-autorizate-button-text">Вхід</span>
+                            <svg width="13" height="11" class="order-confirm-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-paw"></use>
+                            </svg>
+                        </button>
+                        <button class="old-user-send-password-button ">
+                            <span class="old-user-send-password-text">Надіслати пароль</span>
+                            <svg width="13" height="11" class="old-user-send-password-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-paw"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="contacts-buyer-data is-hidden">
                         <li class="contacts-buyer-data-item">
                             <span class="contacts-buyer-data-item-text">Прізвище</span>
                             <input type="text" class="contacts-buyer-data-item-input">
@@ -214,8 +264,10 @@
                     <div class="checkout-delivery-adress">
                         <ul class="checkout-delivery-adress-details">
                             <li class="checkout-delivery-adress-detail">
-                                <span class="checkout-delivery-adress-detail-title">Введіть населений пункт України</span>
-                                <input type="text" name="city" id="city" class="checkout-delivery-adress-input" placeholder="Введіть назву свого міста">
+                                <span class="checkout-delivery-adress-detail-title">Введіть населений пункт
+                                    України</span>
+                                <input type="text" name="city" id="city" class="checkout-delivery-adress-input"
+                                    placeholder="Введіть назву свого міста">
                             </li>
                             <li class="checkout-delivery-adress-detail">
                                 <span class="checkout-delivery-adress-detail-title">Метод доствки</span>
@@ -232,10 +284,12 @@
                                         </svg>
                                         <ul class="checkout-select-values" data-for="delivery-method">
                                             <li class="checkout-select-value">
-                                                <span class="checkout-select-value-text">Доствка у відділення / поштомат</span>
+                                                <span class="checkout-select-value-text">Доствка у відділення /
+                                                    поштомат</span>
                                             </li>
                                             <li class="checkout-select-value">
-                                                <span class="checkout-select-value-text">Адреса доставка курьʼєром</span>
+                                                <span class="checkout-select-value-text">Адреса доставка
+                                                    курьʼєром</span>
                                             </li>
                                             <li class="checkout-select-value">
                                                 <span class="checkout-select-value-text">Самовивоз з зоомаркету</span>
@@ -246,7 +300,8 @@
                             </li>
                         </ul>
                     </div>
-                    <span class="checkout-delivery-exsample">Наприклад: <span class="checkout-delivery-exsample-cities">Київ, Львів, Дніпро, Одеса, Харків</span></span>
+                    <span class="checkout-delivery-exsample">Наприклад: <span
+                            class="checkout-delivery-exsample-cities">Київ, Львів, Дніпро, Одеса, Харків</span></span>
                     <div class="delivery-branch-number-wrap">
                         <span class="checkout-delivery-adress-detail-title">Номер відділення</span>
                         <div class="checkout-select">
@@ -262,7 +317,8 @@
                                 </svg>
                                 <ul class="checkout-select-values" data-for="delivery-branch-number">
                                     <li class="checkout-select-value">
-                                        <span class="checkout-select-value-text">Відділення №1: вул. Пирогівський шлях, 135</span>
+                                        <span class="checkout-select-value-text">Відділення №1: вул. Пирогівський шлях,
+                                            135</span>
                                     </li>
                                 </ul>
                             </div>
@@ -287,7 +343,8 @@
                             </svg>
                             <ul class="checkout-select-values" data-for="payment">
                                 <li class="checkout-select-value">
-                                    <span class="checkout-select-value-text">Онлайн-оплата банківською карткою Visa / Mastercard</span>
+                                    <span class="checkout-select-value-text">Онлайн-оплата банківською карткою Visa /
+                                        Mastercard</span>
                                 </li>
                                 <li class="checkout-select-value">
                                     <span class="checkout-select-value-text">При отріманні</span>
@@ -311,6 +368,11 @@
                             <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
                         </svg>
                     </button>
+                    <div class="promo-allert is-hidden">
+                        <img src="./images/error.png" alt="" class="promo-allert-image">
+                        <span class="promo-allert-text">Введено невірний промокод</span>
+                    </div>
+                    <button class="promo-get-help-button is-hidden">Звернутися за допомогою</button>
                 </div>
             </div>
             <div class="total-check">
@@ -466,6 +528,7 @@
     <script src="./js/revindButton.js"></script>
     <script src="./js/promo.js"></script>
     <script src="./js/checkout-select.js"></script>
+    <script src="./js/memory-button.js"></script>
 </body>
 
 </html>
