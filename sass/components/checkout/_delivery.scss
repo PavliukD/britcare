@@ -1,0 +1,70 @@
+.checkout-delivery{
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px solid #B3B2B2;
+}
+
+.checkout-delivery-adress-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-delivery-adress-detail{
+    width: 350px;
+}
+
+.checkout-delivery-adress-detail-title{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #525051;
+}
+
+.checkout-delivery-adress-input{
+    background-color: transparent;
+    width: 100%;
+    height: 59px;
+    border: 1px solid #525051;
+    border-radius: 14px;
+    outline: none;
+    padding-left: 26px;
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 35px;
+        color: #525051;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::placeholder{
+            font-family: 'Gill Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 35px;
+                color: #B3B2B2;
+        }
+}
+
+.checkout-delivery-exsample{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #B3B2B2;
+        margin-top: 7px;
+}
+
+.checkout-delivery-exsample-cities{
+    color: rgba(82, 80, 81, 1);
+}
+
+.delivery-branch-number-wrap{
+    margin-top: 14px;
+}

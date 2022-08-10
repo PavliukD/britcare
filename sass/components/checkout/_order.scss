@@ -1,0 +1,114 @@
+.checkout-order-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkout-order-item-image{
+    width: 95px;
+    height: 114px;
+    background-color: #E7E4D9;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.checkout-order-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-order-details-title{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #B3B2B2;
+        margin-bottom: 14px;
+        max-width: 200px;
+}
+
+.checkout-order-details-value{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #525051;
+        margin-bottom: 14px;
+}
+
+.checkout-order-details-other{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-decoration-line: line-through;
+        color: #B3B2B2;
+}
+
+.checkout-order-item{
+
+    border-bottom: 1px solid #B3B2B2;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.checkout-order{
+    border-top: 1px solid #B3B2B2;
+}
+
+.checkout-order-item-button{
+    width: 65px;
+    height: 144px;
+    background-color: transparent;
+    border: none;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        background-color: #FFFFFF;
+    }
+}
+
+.checkout-order-item-button-normal{
+    display: block;
+    .checkout-order-item-button:hover &{
+        display: none;
+    }
+}
+
+.checkout-order-item-button-active{
+    display: none;
+
+        .checkout-order-item-button:hover & {
+                display: block;
+            }
+}
+
+.checkout-order-details-wrap{
+    width: 570px;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.checkout-parametr-total{
+    font-family: 'Gill Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 35px;
+        color: #525051;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateY(25%);
+}

@@ -299,8 +299,314 @@ section, .footer, .header-wrap {
   color: #525051;
 }
 
+.checkout {
+  padding-left: 165px;
+  padding-right: 165px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .checkout-parametrs {
-  width: 731px;
+  width: 730px;
+}
+
+.checkout-parametr {
+  width: 100%;
+  position: relative;
+}
+.checkout-parametr:not(:first-child) {
+  margin-top: 60px;
+}
+
+.checkout-parametr-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #525051;
+  margin-bottom: 30px;
+}
+
+.checkout-select {
+  position: relative;
+}
+
+.checkout-select-button {
+  width: 100%;
+  height: 59px;
+  padding-left: 26px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #B3B2B2;
+  border-radius: 14px;
+  background-color: transparent;
+  text-align: left;
+}
+
+.checkout-select-button-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.checkout-select-button-icon {
+  fill: rgb(246, 182, 38);
+  position: absolute;
+  right: 26px;
+  top: 26px;
+}
+
+.checkout-select-values-wrap {
+  width: 100%;
+  padding-left: 26px;
+  background-color: #F4F4ED;
+  border: 1px solid #525051;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+
+.checkout-select-value {
+  height: 59px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.checkout-select-value-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.checkout-select-button-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.checkout-order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout-order-item-image {
+  width: 95px;
+  height: 114px;
+  background-color: #E7E4D9;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.checkout-order-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-order-details-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #B3B2B2;
+  margin-bottom: 14px;
+  max-width: 200px;
+}
+
+.checkout-order-details-value {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525051;
+  margin-bottom: 14px;
+}
+
+.checkout-order-details-other {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #B3B2B2;
+}
+
+.checkout-order-item {
+  border-bottom: 1px solid #B3B2B2;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.checkout-order {
+  border-top: 1px solid #B3B2B2;
+}
+
+.checkout-order-item-button {
+  width: 65px;
+  height: 144px;
+  background-color: transparent;
+  border: none;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout-order-item-button:hover {
+  background-color: #FFFFFF;
+}
+
+.checkout-order-item-button-normal {
+  display: block;
+}
+.checkout-order-item-button:hover .checkout-order-item-button-normal {
+  display: none;
+}
+
+.checkout-order-item-button-active {
+  display: none;
+}
+.checkout-order-item-button:hover .checkout-order-item-button-active {
+  display: block;
+}
+
+.checkout-order-details-wrap {
+  width: 570px;
+  padding-left: 14px;
+  padding-right: 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.checkout-parametr-total {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(25%);
+}
+
+.checkout-delivery {
+  width: 100%;
+  padding-top: 30px;
+  border-top: 1px solid #B3B2B2;
+}
+
+.checkout-delivery-adress-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-delivery-adress-detail {
+  width: 350px;
+}
+
+.checkout-delivery-adress-detail-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+
+.checkout-delivery-adress-input {
+  background-color: transparent;
+  width: 100%;
+  height: 59px;
+  border: 1px solid #525051;
+  border-radius: 14px;
+  outline: none;
+  padding-left: 26px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+.checkout-delivery-adress-input:focus {
+  outline: none;
+}
+.checkout-delivery-adress-input::-moz-placeholder {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #B3B2B2;
+}
+.checkout-delivery-adress-input:-ms-input-placeholder {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #B3B2B2;
+}
+.checkout-delivery-adress-input::placeholder {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #B3B2B2;
+}
+
+.checkout-delivery-exsample {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #B3B2B2;
+  margin-top: 7px;
+}
+
+.checkout-delivery-exsample-cities {
+  color: rgb(82, 80, 81);
+}
+
+.delivery-branch-number-wrap {
+  margin-top: 14px;
+}
+
+.checkout-payment {
+  width: 100%;
+  padding-top: 30px;
+  border-top: 1px solid #B3B2B2;
+}
+
+.checkout-payment-text {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
 }
 
 .promo {

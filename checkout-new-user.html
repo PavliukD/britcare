@@ -119,12 +119,152 @@
             </li>
             <li class="checkout-parametr">
                 <h3 class="checkout-parametr-title">Замовлення</h3>
+                <span class="checkout-parametr-total">на суму: 339 ₴</span>
+                <ul class="checkout-order">
+                    <li class="checkout-order-item">
+                        <img src="./images/item.png" alt="product image" class="checkout-order-item-image">
+                        <div class="checkout-order-details-wrap">
+                            <div class="checkout-order-details">
+                                <span class="checkout-order-details-title">Товар:</span>
+                                <span class="checkout-order-details-value">Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="checkout-order-details">
+                                <span class="checkout-order-details-title">Ціна:</span>
+                                <span class="checkout-order-details-value">339 ₴</span>
+                                <span class="checkout-order-details-other">390 ₴</span>
+                            </div>
+                            <div class="checkout-order-details">
+                                <span class="checkout-order-details-title">Вага:</span>
+                                <span class="checkout-order-details-value">1 кг</span>
+                            </div>
+                            <div class="checkout-order-details">
+                                <span class="checkout-order-details-title">Сума:</span>
+                                <span class="checkout-order-details-value">339 ₴</span>
+                            </div>
+                        </div>
+                        <button class="checkout-order-item-button">
+                            <svg width="16" height="19" class="checkout-order-item-button-normal">
+                                <use href="./images/symbol-defs.svg#icon-del-item"></use>
+                            </svg>
+                            <svg width="16" height="19" class="checkout-order-item-button-active">
+                                <use href="./images/symbol-defs.svg#icon-del-item-active"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="checkout-order-item">
+                        <img src="./images/item.png" alt="product image" class="checkout-order-item-image">
+                        <div class="checkout-order-details-wrap">
+                            <div class="checkout-order-details">
+                                <span class="checkout-order-details-title">Товар:</span>
+                                <span class="checkout-order-details-value">Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="checkout-order-details">
+                                <span class="checkout-order-details-title">Ціна:</span>
+                                <span class="checkout-order-details-value">339 ₴</span>
+                                <span class="checkout-order-details-other">390 ₴</span>
+                            </div>
+                            <div class="checkout-order-details">
+                                <span class="checkout-order-details-title">Вага:</span>
+                                <span class="checkout-order-details-value">1 кг</span>
+                            </div>
+                            <div class="checkout-order-details">
+                                <span class="checkout-order-details-title">Сума:</span>
+                                <span class="checkout-order-details-value">339 ₴</span>
+                            </div>
+                        </div>
+                        <button class="checkout-order-item-button">
+                            <svg width="16" height="19" class="checkout-order-item-button-normal">
+                                <use href="./images/symbol-defs.svg#icon-del-item"></use>
+                            </svg>
+                            <svg width="16" height="19" class="checkout-order-item-button-active">
+                                <use href="./images/symbol-defs.svg#icon-del-item-active"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
             </li>
             <li class="checkout-parametr">
                 <h3 class="checkout-parametr-title">Доставка</h3>
+                <div class="checkout-delivery">
+                    <div class="checkout-delivery-adress">
+                        <ul class="checkout-delivery-adress-details">
+                            <li class="checkout-delivery-adress-detail">
+                                <span class="checkout-delivery-adress-detail-title">Введіть населений пункт України</span>
+                                <input type="text" name="city" id="city" class="checkout-delivery-adress-input" placeholder="Введіть назву свого міста">
+                            </li>
+                            <li class="checkout-delivery-adress-detail">
+                                <span class="checkout-delivery-adress-detail-title">Метод доствки</span>
+                                <div class="checkout-select">
+                                    <button class="checkout-select-button" data-for="delivery-method">
+                                        <span class="checkout-select-button-text"></span>
+                                        <svg width="13" height="7" class="checkout-select-button-icon">
+                                            <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="checkout-select-values-wrap is-hidden" data-for="delivery-method">
+                                        <svg width="13" height="7" class="checkout-select-button-icon">
+                                            <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                                        </svg>
+                                        <ul class="checkout-select-values" data-for="delivery-method">
+                                            <li class="checkout-select-value">
+                                                <span class="checkout-select-value-text">Доствка у відділення / поштомат</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="checkout-delivery-exsample">Наприклад: <span class="checkout-delivery-exsample-cities">Київ, Львів, Дніпро, Одеса, Харків</span></span>
+                    <div class="delivery-branch-number-wrap">
+                        <span class="checkout-delivery-adress-detail-title">Номер відділення</span>
+                        <div class="checkout-select">
+                            <button class="checkout-select-button" data-for="delivery-branch-number">
+                                <span class="checkout-select-button-text"></span>
+                                <svg width="13" height="7" class="checkout-select-button-icon">
+                                    <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                                </svg>
+                            </button>
+                            <div class="checkout-select-values-wrap is-hidden" data-for="delivery-branch-number">
+                                <svg width="13" height="7" class="checkout-select-button-icon">
+                                    <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                                </svg>
+                                <ul class="checkout-select-values" data-for="delivery-branch-number">
+                                    <li class="checkout-select-value">
+                                        <span class="checkout-select-value-text">Відділення №1: вул. Пирогівський шлях, 135</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li class="checkout-parametr">
                 <h3 class="checkout-parametr-title">Оплата</h3>
+                <div class="checkout-payment">
+                    <span class="checkout-payment-text">Метод оплати</span>
+                    <div class="checkout-select">
+                        <button class="checkout-select-button" data-for="payment">
+                            <span class="checkout-select-button-text"></span>
+                            <svg width="13" height="7" class="checkout-select-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
+                            </svg>
+                        </button>
+                        <div class="checkout-select-values-wrap is-hidden" data-for="payment">
+                            <svg width="13" height="7" class="checkout-select-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+                            </svg>
+                            <ul class="checkout-select-values" data-for="payment">
+                                <li class="checkout-select-value">
+                                    <span class="checkout-select-value-text">Онлайн-оплата банківською карткою Visa / Mastercard</span>
+                                </li>
+                                <li class="checkout-select-value">
+                                    <span class="checkout-select-value-text">При отріманні</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
         <div class="checkout-total">
@@ -294,6 +434,7 @@
     </footer>
     <script src="./js/revindButton.js"></script>
     <script src="./js/promo.js"></script>
+    <script src="./js/checkout-select.js"></script>
 </body>
 
 </html>
