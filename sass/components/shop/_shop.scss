@@ -740,13 +740,13 @@
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         border: none;
         border-radius: $input-border-radius;
-        background: $input-bg-color;
+        background: #FFFFFF;
         overflow: visible;
         left: 0;
         top: $input-top;
         width: $width;
         outline: none;
-        height: $input-height;
+        height: 4px;
         margin: 0;
         padding: 0;
     }
@@ -759,7 +759,7 @@
         -webkit-appearance: none;
         width: 21px;
         height: 21px;
-        border: 1px solid #B3B2B2;
+        border: 2px solid #B3B2B2;
         border-radius: $input-border-radius;
         background-image: url('../../../images/paw-icon.png');
         background-repeat: no-repeat;
@@ -773,7 +773,7 @@
         -moz-appearance: none;
         width:21px;
         height: 21px;
-        border: 1px solid #B3B2B2;
+        border: 2px solid #B3B2B2;
         border-radius: $input-border-radius;
                 background-image: url('../../../images/paw-icon.png');
                     background-repeat: no-repeat;

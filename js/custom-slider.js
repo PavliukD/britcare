@@ -6,7 +6,20 @@ function getVals(){
     var slide2 = parseFloat( slides[1].value );
   // Neither slider will clip the other, so make sure we determine which is larger
   if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
-  
+    console.log(slide1)
+    console.log(slide2)
+    const minPrice = document.getElementById('min-price')
+    const maxPrice = document.getElementById('max-price')
+    minPrice.value = slide1
+    maxPrice.value = slide2
+
+    minPrice.addEventListener('input', () => {
+        slides[0].value = minPrice.value
+    })
+
+    maxPrice.addEventListener('input', () => {
+        slides[1].value = maxPrice.value
+    })
 //   var displayElement = parent.getElementsByClassName("rangeValues")[0];
 //       displayElement.innerHTML = "$ " + slide1 + "k - $" + slide2 + "k";
 }
