@@ -1,4 +1,6 @@
 @import '../../utils/variables';
+@import '../checkout/old-buyer';
+@import '../shop/shop';
 
 .product-card {
     display: block;
@@ -452,8 +454,14 @@
     padding-left: 165px;
     padding-right: 165px;
     padding-top: 60px;
+
+}
+
+.item-info{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 180px;
+    border-bottom: 2px solid #B3B2B2;;
 }
 
 .item-image{
@@ -557,4 +565,304 @@
         display: flex;
         align-items: center;
         padding: 20px;
+}
+
+.user-icon{
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background-color: #F6B626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.user-initials{
+    font-family: 'Gill Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 35px;
+color: #FFFFFF;
+}
+
+.rewiew-text{
+    font-family: 'Gill Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+color: #525051;
+}
+
+.user-name,
+.timestamp{
+    font-family: 'Gill Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 18px;
+color: #525051;
+}
+
+.user-name{
+    margin-left: 30px;
+}
+
+.timestamp{
+    margin-left: 10px;
+}
+
+.rewiew-head{
+    display: flex;
+    align-items: center;
+}
+
+.rewiew-rating{
+    @extend .product-card-rating;
+    margin-left: auto;
+}
+
+.rewiew-text{
+    padding-left: 95px;
+}
+
+.item-rewiew{
+    &:not(:first-child){
+        margin-top: 30px;
+    }
+}
+
+.rewiews{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #525051;
+    border-bottom: 1px solid #525051;
+    margin-top: 30px;
+}
+
+.item-meta{
+    margin-top: 30px;
+    display: flex;
+}
+
+.item-cathegory,
+.item-cathegory-name,
+.item-code{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px; 
+    color: #525051;
+}
+
+.item-cathegory-name{
+    text-decoration: underline;
+}
+
+.item-code{
+    margin-left: 145px;
+}
+
+.rewiews-download-more{
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #525051;
+border-radius: 14px;
+    margin-top: 30px;
+}
+
+.rewiews-download-more-text{
+    font-family: 'Gill Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color: #525051;
+margin-right: 10px;
+}
+
+.rewiews-download-more-icon{
+    fill: #525051;
+}
+
+.rewiew-author-name{
+    width: 255px;
+    height: 59px;
+    background-color: transparent;
+    border: 1px solid #525051;
+    border-radius: 14px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #525051;
+    padding: 20px;
+
+    &::placeholder{
+        color: #B3B2B2;
+    }
+
+    &.error{
+        margin: 0;
+        border-color: #FF0000;
+    }
+}
+
+.new-rewiew-title{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #525051;
+}
+
+.new-rewiew{
+    margin-top: 30px;
+}
+
+.new-rewiew-author{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.rewiew-author-name-wrap{
+    
+}
+
+.error-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px; 
+    color: #FF0000;
+    margin-left: 10px;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.rewiew-author-email{
+    @extend .rewiew-author-name;
+    width: 100%;
+    margin-top: 14px;
+}
+
+.new-rewiew-text{
+    @extend .rewiew-author-email;
+    height: 240px;
+    overflow: auto;
+    text-align: start;
+}
+
+.item-grade{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.item-grade-title{
+    font-family: 'Gill Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 18px;
+color: #525051;
+margin-right: 12px;
+
+}
+
+.leave-feedback{
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6B626;
+    border: none;
+    border-radius: 14px;
+    margin-top: 14px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.leave-feedback-text{
+    font-family: 'Gill Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color: #525051;
+margin-right: 10px;
+}
+
+.leave-feedback-icon{
+    fill:#525051 ;
+}
+
+.promotional-goods{
+    padding-top: 60px;
+}
+
+.promotional-goods-title{
+    font-family: 'Gill Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 58px;
+color: #525051;
+}
+
+.promotional-goods-head{
+    display: flex;
+}
+
+.promotional-goods-pagination{
+    @extend .shop-pagination;
+    margin: 0;
+    margin-left: auto;
+}
+
+.promotional-goods-button{
+    @extend .shop-pagination-button;
+
+    &:not(:first-child){
+        margin-left: 14px;
+    }
+}
+
+.promotional-goods-list{
+    @extend .shop-products-list;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card{
+    &.promotional{
+        margin: 0;
+    }
+}
+
+.product-card-promotional{
+   @extend .product-card-hit;
+   width: 100px;
+   background-color: #E65300;
 }
