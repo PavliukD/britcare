@@ -11,92 +11,101 @@
     <link rel="stylesheet" href="./css/index.css"/>
 </head>
 <body>
-    <header class="header">
-        <a href="/">
-            <img src="./images/logo.png" alt="company logo" class="header-company-logo">
-        </a>
-        <ul class="header-nav">
-            <li class="header-nav-item">
-                <a href="./shop.html" class="header-nav-link">
-                    <span class="header-nav-link-text">Магазин</span>
-                </a>
-                <button class="header-shop-button">
-                    <svg width="10" height="5" class="header-shop-button-icon" data-shop-button-bottom>
-                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                    </svg>
-                    <svg width="10" height="5" class="header-shop-button-icon is-hidden" data-shop-button-up>
-                        <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
-                    </svg>
-                </button>
-            </li>
-            <li class="header-nav-item">
-                <a href="" class="header-nav-link">
-                    <span class="header-nav-link-text">Чому ми</span>
-                </a>
-            </li>
-            <li class="header-nav-item">
-                <a href="" class="header-nav-link">
-                    <span class="header-nav-link-text">Відгуки</span>
-                </a>
-            </li>
-            <li class="header-nav-item">
-                <a href="./about.html" class="header-nav-link">
-                    <span class="header-nav-link-text">Про нас</span>
-                </a>
-            </li>
-            <li class="header-nav-item">
-                <a href="./faq.html" class="header-nav-link">
-                    <span class="header-nav-link-text">FAQ</span>
-                </a>
-            </li>
-            <li class="header-nav-item">
-                <a href="./contacts.html" class="header-nav-link">
-                    <span class="header-nav-link-text">Контакти</span>
-                </a>
-            </li>
-        </ul>
-        <ul class="header-user">
-            <li class="header-user-item">
-                <button class="header-user-link">
-                    <div class="header-user-icon-wrap enter">
-                        <svg width="15" height="18" class="header-user-icon">
-                            <use href="./images/symbol-defs.svg#icon-user" icon-user></use>
+        <header class="header">
+            <a href="/">
+                <img src="./images/logo.png" alt="company logo">
+            </a>
+            <ul class="header-nav">
+                <li class="header-nav-item">
+                    <a href="./shop.html" class="header-nav-link">
+                        <span class="header-nav-link-text">Магазин</span>
+                    </a>
+                    <button class="header-shop-button">
+                        <svg width="10" height="5" class="header-shop-button-icon" data-shop-button-bottom>
+                            <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                         </svg>
-                    </div>
-                    <span class="header-user-text">Вхід</span>
-                </button>
-            </li>
-            <li class="header-user-item">
-                <button class="header-user-link">
-                    <div class="header-user-icon-wrap bag">
-                        <svg width="15" height="18" class="header-user-icon">
-                            <use href="./images/symbol-defs.svg#icon-bag"></use>
+                        <svg width="10" height="5" class="header-shop-button-icon is-hidden" data-shop-button-up>
+                            <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
                         </svg>
-                    </div>
-                    <span class="header-user-text">Корзина</span>
-                    <!-- <span class="header-user-added-products">99</span> -->
-                </button>
-            </li>
-        </ul>
-        <ul class="header-shop-nav is-hidden">
-            <li class="header-shop-nav-item">
-                <a href="" class="header-shop-nav-link">
-                    <svg width="25" height="21" class="header-shop-nav-link-icon dog">
-                        <use href="./images/symbol-defs.svg#icon-dog"></use>
-                    </svg>
-                    <span class="header-shop-nav-link-text">для песика</span>
-                </a>
-            </li>
-            <li class="header-shop-nav-item">
-                <a href="" class="header-shop-nav-link">
-                    <svg width="25" height="21" class="header-shop-nav-link-icon cat">
-                        <use href="./images/symbol-defs.svg#icon-cat"></use>
-                    </svg>
-                    <span class="header-shop-nav-link-text">для котика</span>
-                </a>
-            </li>
-        </ul>
-    </header>
+                    </button>
+                </li>
+                <li class="header-nav-item">
+                    <ul class="header-shop-nav is-hidden">
+                        <li class="header-shop-nav-item">
+                            <a href="" class="header-shop-nav-link">
+                                <svg width="25" height="21" class="header-shop-nav-link-icon dog">
+                                    <use href="./images/symbol-defs.svg#icon-dog"></use>
+                                </svg>
+                                <span class="header-shop-nav-link-text">для песика</span>
+                            </a>
+                        </li>
+                        <li class="header-shop-nav-item">
+                            <a href="" class="header-shop-nav-link">
+                                <svg width="25" height="21" class="header-shop-nav-link-icon cat">
+                                    <use href="./images/symbol-defs.svg#icon-cat"></use>
+                                </svg>
+                                <span class="header-shop-nav-link-text">для котика</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">Чому ми</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="" class="header-nav-link">
+                        <span class="header-nav-link-text">Відгуки</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./about.html" class="header-nav-link">
+                        <span class="header-nav-link-text">Про нас</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./faq.html" class="header-nav-link">
+                        <span class="header-nav-link-text">FAQ</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./contacts.html" class="header-nav-link">
+                        <span class="header-nav-link-text">Контакти</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-header-menu-open">
+                <img src="./images/menu-button.png" alt="">
+            </button>
+            <button class="mobile-header-menu-close is-hidden">
+                <img src="./images/menu-close.png" alt="">
+            </button>
+            <ul class="header-user">
+                <li class="header-user-item">
+                    <button class="header-user-link">
+                        <div class="header-user-icon-wrap enter">
+                            <svg width="15" height="18" class="header-user-icon enter">
+                                <use href="./images/symbol-defs.svg#icon-user" icon-user></use>
+                            </svg>
+                        </div>
+                        <span class="header-user-text enter">Вхід</span>
+                    </button>
+                </li>
+                <li class="header-user-item">
+                    <button class="header-user-link">
+                        <div class="header-user-icon-wrap bag">
+                            <svg width="15" height="18" class="header-user-icon">
+                                <use href="./images/symbol-defs.svg#icon-bag"></use>
+                            </svg>
+                        </div>
+                        <span class="header-user-text">Корзина</span>
+                        <!-- <span class="header-user-added-products">99</span> -->
+                    </button>
+                </li>
+            </ul>
+        
+        </header>
     <section class="hero-section">
         <div class="hero">
             <div class="hero-info">
@@ -1052,5 +1061,7 @@
     <script src="./js/revindButton.js"></script>
     <script src="./js/modal-memory-button.js"></script>
     <script src="./js/auth-modal.js"></script>
+        <script src="./js/header-shop-button.js"></script>
+        <script src="./js/mobile-header-menu.js"></script>
 </body>
 </html>

@@ -33,6 +33,26 @@
                     </button>
                 </li>
                 <li class="header-nav-item">
+                    <ul class="header-shop-nav is-hidden">
+                        <li class="header-shop-nav-item">
+                            <a href="" class="header-shop-nav-link">
+                                <svg width="25" height="21" class="header-shop-nav-link-icon dog">
+                                    <use href="./images/symbol-defs.svg#icon-dog"></use>
+                                </svg>
+                                <span class="header-shop-nav-link-text">для песика</span>
+                            </a>
+                        </li>
+                        <li class="header-shop-nav-item">
+                            <a href="" class="header-shop-nav-link">
+                                <svg width="25" height="21" class="header-shop-nav-link-icon cat">
+                                    <use href="./images/symbol-defs.svg#icon-cat"></use>
+                                </svg>
+                                <span class="header-shop-nav-link-text">для котика</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav-item">
                     <a href="" class="header-nav-link">
                         <span class="header-nav-link-text">Чому ми</span>
                     </a>
@@ -58,15 +78,21 @@
                     </a>
                 </li>
             </ul>
+            <button class="mobile-header-menu-open">
+                <img src="./images/menu-button.png" alt="">
+            </button>
+            <button class="mobile-header-menu-close is-hidden">
+                <img src="./images/menu-close.png" alt="">
+            </button>
             <ul class="header-user">
                 <li class="header-user-item">
                     <button class="header-user-link">
                         <div class="header-user-icon-wrap enter">
-                            <svg width="15" height="18" class="header-user-icon">
+                            <svg width="15" height="18" class="header-user-icon enter">
                                 <use href="./images/symbol-defs.svg#icon-user" icon-user></use>
                             </svg>
                         </div>
-                        <span class="header-user-text">Вхід</span>
+                        <span class="header-user-text enter">Вхід</span>
                     </button>
                 </li>
                 <li class="header-user-item">
@@ -81,24 +107,7 @@
                     </button>
                 </li>
             </ul>
-            <ul class="header-shop-nav is-hidden">
-                <li class="header-shop-nav-item">
-                    <a href="" class="header-shop-nav-link">
-                        <svg width="25" height="21" class="header-shop-nav-link-icon dog">
-                            <use href="./images/symbol-defs.svg#icon-dog"></use>
-                        </svg>
-                        <span class="header-shop-nav-link-text">для песика</span>
-                    </a>
-                </li>
-                <li class="header-shop-nav-item">
-                    <a href="" class="header-shop-nav-link">
-                        <svg width="25" height="21" class="header-shop-nav-link-icon cat">
-                            <use href="./images/symbol-defs.svg#icon-cat"></use>
-                        </svg>
-                        <span class="header-shop-nav-link-text">для котика</span>
-                    </a>
-                </li>
-            </ul>
+
         </header>
         <ul class="header-adress">
             <li class="header-adress-item">
@@ -526,6 +535,8 @@
     <script src="./js/promo.js"></script>
     <script src="./js/checkout-select.js"></script>
     <script src="./js/memory-button.js"></script>
+    <script src="./js/header-shop-button.js"></script>
+    <script src="./js/mobile-header-menu.js"></script>
 </body>
 
 </html>
