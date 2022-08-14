@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <a href="/">
-            <img src="./images/logo.png" alt="company logo">
+            <img src="./images/logo.png" alt="company logo" class="header-company-logo">
         </a>
         <ul class="header-nav">
             <li class="header-nav-item">
@@ -102,7 +102,7 @@
             <div class="hero-info">
                 <ul class="hero-standart-list">
                     <li class="hero-standarts-item">
-                        <svg width="65" height="79" class="hero-standarts-icon">
+                        <svg class="hero-standarts-icon">
                             <use href="./images/symbol-defs.svg#icon-iso"></use>
                         </svg>
                         <div class="hero-standarts-notification" style="width: 212px;">
@@ -113,7 +113,7 @@
                         </div>
                     </li>
                     <li class="hero-standarts-item">
-                        <svg width="65" height="79" class="hero-standarts-icon">
+                        <svg class="hero-standarts-icon">
                             <use href="./images/symbol-defs.svg#icon-no-gmo"></use>
                         </svg>
                         <div class="hero-standarts-notification is-hidden">
@@ -124,7 +124,7 @@
                         </div>
                     </li>
                     <li class="hero-standarts-item">
-                        <svg width="65" height="79" class="hero-standarts-icon">
+                        <svg class="hero-standarts-icon">
                             <use href="./images/symbol-defs.svg#icon-gluet_free"></use>
                         </svg>
                         <div class="hero-standarts-notification is-hidden">
@@ -143,9 +143,9 @@
             <ul class="hero-cards-list">
                 <li class="hero-cards-list-item">
                     <a href="" class="hero-card-dog">
-                        <img src="./images/main_dog 1.png" alt="dog">
+                        <!-- <img src="./images/main_dog 1.png" alt="dog"> -->
                         <div class="hero-card-text-wrap">
-                            <svg width="32" height="26" class="hero-card-icon">
+                            <svg class="hero-card-icon">
                                 <use href="./images/symbol-defs.svg#icon-dog"></use>
                             </svg>
                             <span class="hero-card-text">для песика</span>
@@ -154,9 +154,9 @@
                 </li>
                 <li class="hero-cards-list-item">
                     <a href="" class="hero-card-cat">
-                        <img src="./images/main_cat_01 1.png" alt="cat">
+                        <!-- <img src="./images/main_cat_01 1.png" alt="cat"> -->
                         <div class="hero-card-text-wrap">
-                            <svg width="32" height="26" class="hero-card-icon">
+                            <svg class="hero-card-icon">
                                 <use href="./images/symbol-defs.svg#icon-cat"></use>
                             </svg>
                             <span class="hero-card-text">для котика</span>
@@ -168,10 +168,11 @@
     </section>
     <section class="why-are-we">
         <h2 class="why-are-we-title">Чому ми</h2>
-        <p class="why-are-we-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="why-are-we-text">Мова, яку розуміє кожен домашній улюбленець — це турбота. Корм від Brit Care — один зі способів висловити свою любов, і
+        ось чому:</p>
         <div class="why-are-we-info">
             <div class="why-are-we-image-wrap">
-                <svg class="why-are-we-icon" width="80" height="80">
+                <svg class="why-are-we-icon">
                     <use href="./images/symbol-defs.svg#icon-no_gluet"></use>
                 </svg>
                 <img src="./images/Rectangle 2.png" alt="product exsample" class="why-are-we-image">
@@ -644,13 +645,8 @@
     <section class="about-us">
         <div class="about-us-info">
             <h2 class="about-us-title">Про нас</h2>
-            <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis
-                aute irure dolo in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="about-us-text">Brit Care — лінійка чеських преміум та суперпреміум кормів для котів та собак, створена, щоб задовольнити індивідуальні
+            потреби та смаки найвибагливіших домашніх улюбленців.</p>
             <a href="./about.html" class="about-us-lik-details">Детальніше</a>
         </div>
         <div class="about-us-gallery">
@@ -917,9 +913,9 @@
         </div>
     </div>
     <div class="auth is-hidden">
-        <div class="auth-modal">
+        <div class="auth-modal ">
             <button class="auth-close-modal"></button>
-            <div class="auth-new-user">
+            <div class="auth-new-user ">
                 <ul class="auth-buyer">
                     <li class="auth-buyer-item">
                         <button class="auth-buyer-button">Я новий покупець</button>
@@ -992,7 +988,7 @@
                             <input class="sms-password-input" type="text" maxlength="1">
                             <input class="sms-password-input" type="text" maxlength="1">
                         </div>
-                        <div class="modal-sms-password-error is-hidden">
+                        <div class=" is-hidden">
                             <img src="./images/error.png" alt="" class="modal-sms-password-error-image">
                             <span class="modal-sms-password-error-text">Введено невірний пароль</span>
                         </div>

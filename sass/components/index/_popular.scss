@@ -4,6 +4,18 @@
     padding-top: 180px;
     position: relative;
     padding-bottom: 129px;
+
+        @media (max-width: 1139px) {
+                padding-left: 35px;
+                padding-right: 35px;
+                padding-top: 100px;
+            }
+
+        @media (max-width: 767px) {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 193px;
+        }
 }
 
 .popular-title{
@@ -22,6 +34,18 @@
     height: 59px;
     border: 1px solid $main-text-color;
     border-radius: 14px;
+
+    @media (max-width: 1139px){
+        top: 90px;
+        transform: translateX(-35px);
+    }
+
+    @media(max-width: 767px){
+        bottom: 100px;
+        top: auto;
+        transform: translateX(-50%);
+    }
+
 }
 
 .popular-more-icon{
@@ -43,7 +67,15 @@
 .popular-products-list{
     margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    flex-flow: row;
+    // position: relative;
+
+
+    @media (max-width: 1139px){
+    margin-top: 68px;
+    width: 100%;
+    justify-content: start;
+    }
 }
 
 .product-card{
@@ -51,11 +83,29 @@
     position: relative;
     width: 350px;
     height: 814px;
+
+    @media (max-width: 1139px){
+        width: 330px;
+        margin-left: 30px;
+
+        &:nth-child(n+3){
+           display: none;
+        }
+    }
+
+    @media (max-width: 767px){
+        width: 100%;
+        margin: 0;
+
+            &:nth-child(n+2) {
+                    display: none;
+                }
+    }
 }
 
 .product-card-image{
     display: block;
-    width: 350px;
+    width: 100%;
     height: 420px;
     border-radius: 40px;
     background-color: $card-color;
@@ -69,6 +119,7 @@
     font-size: 18px;
     line-height: 30px;
     color: $main-text-color;
+
 }
 
 .product-card-rating-wrap{
@@ -122,6 +173,10 @@
     height: 59px;
     background-color: $secondary-text-color;
     border-radius: 14px;
+
+    @media (max-width: 1139px){
+        width: 123px;
+    }
 }
 
 .product-card-meta-type-dog{
@@ -153,6 +208,10 @@
     border: none;
     border-radius: 14px;
     background-color: $secondary-text-color;
+
+    @media (max-width: 767px){
+        width: 209px;
+    }
 }
 
 .product-card-meta-weight-text{
@@ -224,6 +283,10 @@
     display: flex;
     justify-content: center;
     margin-top: 66px;
+
+    @media (max-width: 767px){
+        margin-top: 30px;
+    }
 }
 
 .popular-slider-point {
@@ -329,6 +392,7 @@
     background-color: #FFFFFF;
     right: 0;
     bottom: -33%;
+    z-index: 9999;
 }
 
 .product-card-meta-weight-variants-item{
@@ -341,4 +405,8 @@
     &:hover {
             background-color: rgba(82, 80, 81, 0.1);
         }
+
+    @media (max-width: 767px){
+        width: 209px;
+    }
 }

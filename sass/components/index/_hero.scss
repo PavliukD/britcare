@@ -11,18 +11,37 @@
     padding-top: 164px;
     padding-bottom: 50px;
     background-color: $card-color;
-    border-radius: 50px;;
+    border-radius: 50px;
+
+    @media (max-width: 1139px){
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    @media (max-width: 767px){
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column-reverse;
+    }
 }
 
 .hero-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 767px){
+        margin-top: 34px;
+    }
 }
 
 .hero-title{
     @extend %title;
     margin-top: 30px;
+
+    @media(max-width: 1139px) {
+        margin-top: 20px;
+        }
 }
 
 .hero-text{
@@ -33,6 +52,11 @@
     font-size: 22px;
     line-height: 35px;
     color: $main-text-color;
+
+    @media (max-width: 1139px){
+        font-size: 18px;
+            line-height: 30px;
+    }
 }
 
 .hero-shop-link{
@@ -52,6 +76,10 @@
     letter-spacing: 0.03em;
     color: $secondary-text-color;
 
+    @media (max-width: 767px){
+        width: 100%;
+    }
+
     &:hover{
         cursor: pointer;
         outline: 1px solid $buttons-color;
@@ -62,10 +90,29 @@
 .hero-cards-list{
     display: flex;
     margin-left: 33px;
+
+    @media (max-width: 1139px) {
+        margin-left: 30px;
+        flex-direction: column;
+    }
+
+    @media(max-width:767px){
+        flex-direction: row;
+        margin-left: 0;
+        justify-content: space-between;
+    }
 }
 
 .hero-cards-list-item:not(:first-child) {
     margin-left: 35px;
+        @media (max-width: 1139px) {
+            margin-left: 0;
+            margin-top: 30px;
+            }
+
+        @media (max-width: 767px){
+            margin-top: 0;
+        }
 }
 
 %hero-card{
@@ -78,16 +125,44 @@
     height: 686px;
     border-radius: 50px;
     text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 1139px){
+        width: 329px;
+        height: 263px;
+        background-position: bottom;
+    }
+
+    @media (max-width: 767px){
+        width: 158px;
+        height: 159px;
+        border-radius: 20px;
+        background-size: 171px 125px;
+        background-position: bottom 0 left 15px;
+    }
 }
 
 .hero-card-dog{
     @extend %hero-card;
     background-color: $notificatins-color;
+    background-image: url('../../../images/main_dog\ 1.png');
+
+    @media (max-width: 1139px){
+        background-image: url('../../../images/main_dog.png');
+
+    }
 }
 
 .hero-card-cat{
     @extend %hero-card;
     background-color: $image-background;
+    background-image: url('../../../images/main_cat_01\ 1.png');
+
+    @media (max-width: 1139px) {
+            background-image: url('../../../images/main_cat.png');
+            
+        }
 }
 
 .hero-card-text-wrap{
@@ -95,10 +170,25 @@
     align-items: center;
     position: absolute;
     bottom: 60px;
+
+    @media (max-width: 1339px){
+        bottom: 31px;
+    }
+
+    @media (max-width: 767px){
+        bottom: 20px;
+    }
 }
 
 .hero-card-icon{
     fill: $secondary-text-color;
+    width: 32px;
+    height: 26px;
+
+    @media(max-width: 767px){
+        width: 21px;
+        height: 17px;
+    }
 }
 
 .hero-card-text{
@@ -110,6 +200,12 @@
     color: $secondary-text-color;
     text-decoration: none;
     margin-left: 14px;
+
+    @media (max-width: 767px){
+        margin-left: 10px;
+        font-size: 14px;
+            line-height: 17px;
+    }
 }
 
 .hero-standart-list{
@@ -117,6 +213,7 @@
 }
 
 .hero-standarts-item{
+
     position: relative;
     &:not(:first-child){
         margin-left: 13px;
@@ -125,6 +222,13 @@
 
 .hero-standarts-icon{
     fill: #B3B2B2;
+        width: 65px;
+            height: 79px;
+
+    @media(max-width: 1139px){
+        width: 37px;
+        height: 37px;
+    }
 
     .hero-standarts-item:hover &{
         fill: #FFFFFF;

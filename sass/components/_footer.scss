@@ -5,11 +5,25 @@
     padding-top: 60px;
     position: relative;
     padding-bottom: 129px;
+
+        @media (max-width: 1139px) {
+                padding-left: 35px;
+                padding-right: 35px;
+                padding-bottom: 60px;
+            }
+        @media (max-width: 767px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 }
 
 .footer-main{
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
 }
 
 .footer-slogan{
@@ -24,6 +38,21 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 50px;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1139px) {
+        width: 241px;
+        height: 436px;
+        padding: 30px;
+    }
+
+    @media (max-width: 767px){
+        width: 100%;
+        height: 292px;
+        background-size: 120%;
+        background-position: left -60px top -220px;
+        border-radius: 30px;
+    }
 
 }
 
@@ -34,9 +63,19 @@
     font-size: 22px;
     line-height: 25px;
     color: $secondary-text-color;
+
+    @media (max-width: 1139px){
+        font-size: 18px;
+            line-height: 21px;
+    }
+
+    @media (max-width: 767px){
+        width: 50%;
+    }
 }
 
 .footer-nav{
+    position: relative;
     width: 730px;
     height: 482px;
     background-color: $buttons-color;
@@ -46,6 +85,19 @@
     padding-left: 65px;
     padding-bottom: 60px;
     padding-right: 60px;
+
+    @media (max-width: 1139px){
+        width: 465px;
+        height: 436px;
+        padding: 30px;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 14px;
+        border-radius: 30px;
+    }
 }
 
 .footer-nav-list{
@@ -55,10 +107,40 @@
 .footer-nav-list-item{
     &:first-child{
         margin-right: 120px;
+
+        @media (max-width: 1139px){
+            margin-right: 38px;
+        }
     }
 
     &:last-child{
         margin-left: 150px;
+
+        @media (max-width: 1139px) {
+            margin-left: 30px;
+        }
+    }
+
+    @media (max-width: 767px){
+        &:first-child{
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+
+        &:nth-child(2){
+            position: absolute;
+            top: 30px;
+            left: 191px;
+        }
+
+        &:nth-child(3){
+            position: absolute;
+            margin: 0;
+            left: 30px;
+            top: 135px;
+        }
+
     }
 }
 
@@ -104,6 +186,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 81px;
+
+    @media (max-width: 767px){
+        width: 85%;
+        position: absolute;
+        bottom: 30px;
+    }
 }
 
 .footer-icon-set-item{
@@ -120,6 +208,16 @@
     display: flex;
     margin-top: 61px;
     justify-content: space-between;
+
+    @media (max-width: 1139px){
+        margin-top: 30px;
+    }
+
+    @media (max-width: 767px){
+        position: relative;
+        flex-direction: column-reverse;
+        margin-top: 14px;
+    }
 }
 
 .footer-legal{
@@ -133,6 +231,15 @@
     font-size: 16px;
     line-height: 35px;
     color: $main-text-color;
+
+    @media (max-width: 1139px){
+        font-size: 14px;
+            line-height: 25px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 14px;
+    }
 }
 
 .footer-legal-link{
@@ -142,6 +249,11 @@
     font-size: 16px;
     line-height: 35px; 
     color: $main-text-color;
+
+        @media (max-width: 1139px) {
+                font-size: 14px;
+                line-height: 25px;
+            }
 }
 
 .footer-legal-item:first-child::after{
@@ -156,8 +268,20 @@
     border: none;
     background-color: $secondary-text-color;
     border-radius: 14px;
+
+    @media (max-width: 767px){
+        position: absolute;
+        right: 0;
+        width: 64px;
+        height: 25px;
+        background-color: #7CB227;
+        transform: translateY(100%);
+    }
 }
 
 .footer-rewind-button-icon{
     fill: $buttons-color;
+    @media (max-width: 767px) {
+        fill: #FFFFFF;
+        }
 }

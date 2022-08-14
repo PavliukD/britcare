@@ -28,12 +28,29 @@ ul{
     list-style: none;
 }
 
+button{
+    padding: 0;
+}
+
 section{
+
     width: 1440px;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
     background-color: $main-background-color;
+
+
+        
+    @media (max-width: 1139px) {
+        width: 768px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    @media (max-width: 767px) {
+        width: 375px;
+    }
 }
 
 .container{
@@ -49,6 +66,16 @@ section{
     font-size: 50px;
     line-height: 58px;
     color: $main-text-color;
+
+    @media(max-width: 1139px){
+        font-size: 36px;
+            line-height: 42px;
+    }
+
+    @media(max-width: 767px){
+        font-size: 32px;
+            line-height: 37px;
+    }
 }
 
 .is-hidden{

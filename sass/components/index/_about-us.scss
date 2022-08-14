@@ -5,10 +5,28 @@
     padding-right: 145px;
     padding-top: 180px;
     padding-bottom: 180px;
+
+
+    @media (max-width: 1139px) {
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-top: 100px;
+            flex-direction: column;
+        }
+         @media (max-width: 767px) {
+             padding-left: 10px;
+             padding-right: 10px;
+            padding-bottom: 125px;
+         }
+
 }
 
 .about-us-info{
     width: 445px;
+
+    @media (max-width: 1139px){
+        width: 100%;
+    }
 }
 
 .about-us-title{
@@ -23,11 +41,21 @@
     line-height: 38px;
     color: $main-text-color;
     margin-top: 30px;
+
+    @media (max-width: 1139px){
+        font-size: 18px;
+            line-height: 30px;
+    }
 }
 
 .about-us-lik-details{
     @extend .hero-shop-link;
     width: 214px;
+
+    @media (max-width: 767px) {
+        width: 189px;
+        margin-top: 30px;
+    }
 }
 
 .about-us-gallery{
@@ -35,12 +63,29 @@
     display: flex;
     justify-content: center;
     width:50%;
+
+    @media (max-width: 1139px){
+        width: 100%;
+    }
+
+    @media (max-width: 767px){
+        margin-top: 60px;
+    }
 }
 
 .about-us-main-photo{
     width: 415px;
     height: 496px;
     border-radius: 40px;
+
+    @media (max-width: 1139px){
+        width: 509px;
+    }
+
+    @media (max-width: 767px){
+        width: 285px;
+        height: 346px;
+    }
 }
 
 .about-us-secondary-photo{
@@ -49,7 +94,15 @@
     border-radius: 40px;
     position: absolute;
     bottom: 0;
+    transform: translateY(50%);
     left: -15px;
+
+    @media (max-width: 767px){
+        width: 156px;
+        height: 110px;
+        border-radius: 20px;
+        left: 0;
+    }
 }
 
 .about-us-logo-wrap{
@@ -63,4 +116,11 @@
     position: absolute;
     top: 60px;
     right: 0;
+
+    @media (max-width: 767px){
+        width: 139px;
+        height: 99px;
+        border-radius: 20px;
+        top: 30px;
+    }
 }

@@ -6,6 +6,7 @@
             height: 100%;
             overflow-y: scroll;
             z-index: 9999;
+            background-color: rgba(82, 80, 81, 0.5);
 }
 
 .auth-modal{
@@ -19,6 +20,11 @@
                 left: 50%;
                 transform: translate(-50%, 0);
                 z-index: 9999;
+
+    @media (max-width: 767px){
+        width: 355px;
+        padding: 20px;
+    }
 }
 
 .auth-close-modal{
@@ -34,6 +40,15 @@
     background-image: url('../images/cross.png');
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (max-width: 767px) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        right: 50%;
+        transform: translateX(50%);
+        top: -45px;
+    }
 }
 
 .auth-buyer{
@@ -54,6 +69,13 @@
     border-radius: 14px;
     background: transparent;
     border: none;
+
+    @media (max-width: 767px){
+        width: 155px;
+        height: 47px;
+        font-size: 14px;
+            line-height: 17px;
+    }
 }
 
 .auth-buyer-item{
@@ -86,6 +108,11 @@ font-family: 'Gill Sans';
     font-size: 18px;
     line-height: 35px;
     color: #525051;
+
+    @media (max-width: 767px){
+        font-size: 14px;
+            line-height: 25px;
+    }
 }
 
 .form-input{
@@ -105,12 +132,22 @@ font-family: 'Gill Sans';
         }
 
         &::placeholder{
-color: #B3B2B2;
+            color: #B3B2B2;
         }
+
+    @media (max-width: 767px){
+        height: 47px;
+        font-size: 14px;
+            line-height: 17px;
+    }
 }
 
 .modal-form{
     margin-top: 30px;
+
+    @media (max-width: 767px){
+        margin-top: 20px;
+    }
 }
 
 .sms-password{
@@ -136,6 +173,13 @@ color: #B3B2B2;
                 &.error{
                     border-color: #FF0000;
                 }
+
+    @media (max-width: 767px) {
+        width: 68px;
+        height: 47px;
+        font-size: 14px;
+            line-height: 17px;
+    }
 }
 
 .modal-send-password-button,
@@ -146,6 +190,11 @@ color: #B3B2B2;
     background-color: #F6B626;
         border-radius: 14px;
         border: none;
+
+    @media (max-width: 767px){
+        height: 47px;
+        margin-top: 20px;
+    }
 }
 
 .modal-send-password-text,
@@ -156,6 +205,12 @@ color: #B3B2B2;
         font-size: 16px;
         line-height: 19px;
         color: #525051;
+
+        @media (max-width: 767px){
+        font-size: 14px;
+            line-height: 17px;
+        }
+
 }
 
 .modal-send-password-button-icon,
@@ -184,6 +239,11 @@ font-family: 'Gill Sans';
     font-size: 18px;
     line-height: 35px;
     color: #525051;
+
+    @media (max-width: 767px){
+        font-size: 14px;
+            line-height: 25px;
+    }
 }
 
 .radio-out {
@@ -219,6 +279,11 @@ font-family: 'Gill Sans';
     text-decoration-line: underline;
     color: #525051;
 
+    @media (max-width: 767px){
+        font-size: 14px;
+        line-height: 25px;
+    }
+
 }
 
 .modal-sms-password-error {
@@ -228,6 +293,11 @@ font-family: 'Gill Sans';
 
     &.is-hidden{
         display: none;
+    }
+
+    @media (max-width: 767px){
+        font-size: 14px;
+            line-height: 25px;
     }
 }
 
@@ -250,6 +320,11 @@ font-family: 'Gill Sans';
     background-color: #F6B626;
     border-radius: 100%;
     margin: auto;
+
+    @media (max-width: 767px){
+        width: 52px;
+        height: 52px;
+    }
 }
 
 .user-initials{
@@ -259,6 +334,11 @@ font-family: 'Gill Sans';
         font-size: 18px;
         line-height: 35px;
         color: #FFFFFF;
+
+        @media (max-width: 767px){
+            font-size: 14px;
+                line-height: 35px;
+        }
 }
 
 .exit-button{
@@ -275,6 +355,11 @@ font-family: 'Gill Sans';
         letter-spacing: 0.03em;
         color: #FFFFFF;
         margin-right: 10px;
+
+        @media (max-width: 767px){
+        font-size: 14px;
+            line-height: 17px;
+        }
 }
 
 .exit-button-icon{

@@ -4,6 +4,19 @@
     padding-right: 165px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    @media (max-width: 1139px){
+        padding-left: 30px;
+        padding-right: 30px;
+        flex-direction: column;
+    }
+
+    @media (max-width: 767px){
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+    }
 }
 
 .contacts-photo{
@@ -11,6 +24,21 @@
     height: 638px;
     border-radius: 50px;
     overflow: hidden;
+
+    @media (max-width: 1139px){
+        width: 690px;
+        height: 638px;
+        object-fit: cover;
+        position: absolute;
+        top: 142px;
+    }
+
+    @media (max-width: 767px){
+        width: 346px;
+        height: 320px;
+        top: 82px;
+        border-radius: 25px;
+    }
 }
 
 .contacts-title{
@@ -20,16 +48,60 @@
         font-size: 50px;
         line-height: 58px;
         color: #525051;
+
+        @media (max-width: 1139px) {
+            font-size: 36px;
+                line-height: 42px;
+        }
+
+        @media (max-width: 767px){
+            font-size: 24px;
+                line-height: 28px;
+        }
 }
 
 .contacts-list{
     margin-top: 60px;
     width: 380px;
+
+    @media (max-width: 1139px){
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 758px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 390px;
+    }
 }
 
 .contacts-list-item{
     &:not(:first-child){
         margin-top: 30px;
+
+        @media (max-width: 1139px) {
+            margin-top: 0;
+        }
+    }
+
+    &:nth-child(n+3) {
+        @media (max-width: 1139px) {
+                margin-top: 30px;
+            }
+        @media (max-width: 767px){
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 1139px){
+        width: 330px;
+    }
+
+    @media (max-width: 767px){
+        &:not(:first-child){
+            margin-top: 30px;
+        }
     }
 }
 
@@ -41,6 +113,11 @@ font-family: 'Gill Sans';
     line-height: 35px;
     color: #525051;
     margin-bottom: 14px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+        line-height: 30px;
+    }
 }
 
 .contacts-list-item-text{
@@ -50,6 +127,10 @@ font-family: 'Gill Sans';
         font-size: 18px;
         line-height: 35px;
         color: #525051;
+
+            @media (max-width: 767px) {
+                    line-height: 30px;
+                }
 }
 
 .contacts-link{
@@ -64,6 +145,7 @@ font-family: 'Gill Sans';
 
 .page-contacts-social-list{
     display: flex;
+    margin-top: 14px;
 }
 
 .page-contacts-social-list-item{

@@ -2,6 +2,20 @@
     padding-left: 165px;
     padding-right: 165px;
     padding-top: 60px;
+    position: relative;
+
+        @media (max-width: 1139px) {
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-bottom: 280px;
+                overflow: visible;
+            }
+        
+            @media (max-width: 767px) {
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 30px;
+            }
 }
 
 .payment-title{
@@ -12,6 +26,23 @@
         line-height: 58px;
         color: #525051;
         margin-bottom: 60px;
+
+    @media (max-width: 1139px) {
+        font-size: 36px;
+            line-height: 42px;
+        }
+
+    @media (max-width: 767px){
+        font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 30px;
+    }
+}
+
+.delivery-payment-list-item{
+    @media (max-width: 1139px){
+        width: 100%;
+    }
 }
 
 .delivery-hero{
@@ -24,6 +55,18 @@
     height: 320px;
     border-radius: 50px;
     overflow: hidden;
+
+    @media (max-width: 1139px){
+    width: 690px;
+        height: 267px;
+        object-fit: cover;
+    }
+
+    @media (max-width: 767px){
+        width: 346px;
+        height: 133px;
+        border-radius: 25px;
+    }
 }
 
 .delivery-alert{
@@ -39,7 +82,22 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+
+    @media (max-width: 1139px){
+        position: absolute;
+        bottom: 0;
+        width: 689px;
+        height: 220px;
+        padding: 30px;
+    }
+
+    @media (max-width: 767px){
+        width: 345px;
+        height: 210px;
+        padding: 20px;
+    }
 }
+
 
 .delivery-alert-text{
     font-family: 'Gill Sans';
@@ -81,6 +139,14 @@
         display: block;
     }
 
+    @media (max-width: 1139px){
+        width: 92%;
+    }
+
+    @media (max-width: 767px){
+        width: 305px;
+    }
+
 }
 
 .give-four-button-text{
@@ -114,6 +180,12 @@
         line-height: 35px;
         color: #525051;
         margin-top: 60px;
+
+        @media (max-width: 767px){
+            margin-top: 30px;
+            font-size: 24px;
+                line-height: 28px;
+        }
 }
 
 .payment-text{
@@ -128,6 +200,11 @@
         &.info{
             margin-top: 14px;
         }
+
+        @media (max-width: 1139px){
+            width: 100%;
+        }
+
 }
 
 .payment-text-accent{
@@ -159,6 +236,14 @@
     top: -153px;
     left: 0;
     transform: translateX(-60%);
+
+    @media (max-width: 1139px){
+        top: -113px;
+    }
+
+    @media (max-width: 767px){
+        top: -50px;
+    }
 }
 
 .give-four-second-paw {
@@ -166,6 +251,16 @@
     position: absolute;
     left: 72px;
     top: -110px;
+
+    @media (max-width: 1139px) {
+            top: -113px;
+            left: 204px;
+        }
+
+    @media (max-width: 767px) {
+        top: -73px;
+            left: 104px;
+    }
 }
 
 .give-four-third-paw {
@@ -173,6 +268,16 @@
     position: absolute;
     left: -127px;
     top: -20px;
+
+    @media (max-width: 1139px) {
+        left: -50px;
+        top: 80px;
+        }
+
+         @media (max-width: 767px) {
+             top: 50px;
+             left: -60px;
+         }
 }
 
 .give-four-fourth-paw {
@@ -180,6 +285,16 @@
     position: absolute;
     left: -38px;
     top: 151px;
+
+    @media (max-width: 1139px) {
+        top: 200px;
+        left: 40px;
+        }
+
+    @media (max-width: 767px) {
+        top: 160px;
+        left: -20px;
+    }
 }
 
 .give-four-fifth-paw {
@@ -187,6 +302,16 @@
     position: absolute;
     top: 161px;
     right: -67px;
+
+    @media (max-width: 1139px) {
+            right: 0;
+            top: 101px;
+        }
+
+    @media (max-width: 767px) {
+            right: -15px;
+                top: 61px;
+    }
 }
 
 .give-four-six-paw {
@@ -194,6 +319,15 @@
     position: absolute;
     left: 63px;
     bottom: -94px;
+
+    @media (max-width: 1139px) {
+            left: 364px;
+            bottom: -74px;
+        }
+    @media (max-width: 767px) {
+    left: 180px;
+        bottom: -44px;
+    }
 }
 
 .give-four-first-paw,
@@ -203,6 +337,7 @@
 .give-four-fifth-paw,
 .give-four-six-paw {
     transform: rotate(17deg);
+    z-index: 999;
 }
 
 .give-four-icons-wrap{
