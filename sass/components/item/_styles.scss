@@ -35,6 +35,11 @@
     display: flex;
     align-items: center;
     margin-top: 16px;
+
+    @media (max-width: 767px) {
+        position: absolute;
+        bottom: -270px;
+    }
 }
 
 .product-card-rating {
@@ -179,6 +184,10 @@
     font-size: 16px;
     line-height: 19px;
     color: $secondary-text-color;
+
+    @media (max-width: 767px){
+        display: block;
+    }
 }
 
 .product-card-meta-type-notification-rectangle {
@@ -299,13 +308,19 @@
     border-radius: 0px 0px 14px 14px;
     overflow: hidden;
     background-color: #FFFFFF;
-    right: 0;
-    bottom: -33%;
+    left: 14px;
+    bottom: 0;
+    transform: translateY(90%);
     z-index: 999;
+    width: 250px;
+
+    @media (max-width: 1139px){
+        width: 324px;
+    }
 }
 
 .product-card-meta-weight-variants-item {
-    width: 124px;
+    width: 100%;
     background-color: #FFFFFF;
     padding-left: 30px;
     padding-top: 20px;
@@ -383,6 +398,10 @@
     position: relative;
     width: 540px;
     margin-top: 14px;
+
+    @media (max-width: 1139px){
+        width: 100%;
+    }
 }
 
 .checkout-select-button {
@@ -395,6 +414,10 @@
     border-radius: 14px;
     background-color: transparent;
     text-align: left;
+
+        @media (max-width: 1139px) {
+                width: 100%;
+            }
 }
 
 
@@ -455,30 +478,68 @@
     padding-right: 165px;
     padding-top: 60px;
 
+    @media (max-width: 1139px){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+    }
+
 }
 
 .item-info{
     display: flex;
     justify-content: space-between;
     padding-bottom: 180px;
-    border-bottom: 2px solid #B3B2B2;;
+    border-bottom: 2px solid #B3B2B2;
+
+    @media (max-width: 1139px){
+        flex-direction: column;
+    }
 }
 
 .item-image{
     width: 475px;
-        height: 662px;
+    height: 662px;
+
+    @media (max-width: 1139px){
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 767px){
+        height: 332px;
+    }
 }
 
 .item-image-wrap{
     width: 475px;
-        height: 662px;
-        background-color: #E7E4D9;
-        border-radius: 40px;
-        overflow: hidden;
+    height: 662px;
+    background-color: #E7E4D9;
+    border-radius: 40px;
+    overflow: hidden;
+
+    @media (max-width: 1139px){
+        width: 100%;
+    }
+
+    @media (max-width: 767px){
+        width: 346px;
+        height: 332px;
+    }
 }
 
 .item-main{
     width: 540px;
+
+    @media (max-width: 1139px){
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 
 .item-title{
@@ -488,23 +549,33 @@
         font-size: 30px;
         line-height: 35px;
         color: #B57B49;
+
+        @media (max-width: 767px){
+        font-size: 24px;
+            line-height: 28px;
+        }
 }
 
 .item-description{
     padding: 20px;
-    border: 1px solid #525051;
+    border: 1px solid rgba(82, 80, 81, 0.1);
         border-radius: 20px;
         margin-top: 14px;
 }
 
 .item-price{
     font-family: 'Gill Sans';
+    display: block;
         font-style: normal;
         font-weight: 700;
         font-size: 30px;
         line-height: 35px;
         color: #525051;
-        margin-top: 16px;
+    @media (max-width: 767px){
+                padding-top: 32px;
+                font-size: 24px;
+                    line-height: 28px;
+    }
 }
 
 .item-old-price{
@@ -518,6 +589,11 @@
         text-decoration-line: line-through;
         color: #B3B2B2;
         margin-top: 10px;
+
+        @media (max-width: 767px){
+            font-size: 16px;
+                line-height: 18px;
+        }
 }
 
 .item-dscription-title{
@@ -546,7 +622,13 @@
     justify-content: space-between;
     background-color: #FFFFFF;
     border-radius: 20px;
-    align-items: center
+    align-items: center;
+    position: relative;
+    margin-top: 14px;
+
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
 }
 
 .item-buy-button{
@@ -554,6 +636,14 @@
     margin: 0;
     width: 250px;
     justify-content: center;
+
+    @media (max-width: 1139px) {
+            width: 324px;
+        }
+
+        @media (max-width: 767px){
+            margin-top: 14px;
+        }
 }
 
 .item-buy-weight{
@@ -565,6 +655,11 @@
         display: flex;
         align-items: center;
         padding: 20px;
+        position: relative;
+
+        @media (max-width: 1139px){
+            width: 324px;
+        }
 }
 
 .user-icon{
@@ -576,6 +671,11 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 767px){
+        width: 51px;
+        height: 51px;
+    }
+
 }
 
 .user-initials{
@@ -585,6 +685,11 @@ font-weight: 600;
 font-size: 18px;
 line-height: 35px;
 color: #FFFFFF;
+
+@media (max-width: 767px){
+    font-size: 14px;
+        line-height: 35px;
+}
 }
 
 .rewiew-text{
@@ -594,6 +699,8 @@ font-weight: 300;
 font-size: 16px;
 line-height: 20px;
 color: #525051;
+
+
 }
 
 .user-name,
@@ -604,10 +711,15 @@ font-weight: 300;
 font-size: 16px;
 line-height: 18px;
 color: #525051;
+
+
 }
 
 .user-name{
     margin-left: 30px;
+    @media (max-width: 767px) {
+        margin-left: 12px;
+    }
 }
 
 .timestamp{
@@ -626,6 +738,10 @@ color: #525051;
 
 .rewiew-text{
     padding-left: 95px;
+
+    @media (max-width: 767px){
+        padding-left: 64px;
+    }
 }
 
 .item-rewiew{
@@ -715,6 +831,13 @@ margin-right: 10px;
         margin: 0;
         border-color: #FF0000;
     }
+
+    @media (max-width: 1139px){
+        width: 330px;
+    }
+
+
+    
 }
 
 .new-rewiew-title{
@@ -734,10 +857,17 @@ margin-right: 10px;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
 }
 
+
 .rewiew-author-name-wrap{
-    
+    @media (max-width: 767px){
+        margin-top: 14px;
+    }
 }
 
 .error-text{
@@ -819,6 +949,10 @@ margin-right: 10px;
 
 .promotional-goods{
     padding-top: 60px;
+
+    @media (max-width: 1139px){
+        display: none;
+    }
 }
 
 .promotional-goods-title{
@@ -865,4 +999,9 @@ color: #525051;
    @extend .product-card-hit;
    width: 100px;
    background-color: #E65300;
+}
+
+.product-card-meta-weight-icon{
+    position: absolute;
+    right: 14px;
 }

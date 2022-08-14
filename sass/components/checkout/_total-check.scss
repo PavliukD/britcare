@@ -4,6 +4,10 @@
     border: 2px dashed #525051;
         border-radius: 40px;
         margin-top: 14px;
+
+        @media (max-width: 1139px) {
+                width: 100%;
+            }
 }
 
 .total-check-title{

@@ -24,6 +24,14 @@
             background-color: #7CB227;
             color: #FFFFFF;
         }
+
+        @media (max-width: 767px){
+            font-size: 14px;
+                line-height: 17px;
+                padding: 20px 15px;
+                width: 166px;
+                text-align: center;
+        }
 }
 
 .contacts-buyer-item:not(:first-child){

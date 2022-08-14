@@ -2,15 +2,33 @@
     width: 100%;
     padding-top: 30px;
     border-top: 1px solid #B3B2B2;
+
+    @media (max-width: 767px){
+        position: relative;
+    }
 }
 
 .checkout-delivery-adress-details{
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
 }
 
 .checkout-delivery-adress-detail{
     width: 350px;
+
+    @media (max-width: 1139px){
+        width: 330px;
+    }
+
+    @media (max-width: 767px){
+        &:not(:first-child){
+            margin-top: 46px;
+        }
+    }
 }
 
 .checkout-delivery-adress-detail-title{
@@ -20,6 +38,11 @@
         font-size: 18px;
         line-height: 35px;
         color: #525051;
+
+        @media (max-width: 767px){
+            font-size: 14px;
+                line-height: 25px;
+        }
 }
 
 .checkout-delivery-adress-input{
@@ -49,6 +72,20 @@
                 line-height: 35px;
                 color: #B3B2B2;
         }
+
+        @media (max-width: 767px){
+            height: 47px;
+            font-size: 14px;
+                line-height: 17px;
+                padding-left: 20px;
+                text-align: start;
+
+                &::placeholder{
+            font-size: 14px;
+                line-height: 17px;
+                    padding-left: 20px;
+                }
+        }
 }
 
 .checkout-delivery-exsample{
@@ -59,6 +96,13 @@
         line-height: 35px;
         color: #B3B2B2;
         margin-top: 7px;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+                line-height: 25px;
+                position: absolute;
+                top: 109px;
+        }
 }
 
 .checkout-delivery-exsample-cities{

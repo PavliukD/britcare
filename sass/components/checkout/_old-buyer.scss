@@ -10,6 +10,10 @@
 .old-user-sms-password{
     width: 350px;
     position: relative;
+
+    @media (max-width: 1139px){
+        width: 330px;
+    }
 }
 
 
@@ -21,6 +25,9 @@
     border: none;
     border-radius: 14px;
     
+    @media (max-width: 1139px) {
+            width: 330px;
+        }
 }
 
 .old-user-autorizate-button-text{
@@ -64,12 +71,23 @@
         &:focus{
             outline: none;
         }
+
+        @media (max-width: 767px){
+            width: 76px;
+            height: 47px;
+            font-size: 14px;
+                line-height: 17px;
+        }
 }
 
 .old-user-help-buttons{
     width: 100%;
     display: flex;
     margin-top: 21px;
+
+    @media (max-width: 767px){
+        width: 346px;
+    }
 }
 
 .old-user-help-button-memory{
@@ -86,6 +104,11 @@
         font-size: 18px;
         line-height: 35px;
         color: #525051;
+
+        @media (max-width: 767px){
+            font-size: 14px;
+                line-height: 25px;
+        }
 }
 
 .radio-out{
@@ -109,6 +132,10 @@
 .old-user-help-button-remember-password{
     @extend .old-user-help-button-memory;
     margin-left: 217px;
+
+    @media (max-width: 767px){
+        margin-left: 15px;
+    }
 }
 
 .old-user-help-button-remember-password-text{
@@ -120,6 +147,11 @@
         line-height: 35px;
         text-decoration-line: underline;
         color: #525051;
+
+        @media (max-width: 767px){
+        font-size: 14px;
+            line-height: 25px;
+        }
 }
 
 .old-user-phone-error{
@@ -133,17 +165,33 @@
         position: absolute;
         bottom: -40px;
         left: 0;
+
+        @media(max-width: 767px){
+            font-size: 14px;
+                line-height: 25px;
+                position: relative;
+                bottom: 0;
+        }
 }
 
 .old-user-phone-error-image{
     position: absolute;
     right: 26px;
     top: 52px;
+
+    @media (max-width: 767px){
+        right: 14px;
+        top: 28px
+    }
 }
 
 .old-user-send-password-button{
     @extend .old-user-autorizate-button;
     background-color: #525051;
+
+        @media (max-width: 1139px) {
+                width: 330px;
+            }
 }
 
 .old-user-send-password-text{
@@ -176,4 +224,9 @@
         line-height: 35px;
         color: #FF0000;
         margin-left: 10px;
+
+        @media (max-width: 767px){
+            font-size: 14px;
+                line-height: 25px;
+        }
 }

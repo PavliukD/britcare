@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 767px){
+        align-items: flex-start;
+    }
 }
 
 .checkout-order-item-image{
@@ -10,11 +14,25 @@
     background-color: #E7E4D9;
     border-radius: 14px;
     overflow: hidden;
+
+    @media (max-width: 767px){
+        width: 64px;
+        height: 76px;
+    }
 }
 
 .checkout-order-details{
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 767px){
+        &:first-child{
+                grid-column-start: 1;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+        }
+    }
 }
 
 .checkout-order-details-title{
@@ -26,6 +44,11 @@
         color: #B3B2B2;
         margin-bottom: 14px;
         max-width: 200px;
+
+        @media (max-width: 767px){
+            font-size: 12px;
+                line-height: 14px;
+        }
 }
 
 .checkout-order-details-value{
@@ -36,6 +59,11 @@
         line-height: 19px;
         color: #525051;
         margin-bottom: 14px;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+                line-height: 17px;
+        }
 }
 
 .checkout-order-details-other{
@@ -48,6 +76,11 @@
         align-items: center;
         text-decoration-line: line-through;
         color: #B3B2B2;
+
+        @media (max-width: 767px){
+            font-size: 14px;
+                line-height: 16px;
+        }
 }
 
 .checkout-order-item{
@@ -74,6 +107,11 @@
     &:hover{
         background-color: #FFFFFF;
     }
+
+    @media (max-width: 767px){
+        height: 72px;
+        width: 37px;
+    }
 }
 
 .checkout-order-item-button-normal{
@@ -98,6 +136,14 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media (max-width: 767px){
+        width: 224px;
+        height: 185pxpx;
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .checkout-parametr-total{
@@ -111,4 +157,8 @@
         right: 0;
         top: 0;
         transform: translateY(25%);
+
+        @media (max-width: 767px){
+            transform: none;
+        }
 }
