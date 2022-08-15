@@ -2082,6 +2082,93 @@ section, .footer, .gallery, .header-wrap {
   }
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+}
+
+section, .footer, .header-wrap, .gallery {
+  width: 1440px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #F4F4ED;
+  position: relative;
+}
+@media (max-width: 1139px) {
+  section, .footer, .header-wrap, .gallery {
+    width: 768px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+@media (max-width: 767px) {
+  section, .footer, .header-wrap, .gallery {
+    width: 375px;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-left: 145px;
+  padding-right: 145px;
+}
+
+.hero-title, .why-are-we-title, .popular-title, .about-us-title {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 58px;
+  color: #525051;
+}
+@media (max-width: 1139px) {
+  .hero-title, .why-are-we-title, .popular-title, .about-us-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-title, .why-are-we-title, .popular-title, .about-us-title {
+    font-size: 32px;
+    line-height: 37px;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
 .footer {
   padding-left: 145px;
   padding-right: 165px;
