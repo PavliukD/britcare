@@ -146,7 +146,7 @@
 .hero-card-dog{
     @extend %hero-card;
     background-color: $notificatins-color;
-    background-image: url('../../../images/main_dog\ 1.png');
+    background-image: url('../../../images/main-dog-1.png');
 
     @media (max-width: 1139px){
         background-image: url('../../../images/main_dog.png');
@@ -210,6 +210,7 @@
 
 .hero-standart-list{
     display: flex;
+    align-items: center;
 }
 
 .hero-standarts-item{
@@ -246,6 +247,7 @@
     left: 20%;
     transform: translateY(calc(-100% - 18px));
     display: none;
+    z-index: 999;
 
     .hero-standarts-item:hover &{
         display: block;

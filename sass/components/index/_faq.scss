@@ -1,9 +1,12 @@
 .faq{
+    width: 100%;
     padding-left: 145px;
     padding-right: 145px;
     padding-top: 180px;
     padding-bottom: 180px;
-    background-color: $secondary-text-color;
+
+        background-color: $secondary-text-color;
+
 
 
         @media (max-width: 1139px) {
@@ -17,6 +20,7 @@
                       padding-bottom: 100px;
                   }
 }
+
 
 .faq-title{
     font-family: 'Gill Sans';
@@ -35,7 +39,12 @@
 }
 
 .faq-questions-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
+
 }
 
 .faq-questions-list-item{

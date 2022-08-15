@@ -1,5 +1,6 @@
 .gallery{
-    @extend section;
+    
+    width: 100%;
     padding: 0;
     overflow: hidden;
 }
@@ -95,12 +96,22 @@
 
 .gallery-list{
     display: flex;
+    width: 100%;
 }
 
 .gallery-card{
     &:not(:first-child) {
             margin-left: 120px;
         }
+    width: 730px;
+
+    @media (max-width: 1139px) {
+        width: 690px;
+    }
+
+    @media (max-width: 767px) {
+        width: 346px;
+    }
 }
 
 .gallery-card-text{
