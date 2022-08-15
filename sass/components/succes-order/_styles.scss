@@ -1,114 +1,30 @@
+@import '../404/404';
+
 .succes-order{
-    padding-left: 145px;
-    padding-right: 165px;
-    padding-top: 60px;
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: 1139px){
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-         @media (max-width: 767px) {
-             padding-left: 15px;
-             padding-right: 15px;
-             flex-direction: column;
-         }
+    @extend .wrong-page;
 }
 
 .succes-order-notification{
-    width: 730px;
-    height: 200px;
-    background-color: #F6B626;
-    border-radius: 40px;
+    @extend.wrong-page-notification;
     background-image: url('../../../images/succes-bg.png');
-    padding-left: 60px;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
 
     @media (max-width: 1139px) {
-        width: 465px;
-        height: 235px;
-        background-size:auto;
-        padding-left: 45px;
         background-image: url('../../../images/succes-bg-tab.png');
     }
 
     @media (max-width: 767px) {
-        width: 346px;
-        height: 154px;
-        background-size: contain;
         background-position: top 0 right 0;
-        padding: 30px;
-        border-radius: 20px;
     }
 }
 
 .succes-notification-text{
-    font-family: 'Gill Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 35px;
-        color: #525051;
-
-        @media (max-width: 1139px){
-            width: 390px;
-        }
-
-        @media (max-width: 767px) {
-            font-size: 24px;
-            line-height: 28px;
-            width: 250px;
-        }
+    @extend .wrong-page-notification-text;
 }
 
 .order-number{
-    font-family: 'Gill Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 35px;
-        color: #FFFFFF;
-        margin-top: 10px;
-
-    @media (max-width: 767px) {
-            font-size: 24px;
-            line-height: 28px;
-    
-        }
+    @extend .wrong-page-error;
 }
 
 .succes-order-link-wrap{
-    width: 350px;
-    height: 200px;
-    border: 2px dashed #525051;
-        border-radius: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        @media (max-width: 1139px){
-            width: 235px;
-            height: 235px;
-        }
-
-        @media (max-width: 767px) {
-            width: 346px;
-            height: 90px;
-            margin-top: 30px;
-        }
-}
-
-.to-main-link{
-    font-family: 'Gill Sans';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 35px;
-        text-decoration-line: underline;
-        color: #525051;
+    @extend .wrong-page-link-wrap;
 }

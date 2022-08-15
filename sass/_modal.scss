@@ -246,23 +246,6 @@ font-family: 'Gill Sans';
     }
 }
 
-.radio-out {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 22px;
-    height: 22px;
-    border-radius: 100%;
-    border: 1px solid #B3B2B2;
-    margin-right: 10px;
-}
-
-.radio-in {
-    width: 14px;
-    height: 14px;
-    border-radius: 100%;
-    background-color: #7CB227;
-}
 
 .modal-help-button-remember-password{
     border: none;
@@ -325,20 +308,6 @@ font-family: 'Gill Sans';
         width: 52px;
         height: 52px;
     }
-}
-
-.user-initials{
-    font-family: 'Gill Sans';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 35px;
-        color: #FFFFFF;
-
-        @media (max-width: 767px){
-            font-size: 14px;
-                line-height: 35px;
-        }
 }
 
 .exit-button{

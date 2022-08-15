@@ -1,22 +1,15 @@
-.faq{
+@import '../index/faq';
+.faq-page{
     background-color: #F4F4ED;
     padding-top: 60px;
     padding-bottom: 0;
 }
 
-.faq-title{
-    font-family: 'Gill Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 58px;
-        color: #525051;
+.faq-page-title{
+    @extend .faq-title;
+ 
+       color: #525051;
         text-align: left;
-
-        @media (max-width: 1139px){
-            font-size: 36px;
-                line-height: 42px;
-        }
 
         @media (max-width: 767px){
         font-size: 24px;
@@ -24,7 +17,7 @@
         }
 }
 
-.faq-questions-list{
+.faq-page-questions-list{
     margin: 0;
 }
 

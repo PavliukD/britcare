@@ -1,3 +1,7 @@
+@import '../utils/variables';
+@import './base';
+
+
 .header-wrap{
     @extend section;
     margin:auto;
