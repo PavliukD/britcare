@@ -6,6 +6,7 @@
 
 .succes-order-notification{
     @extend.wrong-page-notification;
+    background-color: #F6B626;
     background-image: url('../../../images/succes-bg.png');
 
     @media (max-width: 1139px) {
@@ -19,6 +20,7 @@
 
 .succes-notification-text{
     @extend .wrong-page-notification-text;
+    color: #525051;
 }
 
 .order-number{

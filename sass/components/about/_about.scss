@@ -1,97 +1,9 @@
-.about {
-    padding-left: 165px;
-    padding-right: 165px;
-    padding-top: 60px;
-
-    @media (max-width: 1139px){
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    @media (max-width: 767px) {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 30px;
-    }
-}
-
-.about-title {
-    font-family: 'Gill Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 58px;
-    @media (max-width: 1139px) {
-        font-size: 36px;
-            line-height: 42px;
-        }
-
-    @media (max-width: 767px){
-        font-size: 24px;
-            line-height: 28px;
-    }
-}
-
-.about-icons-set{
-    display: flex;
-}
-
-.about-icons-set-item{
-    &:not(:first-child){
-        margin-left: 6px;
-    }
-}
-
-.about-icon{
-    fill: #FFFFFF;
-
-    @media (max-width: 1139px){
-        height: 110px;
-        &:nth-child(1){
-            width: 118px;
-        }
-        &:nth-child(2){
-            width: 136px;
-        }
-        &:nth-child(3){
-            width: 130px;
-        }
-        &:nth-child(4){
-            width: 110px;
-        }
-    }
-
-        @media (max-width: 767px) {
-            height: 47px;
-    
-            &:nth-child(1) {
-                width: 50px;
-            }
-    
-            &:nth-child(2) {
-                width: 58px;
-            }
-    
-            &:nth-child(3) {
-                width: 56px;
-            }
-    
-            &:nth-child(4) {
-                width: 47px;
-            }
-        }
-}
-
-.about-hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
+.page img {
+    margin-bottom: 60px;
+    object-fit: cover;
     width: 1110px;
     height: 320px;
     border-radius: 40px;
-    overflow: hidden;
-    background-image: url('../../../images/about-page.png');
 
     @media (max-width: 1139px){
         width: 690px;
@@ -101,53 +13,8 @@
     @media (max-width: 767px){
         width: 346px;
         height: 133px;
-        margin-top: 30px;
         border-radius: 25px;
-        background-size: cover;
     }
-}
-
-.about-history-title{
-    font-family: 'Gill Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 35px;
-        color: #525051;
-        margin-top: 60px;
-
-    @media (max-width: 767px){
-        font-size: 24px;
-            line-height: 28px;
-            margin-top: 30px;
-    }
-}
-
-.about-text-group{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 14px;
-
-    @media (max-width: 1139px){
-        flex-direction: column;
-    }
-}
-
-.about-text{
-    width: 540px;
-    font-family: 'Gill Sans';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 35px;
-        color: #525051;
-
-        @media (max-width: 1139px){
-            width: 100%;
-            &:not(:first-child){
-                margin-top: 30px;
-            }
-        }
 }
 
 .about-accent-text{

@@ -30,7 +30,8 @@
 }
 
 .about-us-title{
-    @extend %title
+    @extend %title;
+    margin-top: 49px;
 }
 
 .about-us-text{

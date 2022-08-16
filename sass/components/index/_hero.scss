@@ -128,6 +128,11 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    &:hover{
+        transform: scale(1.02);
+        
+    }
+
     @media (max-width: 1139px){
         width: 329px;
         height: 263px;
