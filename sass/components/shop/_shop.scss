@@ -198,6 +198,8 @@
 }
 
 .shop-pagination-button{
+    width: 65px;
+    height: 59px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -413,6 +415,7 @@
 
 .checkmark {
     // position: absolute;
+    margin-right: 12px;
     top: 0;
     left: 0;
     height: 21px;
@@ -481,13 +484,15 @@
 }
 
 .checkbox-title{
-    margin-left: 12px;
+    // margin-left: 12px;
     font-family: 'Gill Sans';
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 19px;
         color: #525051;
+        display: flex;
+        align-items: center;
 
         @media (max-width: 767px){
             font-size: 14px;

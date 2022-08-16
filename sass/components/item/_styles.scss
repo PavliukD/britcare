@@ -10,9 +10,9 @@
     width: 255px;
     height: 735px;
 
-    &:nth-child(n+4) {
-        margin-top: 30px;
-    }
+    // &:nth-child(n+4) {
+    //     margin-top: 30px;
+    // }
 }
 
 .item-product-card-image {
@@ -619,4 +619,28 @@ color: #525051;
 .product-card-meta-weight-icon{
     position: absolute;
     right: 14px;
+}
+
+.product-card-rating-item{
+    position: relative;
+        cursor: pointer;
+}
+
+.product-card-rating-item input{
+position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.rating-checkmark{
+    width: 14px;
+    height: 13px;
+    background-image: url('../../../images/Star-unfill.png');
+    background-position: center;
+}
+
+.rating-checkbox:checked +.rating-checkmark{
+    background-image: url('../../../images/Star-fill.png');
 }

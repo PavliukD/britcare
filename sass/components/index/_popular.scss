@@ -4,7 +4,15 @@
     padding-right: 145px;
     padding-top: 180px;
     position: relative;
-    padding-bottom: 129px;
+    
+    &.promotional{
+        margin-top: 180px;
+        padding-top: 60px;
+        padding-bottom: 129px;
+        border-top: 2px solid #B3B2B2;
+        position: relative;
+        // outline: 1px solid tomato;
+    }
 
         @media (max-width: 1139px) {
                 padding-left: 35px;
@@ -35,6 +43,10 @@
     height: 59px;
     border: 1px solid $main-text-color;
     border-radius: 14px;
+
+    .promotional &{
+        top: 60px;
+    }
 
     @media (max-width: 1139px){
         top: 90px;

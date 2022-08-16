@@ -213,6 +213,7 @@
     display: flex;
     margin-top: 61px;
     justify-content: space-between;
+    position: relative;
 
     @media (max-width: 1139px){
         margin-top: 30px;
@@ -268,6 +269,10 @@
 }
 
 .footer-rewind-button{
+    position: absolute;
+    right: 0;
+    top: -24px;
+    transform: translateY(-100%);
     width: 73px;
     height: 37px;
     border: none;
@@ -277,10 +282,11 @@
     @media (max-width: 767px){
         position: absolute;
         right: 0;
+        bottom: 0;
         width: 64px;
         height: 25px;
         background-color: #7CB227;
-        transform: translateY(100%);
+        transform: translateY(400%);
     }
 }
 
@@ -289,4 +295,21 @@
     @media (max-width: 767px) {
         fill: #FFFFFF;
         }
+}
+
+.created{
+    width: 127px;
+    height: 35px;
+    object-fit: cover;
+
+    @media (max-width: 1139px){
+        width: 116px;
+        height: 25px;
+    }
+
+    @media(max-width: 767px){
+        position: absolute;
+        bottom: -14px;
+        transform: translateY(100%);
+    }
 }

@@ -7,7 +7,7 @@
     button.addEventListener('click', showPaws)
 
     function showPaws() {
-        paws.style.display = "block"
+        paws.style.opacity = "100%"
         button.style.backgroundColor = "#1C1919"
         text.style.color = "#F6B626"
         icon.style.fill = "#F6B626"
