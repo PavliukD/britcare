@@ -150,9 +150,11 @@
     width: 255px;
     height: 307px;
     border-radius: 40px;
+    object-fit: cover;
 
     @media (max-width: 1139px){
         height: 420px;
+        
     }
 
     @media (max-width: 767px){
@@ -171,6 +173,7 @@
             border: none;
             border-radius: 14px;
             background-color: $secondary-text-color;
+            z-index: 999;
 
                 @media (max-width: 1139px) {
                         width: 193px;
@@ -183,8 +186,16 @@
 }
 
 .shop-product-card-meta-weight-variants-item {
-    @extend .product-card-meta-weight-variants-item;
+
     width: 124px;
+    background-color: #FFFFFF;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &:hover {
+            background-color: rgba(82, 80, 81, 0.1);
+        }
     @media (max-width: 767px){
         width: 164px;
     }

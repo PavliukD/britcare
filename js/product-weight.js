@@ -1,13 +1,31 @@
 (() => {
-    const cards = document.querySelectorAll('.product-card')
+    let cards = document.querySelectorAll('.product-card')
+    if (cards.length === 0){
+        cards = document.querySelectorAll('.shop-product-card')
+    }
+    if (cards.length === 0){
+        cards = document.querySelectorAll('.item-product-card')
+    }
     
     cards.forEach(card => new setWeight(card))
 
     function setWeight(card) {
-        const button = card.querySelector('.product-card-meta-weight')
+        let button = card.querySelector('.product-card-meta-weight')
+        if (!button){
+            button = card.querySelector('.shop-product-card-meta-weight')
+        }
         const text = card.querySelector('.product-card-meta-weight-text')
-        const weights = card.querySelectorAll('.product-card-meta-weight-variants-item')
-        const weightsList = card.querySelector('.product-card-meta-weight-variants')
+        let weights = card.querySelectorAll('.product-card-meta-weight-variants-item')
+        if (weights.length === 0){
+            weights = card.querySelectorAll('.shop-product-card-meta-weight-variants-item')
+        }
+        if (weights.length === 0){
+            weights = card.querySelectorAll('.item-product-card-meta-weight-variants-item')
+        }
+        let weightsList = card.querySelector('.product-card-meta-weight-variants')
+        if (!weightsList){
+            weightsList = card.querySelector('.item-product-card-meta-weight-variants')
+        }
 
         button.addEventListener('click', clickButton)
 

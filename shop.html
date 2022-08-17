@@ -300,7 +300,14 @@
             <div class="shop-products">
                 <div class="shop-products-head">
                     <span class="shop-products-head-title">Знайдено: 200 товарів</span>
-                    <div class="shop-checkout-select">
+                    <div class="shop-select-wrap">
+                        <select name="sort" id="sort" class="shop-custom-select">
+                            <option value="popularity">за популярністтю</option>
+                            <option value="boggest price">за зростанням ціни</option>
+                            <option value="low price">за зниженням ціни</option>
+                        </select>
+                    </div>
+                    <!-- <div class="shop-checkout-select">
                         <button class="shop-checkout-select-button" data-for="delivery-method">
                             <span class="shop-checkout-select-button-text"></span>
                             <svg width="13" height="7" class="shop-checkout-select-button-icon ">
@@ -323,7 +330,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <ul class="shop-products-list">
                     <li class="shop-product-card">
@@ -379,35 +386,13 @@
                                                 </div>
                                             </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">400 г</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>
@@ -476,35 +461,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">1кг</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>
@@ -574,35 +537,13 @@
                                                 </div>
                                             </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">400 г</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>
@@ -670,35 +611,13 @@
                                                 </div>
                                             </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">400 г</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>
@@ -766,35 +685,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">1кг</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>
@@ -863,35 +760,13 @@
                                                 </div>
                                             </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">400 г</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>
@@ -959,35 +834,13 @@
                                                 </div>
                                             </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">400 г</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>
@@ -1055,35 +908,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">1кг</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>
@@ -1152,35 +983,13 @@
                                                 </div>
                                             </div>
                                 </div>
-                                <button class="shop-product-card-meta-weight">
-                                    <svg width="16" height="19">
-                                        <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                    </svg>
-                                    <span class="product-card-meta-weight-text">400 г</span>
-                                    <svg width="13" height="7">
-                                        <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                    </svg>
-                                </button>
-                                <ul class="product-card-meta-weight-variants is-hidden">
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">400 г</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">1 кг</span>
-                                    </li>
-                                    <li class="shop-product-card-meta-weight-variants-item">
-                                        <svg width="16" height="19">
-                                            <use href="./images/symbol-defs.svg#icon-pack"></use>
-                                        </svg>
-                                        <span class="product-card-meta-weight-text">2 кг</span>
-                                    </li>
-                                </ul>
+                                <div class="shop-item-wrap">
+                                    <select name="item-weight" id="item-weight" class="shop-select">
+                                        <option value="400g">400 г</option>
+                                        <option value="1kg">1 кг</option>
+                                        <option value="2kg">2 кг</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="product-card-buy">
                                 <div>

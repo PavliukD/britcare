@@ -221,7 +221,7 @@
                 <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
             </svg>
         </a>
-        <ul class="popular-products-list">
+        <ul class="popular-products-list" id="popular">
             <li class="product-card">
                 <img src="./images/bg.png" alt="photo of product" class="product-card-image">
                 <h3 class="product-card-title">Brit Care GF Adult Large Breed Salmon & Potato</h3>
@@ -1081,17 +1081,16 @@
                 </div>
             </li>
         </ul>
-        <div class="popular-slider">
-            <div class="popular-slider-point">
-                <div class="popular-slider-active"></div>
+        <div class="popular-slider" data-name="popular">
+            <div class="popular-slider-item active" data-number="1">
+                <div class="popular-slider-point"></div>
             </div>
-            <div class="popular-slider-point">
-                <div class="popular-slider-active is-hidden"></div>
+            <div class="popular-slider-item" data-number="2">
+                <div class="popular-slider-point"></div>
             </div>
-            <div class="popular-slider-point">
-                <div class="popular-slider-active is-hidden"></div>
+            <div class="popular-slider-item" data-number="3">
+                <div class="popular-slider-point"></div>
             </div>
-        </div>
     </section>
     <section class="popular promotional">
         <h2 class="popular-title">Акційні товари</h2>
@@ -1101,7 +1100,7 @@
                 <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
             </svg>
         </a>
-        <ul class="popular-products-list">
+        <ul class="popular-products-list" id="promotional">
             <li class="product-card">
                 <span class="product-card-promotional">Акція</span>
                 <img src="./images/bg.png" alt="photo of product" class="product-card-image">
@@ -1489,7 +1488,7 @@
                 </div>
             </li>
             <li class="product-card is-hidden">
-                <<span class="product-card-promotional">Акція</span>
+                <span class="product-card-promotional">Акція</span>
                 <img src="./images/item.png" alt="photo of product" class="product-card-image">
                 <h3 class="product-card-title">Brit Care Junior Large Breed Lamb & Rice</h3>
                 <div class="product-card-rating-wrap">
@@ -1976,15 +1975,15 @@
                 </div>
             </li>
         </ul>
-        <div class="popular-slider">
-            <div class="popular-slider-point">
-                <div class="popular-slider-active"></div>
+        <div class="popular-slider" data-name="promotional">
+            <div class="popular-slider-item active" data-number="1">
+                <div class="popular-slider-point"></div>
             </div>
-            <div class="popular-slider-point">
-                <div class="popular-slider-active is-hidden"></div>
+            <div class="popular-slider-item" data-number="2">
+                <div class="popular-slider-point"></div>
             </div>
-            <div class="popular-slider-point">
-                <div class="popular-slider-active is-hidden"></div>
+            <div class="popular-slider-item" data-number="3">
+                <div class="popular-slider-point"></div>
             </div>
         </div>
     </section>
@@ -2537,7 +2536,9 @@
     <script src="./js/revindButton.js"></script>
     <script src="./js/modal-memory-button.js"></script>
     <script src="./js/auth-modal.js"></script>
-        <script src="./js/header-shop-button.js"></script>
-        <script src="./js/mobile-header-menu.js"></script>
+    <script src="./js/header-shop-button.js"></script>
+    <script src="./js/mobile-header-menu.js"></script>
+    <script src="./js/item-slider.js"></script>
+
 </body>
 </html>

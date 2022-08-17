@@ -281,28 +281,13 @@
                             <li class="checkout-delivery-adress-detail">
                                 <span class="checkout-delivery-adress-detail-title">Метод доствки</span>
                                 <div class="checkout-select">
-                                    <button class="checkout-select-button" data-for="delivery-method">
-                                        <span class="checkout-select-button-text"></span>
-                                        <svg width="13" height="7" class="checkout-select-button-icon">
-                                            <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                        </svg>
-                                    </button>
-                                    <div class="checkout-select-values-wrap is-hidden" data-for="delivery-method">
-                                        <svg width="13" height="7" class="checkout-select-button-icon">
-                                            <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
-                                        </svg>
-                                        <ul class="checkout-select-values" data-for="delivery-method">
-                                            <li class="checkout-select-value">
-                                                <span class="checkout-select-value-text">Доствка у відділення / поштомат</span>
-                                            </li>
-                                            <li class="checkout-select-value">
-                                                <span class="checkout-select-value-text">Адреса доставка
-                                                    курьʼєром</span>
-                                            </li>
-                                            <li class="checkout-select-value">
-                                                <span class="checkout-select-value-text">Самовивоз з зоомаркету</span>
-                                            </li>
-                                        </ul>
+                                    <div class="checkout-select">
+                                        <select name="delivery" id="delivery" class="shop-custom-select">
+                                            <option value="popularity">Доствка у відділення / поштомат</option>
+                                            <option value="boggest price">Адреса доставка
+                                                курьʼєром</option>
+                                            <option value="low price">Самовивоз з зоомаркету</option>
+                                        </select>
                                     </div>
                                 </div>
                             </li>
@@ -312,23 +297,10 @@
                             class="checkout-delivery-exsample-cities">Київ, Львів, Дніпро, Одеса, Харків</span></span>
                     <div class="delivery-branch-number-wrap">
                         <span class="checkout-delivery-adress-detail-title">Номер відділення</span>
-                        <div class="checkout-select">
-                            <button class="checkout-select-button" data-for="delivery-branch-number">
-                                <span class="checkout-select-button-text"></span>
-                                <svg width="13" height="7" class="checkout-select-button-icon">
-                                    <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                                </svg>
-                            </button>
-                            <div class="checkout-select-values-wrap is-hidden" data-for="delivery-branch-number">
-                                <svg width="13" height="7" class="checkout-select-button-icon">
-                                    <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
-                                </svg>
-                                <ul class="checkout-select-values" data-for="delivery-branch-number">
-                                    <li class="checkout-select-value">
-                                        <span class="checkout-select-value-text">Відділення №1: вул. Пирогівський шлях, 135</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="checkout-select post">
+                            <select name="post-number" id="post-number" class="shop-custom-select">
+                                <option value="popularity">Відділення №1: вул. Пирогівський шлях, 135</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -337,26 +309,11 @@
                 <h3 class="checkout-parametr-title">Оплата</h3>
                 <div class="checkout-payment">
                     <span class="checkout-payment-text">Метод оплати</span>
-                    <div class="checkout-select">
-                        <button class="checkout-select-button" data-for="payment">
-                            <span class="checkout-select-button-text"></span>
-                            <svg width="13" height="7" class="checkout-select-button-icon">
-                                <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
-                            </svg>
-                        </button>
-                        <div class="checkout-select-values-wrap is-hidden" data-for="payment">
-                            <svg width="13" height="7" class="checkout-select-button-icon">
-                                <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
-                            </svg>
-                            <ul class="checkout-select-values" data-for="payment">
-                                <li class="checkout-select-value">
-                                    <span class="checkout-select-value-text">Онлайн-оплата банківською карткою Visa / Mastercard</span>
-                                </li>
-                                <li class="checkout-select-value">
-                                    <span class="checkout-select-value-text">При отріманні</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="checkout-select post">
+                        <select name="post-number" id="post-number" class="shop-custom-select">
+                            <option value="popularity">Онлайн-оплата банківською карткою Visa / Mastercard</option>
+                            <option value="popularity">При отріманні</option>
+                        </select>
                     </div>
                 </div>
             </li>

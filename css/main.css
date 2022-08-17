@@ -1,198 +1,22 @@
 @font-face {
-  font-family: "Gill Sans Nova Inline Condensed";
-  src: url("GillSansNovaInline-Cond.eot");
-  src: local("Gill Sans Nova Inline Condensed"), local("GillSansNovaInline-Cond"), url("GillSansNovaInline-Cond.eot?#iefix") format("embedded-opentype"), url("GillSansNovaInline-Cond.woff2") format("woff2"), url("GillSansNovaInline-Cond.woff") format("woff"), url("GillSansNovaInline-Cond.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova";
-  src: url("GillSansNova-Light.eot");
-  src: local("Gill Sans Nova Light"), local("GillSansNova-Light"), url("GillSansNova-Light.eot?#iefix") format("embedded-opentype"), url("GillSansNova-Light.woff2") format("woff2"), url("GillSansNova-Light.woff") format("woff"), url("GillSansNova-Light.ttf") format("truetype");
+  font-family: "Gill Sans";
+  src: url("../../fonts/GillSansNova-Light.woff2");
   font-weight: 300;
-  font-style: normal;
 }
 @font-face {
-  font-family: "Gill Sans Nova Shadowed";
-  src: url("GillSansNovaShadowed-Medium.eot");
-  src: local("Gill Sans Nova Shadowed Medium"), local("GillSansNovaShadowed-Medium"), url("GillSansNovaShadowed-Medium.eot?#iefix") format("embedded-opentype"), url("GillSansNovaShadowed-Medium.woff2") format("woff2"), url("GillSansNovaShadowed-Medium.woff") format("woff"), url("GillSansNovaShadowed-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
+  font-family: "Gill Sans";
+  src: url("../../fonts/GillSansNova-Book.woff2");
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Gill Sans Nova Cn";
-  src: url("GillSansNova-CnLight.eot");
-  src: local("Gill Sans Nova Cn Light"), local("GillSansNova-CnLight"), url("GillSansNova-CnLight.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnLight.woff2") format("woff2"), url("GillSansNova-CnLight.woff") format("woff"), url("GillSansNova-CnLight.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova";
-  src: url("GillSansNova-UltraBold.eot");
-  src: local("Gill Sans Nova UltraBold"), local("GillSansNova-UltraBold"), url("GillSansNova-UltraBold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-UltraBold.woff2") format("woff2"), url("GillSansNova-UltraBold.woff") format("woff"), url("GillSansNova-UltraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Book";
-  src: url("GillSansNova-Bold.eot");
-  src: local("Gill Sans Nova Bold"), local("GillSansNova-Bold"), url("GillSansNova-Bold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-Bold.woff2") format("woff2"), url("GillSansNova-Bold.woff") format("woff"), url("GillSansNova-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Inline ExtraLt";
-  src: url("GillSansNovaInline-ExtraLt.eot");
-  src: local("Gill Sans Nova Inline ExtraLt"), local("GillSansNovaInline-ExtraLt"), url("GillSansNovaInline-ExtraLt.eot?#iefix") format("embedded-opentype"), url("GillSansNovaInline-ExtraLt.woff2") format("woff2"), url("GillSansNovaInline-ExtraLt.woff") format("woff"), url("GillSansNovaInline-ExtraLt.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Deco";
-  src: url("GillSansNovaDeco-Regular.eot");
-  src: local("Gill Sans Nova Deco"), local("GillSansNovaDeco-Regular"), url("GillSansNovaDeco-Regular.eot?#iefix") format("embedded-opentype"), url("GillSansNovaDeco-Regular.woff2") format("woff2"), url("GillSansNovaDeco-Regular.woff") format("woff"), url("GillSansNovaDeco-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Cn";
-  src: url("GillSansNova-CnSemiBold.eot");
-  src: local("Gill Sans Nova Cn SemiBold"), local("GillSansNova-CnSemiBold"), url("GillSansNova-CnSemiBold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnSemiBold.woff2") format("woff2"), url("GillSansNova-CnSemiBold.woff") format("woff"), url("GillSansNova-CnSemiBold.ttf") format("truetype");
+  font-family: "Gill Sans";
+  src: url("../../fonts/GillSansNova-Bold.woff2");
   font-weight: 600;
-  font-style: normal;
 }
 @font-face {
-  font-family: "Gill Sans Nova Inline";
-  src: url("GillSansNovaInline-Bold.eot");
-  src: local("Gill Sans Nova Inline Bold"), local("GillSansNovaInline-Bold"), url("GillSansNovaInline-Bold.eot?#iefix") format("embedded-opentype"), url("GillSansNovaInline-Bold.woff2") format("woff2"), url("GillSansNovaInline-Bold.woff") format("woff"), url("GillSansNovaInline-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Cn Book";
-  src: url("GillSansNova-CnBook.eot");
-  src: local("Gill Sans Nova Cn Book"), local("GillSansNova-CnBook"), url("GillSansNova-CnBook.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnBook.woff2") format("woff2"), url("GillSansNova-CnBook.woff") format("woff"), url("GillSansNova-CnBook.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Book";
-  src: url("GillSansNova-Book.eot");
-  src: local("Gill Sans Nova Book"), local("GillSansNova-Book"), url("GillSansNova-Book.eot?#iefix") format("embedded-opentype"), url("GillSansNova-Book.woff2") format("woff2"), url("GillSansNova-Book.woff") format("woff"), url("GillSansNova-Book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Cn";
-  src: url("GillSansNova-CnHeavy.eot");
-  src: local("Gill Sans Nova Cn Heavy"), local("GillSansNova-CnHeavy"), url("GillSansNova-CnHeavy.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnHeavy.woff2") format("woff2"), url("GillSansNova-CnHeavy.woff") format("woff"), url("GillSansNova-CnHeavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova";
-  src: url("GillSansNova-ExtraBold.eot");
-  src: local("Gill Sans Nova ExtraBold"), local("GillSansNova-ExtraBold"), url("GillSansNova-ExtraBold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-ExtraBold.woff2") format("woff2"), url("GillSansNova-ExtraBold.woff") format("woff"), url("GillSansNova-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova";
-  src: url("GillSansNova-SemiBold.eot");
-  src: local("Gill Sans Nova SemiBold"), local("GillSansNova-SemiBold"), url("GillSansNova-SemiBold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-SemiBold.woff2") format("woff2"), url("GillSansNova-SemiBold.woff") format("woff"), url("GillSansNova-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Inline";
-  src: url("GillSansNovaInline-Light.eot");
-  src: local("Gill Sans Nova Inline Light"), local("GillSansNovaInline-Light"), url("GillSansNovaInline-Light.eot?#iefix") format("embedded-opentype"), url("GillSansNovaInline-Light.woff2") format("woff2"), url("GillSansNovaInline-Light.woff") format("woff"), url("GillSansNovaInline-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Cn Book";
-  src: url("GillSansNova-CnBold.eot");
-  src: local("Gill Sans Nova Cn Bold"), local("GillSansNova-CnBold"), url("GillSansNova-CnBold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnBold.woff2") format("woff2"), url("GillSansNova-CnBold.woff") format("woff"), url("GillSansNova-CnBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Cn";
-  src: url("GillSansNova-CnExtraBold.eot");
-  src: local("Gill Sans Nova Cn ExtraBold"), local("GillSansNova-CnExtraBold"), url("GillSansNova-CnExtraBold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnExtraBold.woff2") format("woff2"), url("GillSansNova-CnExtraBold.woff") format("woff"), url("GillSansNova-CnExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova ExtraCond";
-  src: url("GillSansNova-ExtraCondBold.eot");
-  src: local("Gill Sans Nova ExtraCond Bold"), local("GillSansNova-ExtraCondBold"), url("GillSansNova-ExtraCondBold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-ExtraCondBold.woff2") format("woff2"), url("GillSansNova-ExtraCondBold.woff") format("woff"), url("GillSansNova-ExtraCondBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova";
-  src: url("GillSansNova-UltraLight.eot");
-  src: local("Gill Sans Nova UltraLight"), local("GillSansNova-UltraLight"), url("GillSansNova-UltraLight.eot?#iefix") format("embedded-opentype"), url("GillSansNova-UltraLight.woff2") format("woff2"), url("GillSansNova-UltraLight.woff") format("woff"), url("GillSansNova-UltraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Cn";
-  src: url("GillSansNova-CnMedium.eot");
-  src: local("Gill Sans Nova Cn Medium"), local("GillSansNova-CnMedium"), url("GillSansNova-CnMedium.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnMedium.woff2") format("woff2"), url("GillSansNova-CnMedium.woff") format("woff"), url("GillSansNova-CnMedium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Shadowed";
-  src: url("GillSansNovaShadowed-Light.eot");
-  src: local("Gill Sans Nova Shadowed Light"), local("GillSansNovaShadowed-Light"), url("GillSansNovaShadowed-Light.eot?#iefix") format("embedded-opentype"), url("GillSansNovaShadowed-Light.woff2") format("woff2"), url("GillSansNovaShadowed-Light.woff") format("woff"), url("GillSansNovaShadowed-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Cn";
-  src: url("GillSansNova-CnUltraBold.eot");
-  src: local("Gill Sans Nova Cn UltraBold"), local("GillSansNova-CnUltraBold"), url("GillSansNova-CnUltraBold.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnUltraBold.woff2") format("woff2"), url("GillSansNova-CnUltraBold.woff") format("woff"), url("GillSansNova-CnUltraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Shadowed Outline";
-  src: url("GillSansNovaShadowed-Outln.eot");
-  src: local("Gill Sans Nova Shadowed Outline"), local("GillSansNovaShadowed-Outln"), url("GillSansNovaShadowed-Outln.eot?#iefix") format("embedded-opentype"), url("GillSansNovaShadowed-Outln.woff2") format("woff2"), url("GillSansNovaShadowed-Outln.woff") format("woff"), url("GillSansNovaShadowed-Outln.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Inline";
-  src: url("GillSansNovaInline-SemiBold.eot");
-  src: local("Gill Sans Nova Inline SemiBold"), local("GillSansNovaInline-SemiBold"), url("GillSansNovaInline-SemiBold.eot?#iefix") format("embedded-opentype"), url("GillSansNovaInline-SemiBold.woff2") format("woff2"), url("GillSansNovaInline-SemiBold.woff") format("woff"), url("GillSansNovaInline-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Inline";
-  src: url("GillSansNovaInline-Regular.eot");
-  src: local("Gill Sans Nova Inline"), local("GillSansNovaInline-Regular"), url("GillSansNovaInline-Regular.eot?#iefix") format("embedded-opentype"), url("GillSansNovaInline-Regular.woff2") format("woff2"), url("GillSansNovaInline-Regular.woff") format("woff"), url("GillSansNovaInline-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova Cn";
-  src: url("GillSansNova-CnUltraLight.eot");
-  src: local("Gill Sans Nova Cn UltraLight"), local("GillSansNova-CnUltraLight"), url("GillSansNova-CnUltraLight.eot?#iefix") format("embedded-opentype"), url("GillSansNova-CnUltraLight.woff2") format("woff2"), url("GillSansNova-CnUltraLight.woff") format("woff"), url("GillSansNova-CnUltraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gill Sans Nova";
-  src: url("GillSansNova-Heavy.eot");
-  src: local("Gill Sans Nova Heavy"), local("GillSansNova-Heavy"), url("GillSansNova-Heavy.eot?#iefix") format("embedded-opentype"), url("GillSansNova-Heavy.woff2") format("woff2"), url("GillSansNova-Heavy.woff") format("woff"), url("GillSansNova-Heavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
+  font-family: "Gill Sans";
+  src: url("../../fonts/GillSansNova-Heavy.woff2");
+  font-weight: 700;
 }
 h1, h2, h3, h4, h5, p {
   margin: 0;
@@ -2501,27 +2325,38 @@ section, .header-wrap {
     margin-top: 30px;
   }
 }
+.popular-slider.item {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+  padding: 0;
+  z-index: 999;
+}
+
+.popular-slider-item {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.popular-slider-item:not(:first-child) {
+  margin-left: 14px;
+}
+.popular-slider-item.active {
+  outline: 1px solid #B3B2B2;
+}
 
 .popular-slider-point {
   display: block;
-  position: relative;
   width: 14px;
   height: 14px;
   background-color: #B3B2B2;
   border-radius: 100%;
-}
-.popular-slider-point:not(:first-child) {
-  margin-left: 14px;
-}
-
-.popular-slider-active {
-  position: absolute;
-  width: 22px;
-  height: 22px;
   border: 1px solid #B3B2B2;
-  border-radius: 100%;
-  left: -29%;
-  top: -28%;
 }
 
 .product-card-meta-type-notification-rectangle {
@@ -2643,18 +2478,18 @@ section, .header-wrap {
   z-index: 9999;
 }
 
-.product-card-meta-weight-variants-item, .item-product-card-meta-weight-variants-item, .shop-product-card-meta-weight-variants-item {
+.product-card-meta-weight-variants-item {
   width: 193px;
   background-color: #FFFFFF;
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.product-card-meta-weight-variants-item:hover, .item-product-card-meta-weight-variants-item:hover, .shop-product-card-meta-weight-variants-item:hover {
+.product-card-meta-weight-variants-item:hover {
   background-color: rgba(82, 80, 81, 0.1);
 }
 @media (max-width: 767px) {
-  .product-card-meta-weight-variants-item, .item-product-card-meta-weight-variants-item, .shop-product-card-meta-weight-variants-item {
+  .product-card-meta-weight-variants-item {
     width: 209px;
   }
 }
@@ -6125,27 +5960,38 @@ section, .header-wrap {
     margin-top: 30px;
   }
 }
+.popular-slider.item {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+  padding: 0;
+  z-index: 999;
+}
+
+.popular-slider-item {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.popular-slider-item:not(:first-child) {
+  margin-left: 14px;
+}
+.popular-slider-item.active {
+  outline: 1px solid #B3B2B2;
+}
 
 .popular-slider-point {
   display: block;
-  position: relative;
   width: 14px;
   height: 14px;
   background-color: #B3B2B2;
   border-radius: 100%;
-}
-.popular-slider-point:not(:first-child) {
-  margin-left: 14px;
-}
-
-.popular-slider-active {
-  position: absolute;
-  width: 22px;
-  height: 22px;
   border: 1px solid #B3B2B2;
-  border-radius: 100%;
-  left: -29%;
-  top: -28%;
 }
 
 .product-card-meta-type-notification-rectangle {
@@ -6267,18 +6113,18 @@ section, .header-wrap {
   z-index: 9999;
 }
 
-.product-card-meta-weight-variants-item, .item-product-card-meta-weight-variants-item, .shop-product-card-meta-weight-variants-item {
+.product-card-meta-weight-variants-item {
   width: 193px;
   background-color: #FFFFFF;
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.product-card-meta-weight-variants-item:hover, .item-product-card-meta-weight-variants-item:hover, .shop-product-card-meta-weight-variants-item:hover {
+.product-card-meta-weight-variants-item:hover {
   background-color: rgba(82, 80, 81, 0.1);
 }
 @media (max-width: 767px) {
-  .product-card-meta-weight-variants-item, .item-product-card-meta-weight-variants-item, .shop-product-card-meta-weight-variants-item {
+  .product-card-meta-weight-variants-item {
     width: 209px;
   }
 }
@@ -6571,6 +6417,8 @@ section, .header-wrap {
   width: 255px;
   height: 307px;
   border-radius: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1139px) {
   .shop-product-card-image {
@@ -6594,6 +6442,7 @@ section, .header-wrap {
   border: none;
   border-radius: 14px;
   background-color: #FFFFFF;
+  z-index: 999;
 }
 @media (max-width: 1139px) {
   .shop-product-card-meta-weight {
@@ -6609,6 +6458,13 @@ section, .header-wrap {
 
 .shop-product-card-meta-weight-variants-item {
   width: 124px;
+  background-color: #FFFFFF;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.shop-product-card-meta-weight-variants-item:hover {
+  background-color: rgba(82, 80, 81, 0.1);
 }
 @media (max-width: 767px) {
   .shop-product-card-meta-weight-variants-item {
@@ -7681,27 +7537,38 @@ section.range-slider input[type=range]::-moz-focus-outer, .range-slider.header-w
     margin-top: 30px;
   }
 }
+.popular-slider.item {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+  padding: 0;
+  z-index: 999;
+}
+
+.popular-slider-item {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.popular-slider-item:not(:first-child) {
+  margin-left: 14px;
+}
+.popular-slider-item.active {
+  outline: 1px solid #B3B2B2;
+}
 
 .popular-slider-point {
   display: block;
-  position: relative;
   width: 14px;
   height: 14px;
   background-color: #B3B2B2;
   border-radius: 100%;
-}
-.popular-slider-point:not(:first-child) {
-  margin-left: 14px;
-}
-
-.popular-slider-active {
-  position: absolute;
-  width: 22px;
-  height: 22px;
   border: 1px solid #B3B2B2;
-  border-radius: 100%;
-  left: -29%;
-  top: -28%;
 }
 
 .product-card-meta-type-notification-rectangle {
@@ -7823,18 +7690,18 @@ section.range-slider input[type=range]::-moz-focus-outer, .range-slider.header-w
   z-index: 9999;
 }
 
-.product-card-meta-weight-variants-item, .item-product-card-meta-weight-variants-item, .shop-product-card-meta-weight-variants-item {
+.product-card-meta-weight-variants-item {
   width: 193px;
   background-color: #FFFFFF;
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.product-card-meta-weight-variants-item:hover, .item-product-card-meta-weight-variants-item:hover, .shop-product-card-meta-weight-variants-item:hover {
+.product-card-meta-weight-variants-item:hover {
   background-color: rgba(82, 80, 81, 0.1);
 }
 @media (max-width: 767px) {
-  .product-card-meta-weight-variants-item, .item-product-card-meta-weight-variants-item, .shop-product-card-meta-weight-variants-item {
+  .product-card-meta-weight-variants-item {
     width: 209px;
   }
 }
@@ -8020,11 +7887,10 @@ section.range-slider input[type=range]::-moz-focus-outer, .range-slider.header-w
 }
 
 .item-product-card-meta-weight-variants {
-  left: 14px;
-  bottom: 0;
-  right: auto;
-  transform: translateY(90%);
-  width: 250px;
+  top: 0;
+  right: 0;
+  z-index: 995;
+  width: 124px;
 }
 @media (max-width: 1139px) {
   .item-product-card-meta-weight-variants {
@@ -8033,7 +7899,21 @@ section.range-slider input[type=range]::-moz-focus-outer, .range-slider.header-w
 }
 
 .item-product-card-meta-weight-variants-item {
-  width: 100%;
+  width: 124px;
+  background-color: #FFFFFF;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transform: translateY(100%);
+  z-index: 995;
+}
+.item-product-card-meta-weight-variants-item:hover {
+  background-color: rgba(82, 80, 81, 0.1);
+}
+@media (max-width: 767px) {
+  .item-product-card-meta-weight-variants-item {
+    width: 164px;
+  }
 }
 
 .item-checkout-select {
@@ -8111,6 +7991,7 @@ section.range-slider input[type=range]::-moz-focus-outer, .range-slider.header-w
   background-color: #E7E4D9;
   border-radius: 40px;
   overflow: hidden;
+  position: relative;
 }
 @media (max-width: 1139px) {
   .item-image-wrap {
@@ -9044,4 +8925,151 @@ section.range-slider input[type=range]::-moz-focus-outer, .range-slider.header-w
   line-height: 35px;
   color: #525051;
   margin-top: 14px;
+}
+
+.shop-select-wrap, .checkout-select, .item-select, .item-weight {
+  width: 255px;
+  height: 59px;
+  position: relative;
+}
+.shop-select-wrap:after, .checkout-select:after, .item-select:after, .item-weight:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 7px;
+  background-image: url(".././../images/arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shop-custom-select, .shop-select, .item-custom-select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding-left: 26px;
+  border: 1px solid #525051;
+  border-radius: 14px;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.select-wrap option {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525051;
+  background-color: transparent;
+}
+
+.item-weight {
+  width: 250px;
+}
+.item-weight::before {
+  content: "";
+  width: 16px;
+  height: 19px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../../images/pack_icon.png");
+}
+
+.item-custom-select {
+  padding-left: 46px;
+}
+
+.item-select {
+  width: 100%;
+}
+.item-select:not(:first-child) {
+  margin-top: 14px;
+}
+
+.shop-item-wrap {
+  width: 124px;
+  height: 59px;
+  margin-left: 14px;
+  position: relative;
+}
+@media (max-width: 1139px) {
+  .shop-item-wrap {
+    width: 193px;
+  }
+}
+@media (max-width: 767px) {
+  .shop-item-wrap {
+    width: 157px;
+    height: 47px;
+    margin-left: 0;
+  }
+}
+.shop-item-wrap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 7px;
+  background-image: url(".././../images/arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.shop-item-wrap::before {
+  content: "";
+  width: 16px;
+  height: 19px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../../images/pack_icon.png");
+}
+
+.shop-select {
+  background-color: #ffffff;
+  border: none;
+  padding-left: 46px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.shop-item-wrap option {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.checkout-select {
+  width: 350px;
+}
+@media (max-width: 1139px) {
+  .checkout-select {
+    width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .checkout-select {
+    width: 346px;
+  }
+}
+.checkout-select.post {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
