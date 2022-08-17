@@ -100,8 +100,9 @@
 }
 
 .gallery-card{
-    &:not(:first-child) {
-            margin-left: 120px;
+    position: static;
+    &:not(:last-child) {
+            margin-right: 120px;
         }
     width: 730px;
 
@@ -111,6 +112,17 @@
 
     @media (max-width: 767px) {
         width: 346px;
+    }
+
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
+    transition-delay: 0;
+    
+
+    &.hidde{
+        position: absolute;
+        transform: translateX(-100%);
+        opacity: 0;
     }
 }
 

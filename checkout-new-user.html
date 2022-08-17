@@ -123,32 +123,112 @@
             <li class="checkout-parametr">
                 <h3 class="checkout-parametr-title">Ваші контактні дані</h3>
                 <div class="contacts-full">
-                    <ul class="contacts-buyer">
-                        <li class="contacts-buyer-item">
-                            <a href="" class="contacts-buyer-link new">Я новий покупець</a>
-                        </li>
-                        <li class="contacts-buyer-item">
-                            <a href="" class="contacts-buyer-link old">Я постійний клієнт</a>
-                        </li>
-                    </ul>
-                    <ul class="contacts-buyer-data">
-                        <li class="contacts-buyer-data-item">
-                            <span class="contacts-buyer-data-item-text">Прізвище</span>
-                            <input type="text" class="contacts-buyer-data-item-input">
-                        </li>
-                        <li class="contacts-buyer-data-item">
-                            <span class="contacts-buyer-data-item-text">Ім'я</span>
-                            <input type="text" class="contacts-buyer-data-item-input">
-                        </li>
-                        <li class="contacts-buyer-data-item">
-                            <span class="contacts-buyer-data-item-text">По батькові</span>
-                            <input type="text" class="contacts-buyer-data-item-input">
-                        </li>
-                        <li class="contacts-buyer-data-item">
-                            <span class="contacts-buyer-data-item-text">Мобільний телефон</span>
-                            <input type="text" class="contacts-buyer-data-item-input" placeholder="+38 (0__) ___ - __ - __">
-                        </li>
-                    </ul>
+                    <div id="new-user">
+                        <ul class="contacts-buyer">
+                            <li class="contacts-buyer-item">
+                                <button class="contacts-buyer-link new">Я новий покупець</button>
+                            </li>
+                            <li class="contacts-buyer-item">
+                                <button class="contacts-buyer-link old">Я постійний клієнт</button>
+                            </li>
+                        </ul>
+                        <ul class="contacts-buyer-data">
+                            <li class="contacts-buyer-data-item">
+                                <span class="contacts-buyer-data-item-text">Прізвище</span>
+                                <input type="text" class="contacts-buyer-data-item-input">
+                            </li>
+                            <li class="contacts-buyer-data-item">
+                                <span class="contacts-buyer-data-item-text">Ім'я</span>
+                                <input type="text" class="contacts-buyer-data-item-input">
+                            </li>
+                            <li class="contacts-buyer-data-item">
+                                <span class="contacts-buyer-data-item-text">По батькові</span>
+                                <input type="text" class="contacts-buyer-data-item-input">
+                            </li>
+                            <li class="contacts-buyer-data-item">
+                                <span class="contacts-buyer-data-item-text">Мобільний телефон</span>
+                                <input type="text" class="contacts-buyer-data-item-input" placeholder="+38 (0__) ___ - __ - __">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="old-user" class="is-hidden">
+                        <ul class="contacts-buyer" id="old-user">
+                            <li class="contacts-buyer-item">
+                                <button class="contacts-buyer-link old">Я постійний клієнт</button>
+                            </li>
+                            <li class="contacts-buyer-item">
+                                <button class="contacts-buyer-link new">Я новий покупець</button>
+                            </li>
+                        </ul>
+                        <div class="old-user-data ">
+                            <div class="old-user-phone">
+                                <span class="contacts-buyer-data-item-text">Мобільний телефон</span>
+                                <input type="text" class="contacts-buyer-data-item-input" placeholder="+38 (0__) ___ - __ - __">
+                                <span class="old-user-phone-error is-hidden">Введено невірний номер телефону</span>
+                                <img src="./images/error.png" alt="" class="old-user-phone-error-image is-hidden">
+                            </div>
+                            <button class="old-user-autorizate-button is-hidden">
+                                <span class="old-user-autorizate-button-text">Авторизуватися</span>
+                                <svg width="13" height="11" class="order-confirm-button-icon">
+                                    <use href="./images/symbol-defs.svg#icon-paw"></use>
+                                </svg>
+                            </button>
+                            <div class="old-user-sms-password">
+                                <span class="contacts-buyer-data-item-text">Пароль з СМС повідомлення</span>
+                                <div class="old-user-sms-password-inputs">
+                                    <input type="text" class="old-user-sms-password-input" maxlength="1">
+                                    <input type="text" class="old-user-sms-password-input" maxlength="1">
+                                    <input type="text" class="old-user-sms-password-input" maxlength="1">
+                                    <input type="text" class="old-user-sms-password-input" maxlength="1">
+                                </div>
+                                <div class="old-user-sms-password-error is-hidden">
+                                    <img src="./images/error.png" alt="" class="old-user-sms-password-error-image">
+                                    <span class="old-user-sms-password-error-text">Введено невірний пароль</span>
+                                </div>
+                            </div>
+                            <div class="old-user-help-buttons ">
+                                <button class="old-user-help-button-memory" data-memory="false">
+                                    <div class="radio-out">
+                                        <div class="radio-in is-hidden"></div>
+                                    </div>
+                                    <span class="old-user-help-button-memory-text">Запам'ятати мене</span>
+                                </button>
+                                <button class="old-user-help-button-remember-password" data-memory="false">
+                                    <span class="old-user-help-button-remember-password-text">Надіслати пароль повторно</span>
+                                </button>
+                            </div>
+                            <button class="old-user-enter-button">
+                                <span class="old-user-autorizate-button-text">Вхід</span>
+                                <svg width="13" height="11" class="order-confirm-button-icon">
+                                    <use href="./images/symbol-defs.svg#icon-paw"></use>
+                                </svg>
+                            </button>
+                            <button class="old-user-send-password-button is-hidden">
+                                <span class="old-user-send-password-text">Надіслати пароль</span>
+                                <svg width="13" height="11" class="old-user-send-password-button-icon">
+                                    <use href="./images/symbol-defs.svg#icon-paw"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="contacts-buyer-data is-hidden">
+                            <li class="contacts-buyer-data-item">
+                                <span class="contacts-buyer-data-item-text">Прізвище</span>
+                                <input type="text" class="contacts-buyer-data-item-input">
+                            </li>
+                            <li class="contacts-buyer-data-item">
+                                <span class="contacts-buyer-data-item-text">Ім'я</span>
+                                <input type="text" class="contacts-buyer-data-item-input">
+                            </li>
+                            <li class="contacts-buyer-data-item">
+                                <span class="contacts-buyer-data-item-text">По батькові</span>
+                                <input type="text" class="contacts-buyer-data-item-input">
+                            </li>
+                            <li class="contacts-buyer-data-item">
+                                <span class="contacts-buyer-data-item-text">Мобільний телефон</span>
+                                <input type="text" class="contacts-buyer-data-item-input" placeholder="+38 (0__) ___ - __ - __">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </li>
             <li class="checkout-parametr">
@@ -475,10 +555,10 @@
     </footer>
     <script src="./js/revindButton.js"></script>
     <script src="./js/promo.js"></script>
-    <script src="./js/checkout-select.js"></script>
     <script src="./js/memory-button.js"></script>
     <script src="./js/header-shop-button.js"></script>
     <script src="./js/mobile-header-menu.js"></script>
+    <script src="./js/checkoutPage-tabs.js"></script>
 </body>
 
 </html>
