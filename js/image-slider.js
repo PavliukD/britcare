@@ -6,26 +6,13 @@
     sliders.forEach(slider => {
 
         const list = document.querySelector(`#${slider.dataset.name}`)
-        let step = 3
+        let step = 1
 
         for (let i = 0; i < list.children.length; i++){
             list.children[i].classList.add('is-hidden')
         }
 
-        let pages = 0
-        if (window.clientWidth >= 1140){
-            pages = Math.ceil(list.children.length / 3)
-        }
-
-        else if (window.clientWidth >= 768){
-            pages = Math.ceil(list.children.length / 2)
-            step = 2
-        }
-
-        else if (window.clientWidth < 768){
-            pages = Math.ceil(list.children.length / 1)
-            step = 1
-        }
+        let pages = list.children.length
 
         for (let i = 0; i < step; i++){
             list.children[i].classList.remove('is-hidden')
