@@ -121,6 +121,11 @@
     width: 255px;
     height: 743px;
 
+    &:hover {
+            transform: scale(1.02);
+    
+        }
+
     &:nth-child(n+4){
         margin-top: 30px;
 

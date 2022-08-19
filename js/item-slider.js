@@ -73,26 +73,33 @@
             if (Number(button.dataset.number) === pages){
                 return
             }
-            if (button.dataset.number === leftButton.dataset.number){
-                rightButton.classList.add('hidden')
+            if (button.dataset.number === leftButton.dataset.number) {
+                setTimeout(() => {
+                    rightButton.classList.add('hidden')
+                }, 250)
                 const number = Number(leftButton.dataset.number) - 2
-                slider.children[number].classList.remove('hidden')
+                setTimeout(() => {
+                    slider.children[number].classList.remove('hidden')
+                }, 250)
+
                 return
             }
             if (button.dataset.number === rightButton.dataset.number){
-                leftButton.classList.add('hidden')
+                setTimeout(() => {
+                    leftButton.classList.add('hidden')
+                },250)
                 const number = Number(rightButton.dataset.number)
-                slider.children[number].classList.remove('hidden')
+                setTimeout(() => {
+                    slider.children[number].classList.remove('hidden')
+                }, 250)
                 return
             }
         }
 
         function changeList (button){
-            console.log('change list')
             const shownButtons =  slider.querySelectorAll('.popular-slider-item:not(.hidden)')
             const leftButton = shownButtons[0]
             const rightButton = shownButtons[shownButtons.length - 1]
-            console.dir(list.children.length)
             
 
             if (Number(button.dataset.number) === 1 && !leftButton.classList.contains('active')){
@@ -103,21 +110,25 @@
             }
             if (button.dataset.number > leftButton.dataset.number){
                 for (let i = 0; i < list.children.length; i++){
-                    list.children[i].classList.add('is-hidden')
-                    console.log(list.children[i])
+
+                        list.children[i].classList.add('is-hidden')
+
                 }
                 for (let i = Number(button.dataset.number-1) * step; i < (Number(button.dataset.number)) * step; i++){                   
-                    list.children[i].classList.remove('is-hidden')
+
+                            list.children[i].classList.remove('is-hidden')
+
                 }
                 return
             }
             if (button.dataset.number < rightButton.dataset.number){
                 for (let i = 0; i < list.children.length; i++){
-                    list.children[i].classList.add('is-hidden')
-                    console.log(list.children[i])
+
+                        list.children[i].classList.add('is-hidden')
+
                 }
                 for (let i = Number(button.dataset.number-1) * step; i < (Number(button.dataset.number)) * step; i++){
-                    list.children[i].classList.remove('is-hidden')
+                            list.children[i].classList.remove('is-hidden')
                 }
                 return
             }
