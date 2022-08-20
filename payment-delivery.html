@@ -358,10 +358,160 @@
             </button>
         </div>
     </footer>
-    <script src="./js/revindButton.js"></script>
-    <script src="./js/paws.js"></script>
-    <script src="./js/memory-button.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h3 class="modal-title">Cookie policy</h3>
+            <p class="modal-text">Щоб надати вам кращий сервіс, ми використовуємо файли cookie та подібні методи.
+                Ці файли cookie використовуються для забезпечення належної роботи сайту
+                (функціональні та файли cookie в строго необхідній категорії).</p>
+            <ul class="modal-buttons-list">
+                <li class="modal-buttons-list-item">
+                    <button class="modal-button accept" data-modal-accept-button>Прийняти</button>
+                </li>
+                <li class="modal-buttons-list-item">
+                    <button class="modal-button reject" data-modal-reject-button>Відхилити</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="auth is-hidden">
+        <div class="auth-modal ">
+            <button class="auth-close-modal"></button>
+            <div class="auth-new-user ">
+                <ul class="auth-buyer">
+                    <li class="auth-buyer-item">
+                        <button class="auth-buyer-button">Я новий покупець</button>
+                        <a href="" class="auth-buyer-link"></a>
+                    </li>
+                    <li class="auth-buyer-item">
+                        <button class="auth-buyer-button">Я постійний клієнт</button>
+                    </li>
+                </ul>
+                <form action="" class="modal-form">
+                    <div class="input-wrap">
+                        <label for="surname" class="input-label">Прізвище</label>
+                        <input class="form-input" type="text" id="surname">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="name" class="input-label">Ім'я</label>
+                        <input class="form-input" type="text" id="name">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="second-name" class="input-label">По батькові</label>
+                        <input class="form-input" type="text" id="second-name">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="phone" class="input-label">Мобільний телефон</label>
+                        <input class="form-input" type="text" id="phone" placeholder="+38 (0__) ___ - __ - __">
+                    </div>
+                    <div class="input-wrap is-hidden">
+                        <label class="input-label">Пароль з СМС повідомлення</label>
+                        <div class="sms-password">
+                            <input class="sms-password-input" type="text" maxlength="1">
+                            <input class="sms-password-input" type="text" maxlength="1">
+                            <input class="sms-password-input" type="text" maxlength="1">
+                            <input class="sms-password-input" type="text" maxlength="1">
+                        </div>
+                    </div>
+                </form>
+                <button class="modal-send-password-button ">
+                    <span class="modal-send-password-text">Надіслати пароль</span>
+                    <svg width="13" height="11" class="modal-send-password-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-paw"></use>
+                    </svg>
+                </button>
+                <button class="modal-enter-button is-hidden">
+                    <span class="modal-enter-text">Увійти</span>
+                    <svg width="13" height="11" class="modal-enter-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-paw"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="auth-old-user is-hidden">
+                <ul class="auth-buyer">
+                    <li class="auth-buyer-item">
+                        <button class="auth-buyer-button">Я постійний клієнт</button>
+                        <a href="" class="auth-buyer-link"></a>
+                    </li>
+                    <li class="auth-buyer-item">
+                        <button class="auth-buyer-button">Я новий покупець</button>
+                    </li>
+                </ul>
+                <form action="" class="modal-form">
+                    <div class="input-wrap">
+                        <label for="phone" class="input-label">Мобільний телефон</label>
+                        <input class="form-input" type="text" id="phone" placeholder="+38 (0__) ___ - __ - __">
+                    </div>
+                    <div class="input-wrap">
+                        <label class="input-label">Пароль з СМС повідомлення</label>
+                        <div class="sms-password">
+                            <input class="sms-password-input" type="text" maxlength="1">
+                            <input class="sms-password-input" type="text" maxlength="1">
+                            <input class="sms-password-input" type="text" maxlength="1">
+                            <input class="sms-password-input" type="text" maxlength="1">
+                        </div>
+                        <div class=" is-hidden">
+                            <img src="./images/error.png" alt="" class="modal-sms-password-error-image">
+                            <span class="modal-sms-password-error-text">Введено невірний пароль</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-help-buttons">
+                    <button class="modal-help-button-memory" data-memory="false">
+                        <div class="radio-out">
+                            <div class="radio-in is-hidden"></div>
+                        </div>
+                        <span class="modal-help-button-memory-text">Запам'ятати мене</span>
+                    </button>
+                    <button class="modal-help-button-remember-password" data-memory="false">
+                        <span class="modal-help-button-remember-password-text">Надіслати пароль повторно</span>
+                    </button>
+                </div>
+                <button class="modal-send-password-button ">
+                    <span class="modal-send-password-text">Надіслати пароль</span>
+                    <svg width="13" height="11" class="modal-send-password-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-paw"></use>
+                    </svg>
+                </button>
+                <button class="modal-enter-button is-hidden">
+                    <span class="modal-enter-text">Увійти</span>
+                    <svg width="13" height="11" class="modal-enter-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-paw"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="exit-user is-hidden">
+                <div class="user">
+                    <span class="user-initials">ВП</span>
+                </div>
+                <form action="" class="modal-form">
+                    <div class="input-wrap">
+                        <input class="form-input" type="text" id="surname">
+                    </div>
+                    <div class="input-wrap">
+                        <input class="form-input" type="text" id="name">
+                    </div>
+                    <div class="input-wrap">
+                        <input class="form-input" type="text" id="second-name">
+                    </div>
+                    <div class="input-wrap">
+                        <input class="form-input" type="text" id="phone" placeholder="+38 (0__) ___ - __ - __">
+                    </div>
+                </form>
+                <button class="exit-button">
+                    <span class="exit-text">Вийти з аккаунту</span>
+                    <svg width="13" height="11" class="exit-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-paw"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./js/revindButton.js"></script> -->
+    <!-- <script src="./js/paws.js"></script> -->
+    <!-- <script src="./js/memory-button.js"></script>
     <script src="./js/header-shop-button.js"></script>
-    <script src="./js/mobile-header-menu.js"></script>
+    <script src="./js/mobile-header-menu.js"></script> -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
