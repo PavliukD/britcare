@@ -4604,6 +4604,11 @@ section, .header-wrap {
   }
 }
 
+.payment-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .payment h2 {
   font-family: "Gill Sans";
   font-style: normal;
@@ -4625,17 +4630,6 @@ section, .header-wrap {
     line-height: 28px;
     margin-bottom: 30px;
   }
-}
-
-@media (max-width: 1139px) {
-  .payment li {
-    width: 100%;
-  }
-}
-
-.delivery-hero {
-  display: flex;
-  justify-content: space-between;
 }
 
 .payment img {
@@ -4737,6 +4731,8 @@ section, .header-wrap {
 @media (max-width: 767px) {
   .give-four-button {
     width: 305px;
+    height: 47px;
+    bottom: 10px;
   }
 }
 
@@ -4761,7 +4757,7 @@ section, .header-wrap {
   fill: #F6B626;
 }
 
-.payment h3 {
+.payment-wrap h3 {
   font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
@@ -4772,14 +4768,19 @@ section, .header-wrap {
   margin-bottom: 14px;
 }
 @media (max-width: 767px) {
-  .payment h3 {
+  .payment-wrap h3 {
     margin-top: 30px;
     font-size: 24px;
     line-height: 28px;
   }
 }
+@media (max-width: 767px) {
+  .payment-wrap h3 {
+    line-height: 30px;
+  }
+}
 
-.payment p {
+.payment-wrap p {
   font-family: "Gill Sans";
   font-style: normal;
   font-weight: 300;
@@ -4787,17 +4788,23 @@ section, .header-wrap {
   line-height: 35px;
   color: #525051;
   width: 824px;
+  margin-bottom: 60px;
 }
-.payment p.info {
+.payment-wrap p.info {
   margin-top: 14px;
 }
 @media (max-width: 1139px) {
-  .payment p {
+  .payment-wrap p {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .payment-wrap p {
+    line-height: 30px;
+  }
+}
 
-.payment span {
+.payment-wrap span {
   font-family: "Gill Sans";
   font-style: normal;
   font-weight: 700;
@@ -4805,20 +4812,47 @@ section, .header-wrap {
   line-height: 35px;
   color: #525051;
 }
-
-.payment ol {
-  margin-top: 60px;
-  list-style: none;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+@media (max-width: 767px) {
+  .payment-wrap span {
+    line-height: 30px;
+  }
 }
 
-ol li:not(:first-child) {
-  margin-top: 60px;
+.payment-wrap h4 {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+@media (max-width: 767px) {
+  .payment-wrap h4 {
+    line-height: 30px;
+  }
 }
 
-.payment ul li:first-child {
+.payment-wrap ul {
   margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .payment-wrap ul {
+    margin-bottom: 30px;
+  }
+}
+
+.payment-wrap li {
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #525051;
+}
+@media (max-width: 767px) {
+  .payment-wrap li {
+    line-height: 30px;
+  }
 }
 
 .give-four-first-paw {
