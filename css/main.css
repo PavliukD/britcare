@@ -4801,6 +4801,7 @@ section, .header-wrap {
 @media (max-width: 767px) {
   .payment-wrap p {
     line-height: 30px;
+    margin-bottom: 30px;
   }
 }
 
